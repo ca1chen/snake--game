@@ -16,15 +16,15 @@ class Reminder {
     this.createdAt,
   });
 
-  /// 从数据库 Map 创建
+  /// 从数据库 Map 创建（带类型安全 fallback）
   factory Reminder.fromMap(Map<String, dynamic> map) {
     return Reminder(
       id: map['id'] as int?,
-      todoId: map['todo_id'] as int,
+      todoId: (map['todo_id'] as int?) ?? 0,
       remindMinutes: map['remind_minutes'] as int? ?? 30,
       isTriggered: (map['is_triggered'] as int?) == 1,
       notificationId: map['notification_id'] as int?,
-      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'] as String) : null,
+      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'].toString()) : null,
     );
   }
 

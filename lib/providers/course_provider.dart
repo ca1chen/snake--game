@@ -46,15 +46,16 @@ class CourseNotifier extends StateNotifier<CourseState> {
   /// 加载当前学期的课程
   Future<void> loadCourses() async {
     final semester = _semesterNotifier.state.currentSemester;
-    if (semester == null) {
+    final semesterId = semester?.id;
+    if (semesterId == null) {
       state = state.copyWith(courses: [], coursesByDay: {}, isLoading: false);
       return;
     }
     state = state.copyWith(isLoading: true, error: null);
     try {
-      final courses = await _repo.getBySemester(semester.id!);
+      final courses = await _repo.getBySemester(semesterId);
       final byDay = await _repo.getActiveForWeek(
-        semester.id!,
+        semesterId,
         state.currentWeek,
       );
       state = state.copyWith(

@@ -36,7 +36,7 @@ class SemesterNotifier extends StateNotifier<SemesterState> {
   final SemesterRepository _repo = SemesterRepository();
 
   SemesterNotifier() : super(const SemesterState()) {
-    loadSemesters();
+    Future.microtask(() => loadSemesters());
   }
 
   /// 加载所有学期

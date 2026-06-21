@@ -33,20 +33,20 @@ class TodoItem {
     this.updatedAt,
   });
 
-  /// 从数据库 Map 创建
+  /// 从数据库 Map 创建（带类型安全 fallback）
   factory TodoItem.fromMap(Map<String, dynamic> map) {
     return TodoItem(
       id: map['id'] as int?,
-      title: map['title'] as String,
+      title: (map['title'] as String?) ?? '',
       description: map['description'] as String? ?? '',
-      priority: Priority.values[map['priority'] as int? ?? 1],
-      dueDate: map['due_date'] as String,
+      priority: Priority.values[(map['priority'] as int?) ?? 1],
+      dueDate: (map['due_date'] as String?) ?? DateTime.now().toIso8601String().split('T').first,
       dueTime: map['due_time'] as String?,
       isCompleted: (map['is_completed'] as int?) == 1,
-      completedAt: map['completed_at'] != null ? DateTime.tryParse(map['completed_at'] as String) : null,
+      completedAt: map['completed_at'] != null ? DateTime.tryParse(map['completed_at'].toString()) : null,
       courseId: map['course_id'] as int?,
-      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'] as String) : null,
-      updatedAt: map['updated_at'] != null ? DateTime.tryParse(map['updated_at'] as String) : null,
+      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'].toString()) : null,
+      updatedAt: map['updated_at'] != null ? DateTime.tryParse(map['updated_at'].toString()) : null,
     );
   }
 

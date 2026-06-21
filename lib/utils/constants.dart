@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 /// 节数时间段映射（天大作息）
 const Map<int, String> periodTimeMap = {
   1: '08:30 - 09:15',
@@ -58,3 +60,18 @@ const String dbName = 'firstcc.db';
 
 /// 数据库版本
 const int dbVersion = 1;
+
+/// 将 hex 颜色字符串解析为 Color
+/// 支持格式: #RGB, #RRGGBB, RGB, RRGGBB (大小写不敏感)
+/// 默认返回 #4A90D9（蓝色）
+Color parseHexColor(String? hex) {
+  if (hex == null || hex.isEmpty) return const Color(0xFF4A90D9);
+  var h = hex.replaceFirst('#', '');
+  // 短格式 #RGB → #RRGGBB
+  if (h.length == 3) {
+    h = h.split('').map((c) => '$c$c').join();
+  }
+  if (h.length < 6) h = h.padRight(6, '0');
+  final parsed = int.tryParse('FF${h.substring(0, 6)}', radix: 16);
+  return parsed != null ? Color(parsed) : const Color(0xFF4A90D9);
+}

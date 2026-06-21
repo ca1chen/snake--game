@@ -41,24 +41,24 @@ class Course {
     this.updatedAt,
   });
 
-  /// 从数据库 Map 创建
+  /// 从数据库 Map 创建（带类型安全 fallback）
   factory Course.fromMap(Map<String, dynamic> map) {
     return Course(
       id: map['id'] as int?,
-      semesterId: map['semester_id'] as int,
-      name: map['name'] as String,
+      semesterId: (map['semester_id'] as int?) ?? 0,
+      name: (map['name'] as String?) ?? '',
       teacher: map['teacher'] as String? ?? '',
       classroom: map['classroom'] as String? ?? '',
-      dayOfWeek: map['day_of_week'] as int,
-      startPeriod: map['start_period'] as int,
+      dayOfWeek: (map['day_of_week'] as int?) ?? 1,
+      startPeriod: (map['start_period'] as int?) ?? 1,
       duration: map['duration'] as int? ?? 2,
       startWeek: map['start_week'] as int? ?? 1,
       endWeek: map['end_week'] as int? ?? 18,
-      weekType: WeekType.values[map['week_type'] as int? ?? 0],
+      weekType: WeekType.values[(map['week_type'] as int?) ?? 0],
       color: map['color'] as String? ?? '#4A90D9',
       notes: map['notes'] as String? ?? '',
-      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'] as String) : null,
-      updatedAt: map['updated_at'] != null ? DateTime.tryParse(map['updated_at'] as String) : null,
+      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'].toString()) : null,
+      updatedAt: map['updated_at'] != null ? DateTime.tryParse(map['updated_at'].toString()) : null,
     );
   }
 

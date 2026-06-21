@@ -6,15 +6,12 @@ import '../utils/constants.dart';
 
 /// SQLite 数据库单例
 class DatabaseHelper {
-  static DatabaseHelper? _instance;
+  static late final DatabaseHelper _instance = DatabaseHelper._();
   static Database? _database;
 
   DatabaseHelper._();
 
-  factory DatabaseHelper() {
-    _instance ??= DatabaseHelper._();
-    return _instance!;
-  }
+  factory DatabaseHelper() => _instance;
 
   Future<Database> get database async {
     _database ??= await _initDatabase();
@@ -48,8 +45,9 @@ class DatabaseHelper {
 
   /// 关闭数据库
   Future<void> close() async {
-    if (_database != null) {
-      await _database!.close();
+    final db = _database;
+    if (db != null) {
+      await db.close();
       _database = null;
       Logger.d('DB', 'Database closed');
     }

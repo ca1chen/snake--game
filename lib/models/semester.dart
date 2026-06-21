@@ -20,17 +20,19 @@ class Semester {
     this.updatedAt,
   });
 
-  /// 从数据库 Map 创建
+  /// 从数据库 Map 创建（带类型安全 fallback）
   factory Semester.fromMap(Map<String, dynamic> map) {
+    final startStr = map['start_date'] as String?;
+    final endStr = map['end_date'] as String?;
     return Semester(
       id: map['id'] as int?,
-      name: map['name'] as String,
-      startDate: DateTime.parse(map['start_date'] as String),
-      endDate: DateTime.parse(map['end_date'] as String),
+      name: (map['name'] as String?) ?? '',
+      startDate: startStr != null ? (DateTime.tryParse(startStr) ?? DateTime.now()) : DateTime.now(),
+      endDate: endStr != null ? (DateTime.tryParse(endStr) ?? DateTime.now()) : DateTime.now(),
       totalWeeks: map['total_weeks'] as int? ?? 18,
       isCurrent: (map['is_current'] as int?) == 1,
-      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'] as String) : null,
-      updatedAt: map['updated_at'] != null ? DateTime.tryParse(map['updated_at'] as String) : null,
+      createdAt: map['created_at'] != null ? DateTime.tryParse(map['created_at'].toString()) : null,
+      updatedAt: map['updated_at'] != null ? DateTime.tryParse(map['updated_at'].toString()) : null,
     );
   }
 

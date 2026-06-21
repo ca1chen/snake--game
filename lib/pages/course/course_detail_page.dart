@@ -29,7 +29,7 @@ class CourseDetailPage extends ConsumerWidget {
       );
     }
 
-    final color = Color(int.parse('FF${course.color.replaceFirst('#', '')}', radix: 16));
+    final color = parseHexColor(course.color);
     final boundTodos = todoState.todos.where((t) => t.courseId == courseId).toList()
       ..sort((a, b) {
         if (a.isCompleted != b.isCompleted) return a.isCompleted ? 1 : -1;

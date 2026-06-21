@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:html/parser.dart' as html_parser;
 import '../models/course.dart';
-import '../models/semester.dart';
 import '../utils/gbk_decoder.dart';
 
 /// 解析结果
@@ -25,11 +24,12 @@ class CourseImportService {
   static Future<ImportResult> parseFile(String filePath) async {
     final file = File(filePath);
     final bytes = await file.readAsBytes();
-    return parseBytes(bytes);
+    return await parseBytes(bytes);
   }
 
   /// 从字节数组解析课表（用于分享接收场景）
-  static ImportResult parseBytes(List<int> bytes) {
+  static Future<ImportResult> parseBytes(List<int> bytes) async {
+    await GbkDecoder.ensureInitialized();
     final html = GbkDecoder.decode(bytes);
     return _parseHtml(html);
   }

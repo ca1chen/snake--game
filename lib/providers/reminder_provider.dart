@@ -32,7 +32,7 @@ class ReminderNotifier extends StateNotifier<ReminderState> {
   final ReminderRepository _repo = ReminderRepository();
 
   ReminderNotifier() : super(const ReminderState()) {
-    loadAll();
+    Future.microtask(() => loadAll());
   }
 
   /// 加载所有提醒

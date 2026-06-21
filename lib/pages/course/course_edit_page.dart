@@ -96,9 +96,18 @@ class _CourseEditPageState extends ConsumerState<CourseEditPage> {
       await ref.read(courseProvider.notifier).addCourse(course);
     }
 
-    if (mounted) {
-      Navigator.pop(context, true);
+    // 检查是否保存成功
+    if (!mounted) return;
+    final error = ref.read(courseProvider).error;
+    if (error != null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('保存失败: $error'), backgroundColor: Colors.red),
+      );
+      ref.read(courseProvider.notifier).clearError();
+      return;
     }
+
+    Navigator.pop(context, true);
   }
 
   @override
@@ -106,10 +115,13 @@ class _CourseEditPageState extends ConsumerState<CourseEditPage> {
     final semesterState = ref.watch(semesterProvider);
     final theme = Theme.of(context);
 
-    // 自动设置学期
-    if (_semesterId == 0 && semesterState.currentSemester != null) {
-      _semesterId = semesterState.currentSemester!.id!;
-    }
+    // 监听学期加载完成，自动设置当前学期
+    ref.listen(semesterProvider, (prev, next) {
+      final semesterId = next.currentSemester?.id;
+      if (_semesterId == 0 && semesterId != null) {
+        setState(() => _semesterId = semesterId);
+      }
+    });
 
     return Scaffold(
       appBar: AppBar(
@@ -233,7 +245,7 @@ class _CourseEditPageState extends ConsumerState<CourseEditPage> {
               spacing: 8,
               runSpacing: 8,
               children: courseColorPalette.map((hex) {
-                final color = Color(int.parse('FF${hex.replaceFirst('#', '')}', radix: 16));
+                final color = parseHexColor(hex);
                 final isSelected = hex == _color;
                 return GestureDetector(
                   onTap: () => setState(() => _color = hex),

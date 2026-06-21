@@ -67,7 +67,7 @@ class TodoNotifier extends StateNotifier<TodoState> {
   final TodoRepository _repo = TodoRepository();
 
   TodoNotifier() : super(const TodoState()) {
-    loadTodos();
+    Future.microtask(() => loadTodos());
   }
 
   /// 加载所有待办

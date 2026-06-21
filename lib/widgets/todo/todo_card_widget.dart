@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../../models/todo_item.dart';
+import '../../utils/constants.dart';
 import 'priority_badge_widget.dart';
 
 /// 待办卡片组件
@@ -142,9 +143,7 @@ class _CourseTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = colorHex != null
-        ? Color(int.parse('FF${colorHex!.replaceFirst('#', '')}', radix: 16))
-        : Colors.blue;
+    final color = parseHexColor(colorHex);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),

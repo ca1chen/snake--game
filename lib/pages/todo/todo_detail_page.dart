@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/todo_provider.dart';
 import '../../providers/course_provider.dart';
+import '../../utils/constants.dart';
 import '../../widgets/todo/priority_badge_widget.dart';
 import '../../widgets/common/confirm_dialog.dart';
 import '../../router/app_router.dart';
@@ -29,9 +30,7 @@ class TodoDetailPage extends ConsumerWidget {
     final course = todo.courseId != null
         ? courseState.courses.where((c) => c.id == todo.courseId).firstOrNull
         : null;
-    final color = course != null
-        ? Color(int.parse('FF${course.color.replaceFirst('#', '')}', radix: 16))
-        : null;
+    final color = course != null ? parseHexColor(course.color) : null;
 
     return Scaffold(
       appBar: AppBar(

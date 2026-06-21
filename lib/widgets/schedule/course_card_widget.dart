@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/course.dart';
+import '../../utils/constants.dart';
 
 /// 课程卡片组件（显示在周视图网格中）
 class CourseCard extends StatelessWidget {
@@ -16,22 +17,17 @@ class CourseCard extends StatelessWidget {
     this.onLongPress,
   });
 
-  Color get _color {
-    final hex = course.color.replaceFirst('#', '');
-    return Color(int.parse('FF$hex', radix: 16));
-  }
+  Color get _color => parseHexColor(course.color);
 
   @override
   Widget build(BuildContext context) {
-    final isLight = Theme.of(context).brightness == Brightness.light;
-
     return GestureDetector(
       onTap: onTap,
       onLongPress: onLongPress,
       child: Container(
         margin: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
-          color: _color.withOpacity(isLight ? 0.88 : 0.7),
+          color: _color.withOpacity(0.85),
           borderRadius: BorderRadius.circular(6),
           boxShadow: [
             BoxShadow(
@@ -50,7 +46,7 @@ class CourseCard extends StatelessWidget {
             Text(
               course.name,
               style: TextStyle(
-                color: isLight ? Colors.white : Colors.white.withOpacity(0.95),
+                color: Colors.white,
                 fontSize: 11,
                 fontWeight: FontWeight.w600,
               ),
@@ -63,7 +59,7 @@ class CourseCard extends StatelessWidget {
               Text(
                 course.classroom,
                 style: TextStyle(
-                  color: (isLight ? Colors.white : Colors.white).withOpacity(0.8),
+                  color: Colors.white.withOpacity(0.8),
                   fontSize: 9,
                 ),
                 maxLines: 1,

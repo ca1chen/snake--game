@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../models/course.dart';
 import '../../providers/course_provider.dart';
+import '../../utils/constants.dart';
 import '../../widgets/common/empty_state_widget.dart';
 import '../../widgets/common/confirm_dialog.dart';
 import '../../router/app_router.dart';
@@ -32,9 +33,7 @@ class CourseListPage extends ConsumerWidget {
                   itemCount: courseState.courses.length,
                   itemBuilder: (context, index) {
                     final course = courseState.courses[index];
-                    final color = Color(
-                      int.parse('FF${course.color.replaceFirst('#', '')}', radix: 16),
-                    );
+                    final color = parseHexColor(course.color);
 
                     return Card(
                       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 3),

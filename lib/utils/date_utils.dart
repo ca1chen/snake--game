@@ -51,9 +51,9 @@ class DateUtils {
     return a.year == b.year && a.month == b.month && a.day == b.day;
   }
 
-  /// 计算两个日期相差的天数
+  /// 计算两个日期相差的天数（忽略时间分量）
   static int daysBetween(DateTime a, DateTime b) {
-    return a.difference(b).inDays.abs();
+    return a.normalized().difference(b.normalized()).inDays.abs();
   }
 }
 

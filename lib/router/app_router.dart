@@ -104,14 +104,20 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '${AppRoutes.courseDetail}/:courseId',
       builder: (context, state) {
-        final id = int.parse(state.pathParameters['courseId']!);
+        final id = int.tryParse(state.pathParameters['courseId'] ?? '');
+        if (id == null) {
+          return const Scaffold(body: Center(child: Text('缺少课程ID')));
+        }
         return CourseDetailPage(courseId: id);
       },
     ),
     GoRoute(
       path: '${AppRoutes.courseEdit}/:courseId',
       builder: (context, state) {
-        final courseId = int.parse(state.pathParameters['courseId']!);
+        final courseId = int.tryParse(state.pathParameters['courseId'] ?? '');
+        if (courseId == null) {
+          return const Scaffold(body: Center(child: Text('缺少课程ID')));
+        }
         final repo = CourseRepository();
         return FutureBuilder<Course?>(
           future: repo.getById(courseId),
@@ -134,7 +140,10 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '${AppRoutes.todoDetail}/:todoId',
       builder: (context, state) {
-        final id = int.parse(state.pathParameters['todoId']!);
+        final id = int.tryParse(state.pathParameters['todoId'] ?? '');
+        if (id == null) {
+          return const Scaffold(body: Center(child: Text('缺少待办ID')));
+        }
         return TodoDetailPage(todoId: id);
       },
     ),
