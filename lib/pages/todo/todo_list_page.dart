@@ -52,6 +52,19 @@ class _TodoListPageState extends ConsumerState<TodoListPage>
 
   // --- 语音录入 ---
   Future<void> _startVoiceRecording() async {
+    // 检查浏览器是否支持语音识别
+    if (!SpeechService.isSupported) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('iOS 系统不支持浏览器语音识别，请使用桌面端 Chrome'),
+            duration: Duration(seconds: 4),
+          ),
+        );
+      }
+      return;
+    }
+
     final modelReady = await _speech.isModelReady();
     if (!mounted) return;
     if (!modelReady) {
@@ -69,11 +82,14 @@ class _TodoListPageState extends ConsumerState<TodoListPage>
     _resultSub = _speech.onResult.listen((result) {
       if (!mounted || !_isVoiceRecording) return;
       if (result.hasError) {
-        if (result.error == 'MODEL_NOT_DOWNLOADED') {
-          _showDownloadDialog();
-          _stopPulse();
-          setState(() => _isVoiceRecording = false);
-        }
+        _stopPulse();
+        setState(() => _isVoiceRecording = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(result.error ?? '语音识别出错'),
+            duration: const Duration(seconds: 3),
+          ),
+        );
         return;
       }
       setState(() => _recognizedText = result.text ?? '');

@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'dart:io';
 import 'dart:typed_data';
+import 'package:archive/archive.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 /// GBK→Unicode decoder for TJU course file parsing.
@@ -16,7 +16,7 @@ class GbkDecoder {
     if (_table != null) return;
     final b64 = await rootBundle.loadString('assets/gbk_table.txt');
     final bytes = base64Decode(b64.trim());
-    final decompressed = Uint8List.fromList(zlib.decode(bytes));
+    final decompressed = Uint8List.fromList(ZLibDecoder().decodeBytes(bytes));
     _table = decompressed.buffer.asUint16List();
   }
 

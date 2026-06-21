@@ -34,23 +34,41 @@ class _SplashPageState extends ConsumerState<SplashPage> {
 
   Future<void> _init() async {
     try {
-      // 1. 初始化通知服务
+      // 1. 初始化通知服务（超时 5 秒）
       setState(() => _status = AppStrings.splashInitNotify);
-      await NotificationService.init();
+      await NotificationService.init().timeout(
+        const Duration(seconds: 5),
+        onTimeout: () => {},
+      );
 
-      // 2. 加载学期数据（触发数据库初始化）
+      // 2. 加载学期数据（触发数据库初始化，超时 10 秒）
       setState(() => _status = AppStrings.splashLoadData);
-      await ref.read(semesterProvider.notifier).loadSemesters();
+      await ref.read(semesterProvider.notifier).loadSemesters().timeout(
+        const Duration(seconds: 10),
+        onTimeout: () => {},
+      );
 
-      // 3. 首次启动时，导入课表种子数据
-      await _seedIfEmpty();
+      // 3. 首次启动时，导入课表种子数据（超时 15 秒）
+      await _seedIfEmpty().timeout(
+        const Duration(seconds: 15),
+        onTimeout: () => {},
+      );
 
-      // 4. 加载课程和待办
-      await ref.read(courseProvider.notifier).loadCourses();
-      await ref.read(todoProvider.notifier).loadTodos();
+      // 4. 加载课程和待办（超时 10 秒）
+      await ref.read(courseProvider.notifier).loadCourses().timeout(
+        const Duration(seconds: 10),
+        onTimeout: () => {},
+      );
+      await ref.read(todoProvider.notifier).loadTodos().timeout(
+        const Duration(seconds: 10),
+        onTimeout: () => {},
+      );
 
       // 5. 处理系统分享导入
-      await _handleSharedImport();
+      await _handleSharedImport().timeout(
+        const Duration(seconds: 10),
+        onTimeout: () => {},
+      );
 
       setState(() => _ready = true);
     } catch (e) {

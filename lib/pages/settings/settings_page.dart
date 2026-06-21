@@ -128,12 +128,17 @@ class SettingsPage extends ConsumerWidget {
       );
 
       if (result == null || result.files.isEmpty) return;
-      final filePath = result.files.single.path;
-      if (filePath == null) return;
+      final file = result.files.single;
+      final fileBytes = file.bytes;
+      final filePath = file.path;
+
+      if (fileBytes == null && filePath == null) return;
 
       // 2. 解析课表
       _showLoading(navCtx, '正在解析课表...');
-      final importResult = await CourseImportService.parseFile(filePath);
+      final importResult = fileBytes != null
+          ? await CourseImportService.parseBytes(fileBytes)
+          : await CourseImportService.parseFile(filePath!);
       nav?.pop(); // dismiss loading
 
       if (importResult.courses.isEmpty) {
