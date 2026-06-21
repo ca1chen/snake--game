@@ -169,13 +169,13 @@ class SettingsPage extends ConsumerWidget {
       if (semester != null) {
         semesterId = semester.id!;
       } else {
-        // 自动创建学期
-        final now = DateTime.now();
-        final monday = now.subtract(Duration(days: now.weekday - 1));
+        // 自动创建学期（根据学期名称推算天大开学日期）
+        final startDate =
+            CourseImportService.estimateSemesterStart(importResult.semesterName);
         final newSem = Semester(
           name: importResult.semesterName,
-          startDate: monday,
-          endDate: monday.add(const Duration(days: 18 * 7 - 1)),
+          startDate: startDate,
+          endDate: startDate.add(const Duration(days: 18 * 7 - 1)),
           totalWeeks: 18,
           isCurrent: semesters.isEmpty,
         );

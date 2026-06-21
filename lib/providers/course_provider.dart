@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/course.dart';
 import '../repositories/course_repository.dart';
+import '../utils/date_utils.dart' as DateHelper;
 import 'semester_provider.dart';
 
 /// 课程列表状态
@@ -51,12 +52,20 @@ class CourseNotifier extends StateNotifier<CourseState> {
       state = state.copyWith(courses: [], coursesByDay: {}, isLoading: false);
       return;
     }
-    state = state.copyWith(isLoading: true, error: null);
+    // 自动计算当前周次（如果从未设置过）
+    var week = state.currentWeek;
+    if (week <= 1) {
+      week = DateHelper.DateUtils.getWeekNumber(semester!.startDate, DateTime.now());
+      if (week < 1) week = 1;
+      if (week > semester!.totalWeeks) week = semester!.totalWeeks;
+    }
+
+    state = state.copyWith(currentWeek: week, isLoading: true, error: null);
     try {
       final courses = await _repo.getBySemester(semesterId);
       final byDay = await _repo.getActiveForWeek(
         semesterId,
-        state.currentWeek,
+        week,
       );
       state = state.copyWith(
         courses: courses,

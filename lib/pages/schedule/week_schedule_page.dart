@@ -4,6 +4,7 @@ import '../../models/semester.dart';
 import '../../providers/semester_provider.dart';
 import '../../providers/course_provider.dart';
 import '../../providers/todo_provider.dart';
+import '../../utils/date_utils.dart' as DateHelper;
 import '../../widgets/schedule/schedule_header_widget.dart';
 import '../../utils/app_strings.dart';
 import '../../widgets/schedule/week_grid_widget.dart';
@@ -108,9 +109,8 @@ class WeekSchedulePage extends ConsumerWidget {
   }
 
   int _getTodayWeek(Semester semester) {
-    final diff = DateTime.now().difference(semester.startDate).inDays;
-    if (diff < 0) return 1;
-    final week = (diff / 7).floor() + 1;
+    final week = DateHelper.DateUtils.getWeekNumber(semester.startDate, DateTime.now());
+    if (week < 1) return 1;
     if (week > semester.totalWeeks) return semester.totalWeeks;
     return week;
   }

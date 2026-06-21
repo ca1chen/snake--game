@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:html/parser.dart' as html_parser;
 import '../models/course.dart';
+import '../utils/constants.dart';
 import '../utils/gbk_decoder.dart';
 
 /// 解析结果
@@ -235,16 +236,47 @@ class CourseImportService {
     );
   }
 
-  /// 课程颜色轮换
-  static final List<String> _colorPalette = [
-    '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4',
-    '#FFEAA7', '#DDA0DD', '#F7DC6F', '#BB8FCE',
-    '#85C1E9', '#82E0AA', '#F8C471', '#D7BDE2',
-    '#A3E4D7', '#AED6F1', '#98D8C8', '#F1948A',
-  ];
-
+  /// 课程颜色轮换（与手动添加共用调色板）
   static String _pickColor(int index) {
-    return _colorPalette[index % _colorPalette.length];
+    return courseColorPalette[index % courseColorPalette.length];
+  }
+
+  /// 根据学期名称推算天大开学第一周周一日期
+  /// "2025-2026学年第2学期" → 2026-03-09
+  /// "2025-2026学年第1学期" → 2025-09-29
+  static DateTime estimateSemesterStart(String semesterName) {
+    // 天大已知校历（第一周周一）
+    const knownStarts = <String, Map<int, String>>{
+      '2024-2025': {1: '2024-09-02', 2: '2025-03-03'},
+      '2025-2026': {1: '2025-09-29', 2: '2026-03-09'},
+      '2026-2027': {1: '2026-08-31', 2: '2027-03-01'},
+      '2027-2028': {1: '2027-09-06', 2: '2028-03-06'},
+    };
+
+    final match =
+        RegExp(r'(\d{4})-(\d{4})学年第(\d)学期').firstMatch(semesterName);
+    if (match != null) {
+      final year1 = match.group(1)!;
+      final year2 = match.group(2)!;
+      final term = int.parse(match.group(3)!);
+      final key = '$year1-$year2';
+      if (knownStarts.containsKey(key)) {
+        final dateStr = knownStarts[key]![term];
+        if (dateStr != null) return DateTime.parse(dateStr);
+      }
+      // 回退估算：春季≈次年3月初周一，秋季≈当年9月初周一
+      if (term == 2) {
+        final mar1 = DateTime(int.parse(year2), 3, 1);
+        return mar1.subtract(Duration(days: mar1.weekday - 1));
+      } else {
+        final sep1 = DateTime(int.parse(year1), 9, 1);
+        return sep1.subtract(Duration(days: sep1.weekday - 1));
+      }
+    }
+
+    // 完全无法解析时回退到当前周一
+    final now = DateTime.now();
+    return now.subtract(Duration(days: now.weekday - 1));
   }
 }
 
