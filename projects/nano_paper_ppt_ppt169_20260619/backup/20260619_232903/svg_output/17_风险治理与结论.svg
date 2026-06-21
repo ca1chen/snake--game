@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#080E18"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#0EA5E9"/>
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#0EA5E9">风险治理与发展路线</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#1E293B"/>
+
+  <!-- 3 risk columns -->
+  <rect x="80" y="95" width="350" height="250" rx="6" fill="#111827"/>
+  <rect x="80" y="95" width="350" height="5" fill="#0EA5E9"/>
+  <text x="255" y="135" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#0EA5E9" text-anchor="middle">科学工程风险</text>
+  <text x="105" y="175" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 微观完美与宏观脆弱</text>
+  <text x="105" y="205" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 长期稳定性难以保证</text>
+  <text x="105" y="235" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 高性价比量产难以实现</text>
+  <text x="105" y="265" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 基础理论体系尚不完善</text>
+  <text x="105" y="295" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 多场耦合问题未根本解决</text>
+
+  <rect x="465" y="95" width="350" height="250" rx="6" fill="#111827"/>
+  <rect x="465" y="95" width="350" height="5" fill="#F97316"/>
+  <text x="640" y="135" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#F97316" text-anchor="middle">生态健康风险</text>
+  <text x="490" y="175" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 纳米毒理学数据严重匮乏</text>
+  <text x="490" y="205" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 食物链富集机制不明确</text>
+  <text x="490" y="235" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 长期慢性毒性未知</text>
+  <text x="490" y="265" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 微生物生态系统不可逆破坏</text>
+  <text x="490" y="295" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 纳米颗粒人体穿透风险</text>
+
+  <rect x="850" y="95" width="350" height="250" rx="6" fill="#111827"/>
+  <rect x="850" y="95" width="350" height="5" fill="#F97316"/>
+  <text x="1025" y="135" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#F97316" text-anchor="middle">社会伦理风险</text>
+  <text x="875" y="175" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 技术"平权"与阶级固化</text>
+  <text x="875" y="205" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 人与自然的定义边界</text>
+  <text x="875" y="235" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 生化武器化风险</text>
+  <text x="875" y="265" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 大规模隐私监控</text>
+  <text x="875" y="295" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 监管滞后于技术发展</text>
+
+  <!-- Bottom roadmap -->
+  <rect x="80" y="375" width="1120" height="160" rx="6" fill="#060E1A"/>
+  <text x="640" y="415" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#080E18" text-anchor="middle">发展路线图</text>
+  <!-- 3 steps -->
+  <rect x="110" y="440" width="320" height="70" rx="4" fill="#0EA5E9"/>
+  <text x="270" y="470" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#080E18" text-anchor="middle">近期（5年内）</text>
+  <text x="270" y="495" font-family="Microsoft YaHei" font-size="12" fill="#8899BB" text-anchor="middle">完善纳米毒理学基础研究</text>
+  <text x="480" y="470" font-family="Arial" font-size="20" fill="#22D3EE" text-anchor="middle">→</text>
+  <rect x="530" y="440" width="320" height="70" rx="4" fill="#22D3EE"/>
+  <text x="690" y="470" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#080E18" text-anchor="middle">中期（5-10年）</text>
+  <text x="690" y="495" font-family="Microsoft YaHei" font-size="12" fill="#8899BB" text-anchor="middle">建立全球统一伦理监管框架</text>
+  <text x="900" y="470" font-family="Arial" font-size="20" fill="#22D3EE" text-anchor="middle">→</text>
+  <rect x="950" y="440" width="220" height="70" rx="4" fill="#0EA5E9"/>
+  <text x="1060" y="470" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#080E18" text-anchor="middle">远期（10年+）</text>
+  <text x="1060" y="495" font-family="Microsoft YaHei" font-size="12" fill="#8899BB" text-anchor="middle">技术与安全协调发展</text>
+
+  <rect x="80" y="560" width="1120" height="110" rx="6" fill="#111827"/>
+  <rect x="80" y="560" width="1120" height="4" fill="#0EA5E9"/>
+  <text x="640" y="600" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#0EA5E9" text-anchor="middle">核心结论</text>
+  <text x="640" y="635" font-family="Microsoft YaHei" font-size="15" fill="#CCD6E0" text-anchor="middle">纳米技术与纳米机器人的工程化落地必须走"技术攻关"与"安全保障"双轮驱动之路</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="end">17</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#1E293B"/>
+</svg>

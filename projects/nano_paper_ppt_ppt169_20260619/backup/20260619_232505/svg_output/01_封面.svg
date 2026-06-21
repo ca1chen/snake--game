@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0B1D3A"/>
+  <!-- TJU accent bar -->
+  <rect x="0" y="0" width="1280" height="6" fill="#003D7C"/>
+  <!-- Vertical decorative bar -->
+  <rect x="160" y="160" width="4" height="380" rx="2" fill="#0066B3"/>
+  <!-- University -->
+  <text x="200" y="240" font-family="Microsoft YaHei" font-size="18" fill="#8899BB">天津大学 · 机械工程学院</text>
+  <!-- Title -->
+  <text x="200" y="320" font-family="Microsoft YaHei" font-size="42" font-weight="bold" fill="#FFFFFF">纳米技术及纳米机器人的</text>
+  <text x="200" y="385" font-family="Microsoft YaHei" font-size="42" font-weight="bold" fill="#FFFFFF">应用和现状</text>
+  <rect x="200" y="420" width="160" height="3" fill="#0066B3"/>
+  <!-- Authors -->
+  <text x="200" y="480" font-family="Microsoft YaHei" font-size="16" fill="#AABBCC">汪翔天 · 黄子烨 · 钟乐昕 · 马锦龙</text>
+  <text x="200" y="520" font-family="Microsoft YaHei" font-size="14" fill="#667788">智能制造工程 · 机械设计制造及其自动化</text>
+  <text x="200" y="550" font-family="Microsoft YaHei" font-size="14" fill="#667788">2025级</text>
+  <!-- Bottom bar -->
+  <rect x="0" y="714" width="1280" height="6" fill="#003D7C"/>
+</svg>

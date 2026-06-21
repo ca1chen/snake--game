@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#080E18" />
+  <rect x="0" y="0" width="1280" height="4" fill="#F97316" />
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#0EA5E9">六大领域产业化挑战</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#1E293B" />
+
+  
+  <path fill="#111827" d="M86,95 H424 A6,6 0 0 1 430,101 V219 A6,6 0 0 1 424,225 H86 A6,6 0 0 1 80,219 V101 A6,6 0 0 1 86,95 Z" />
+  <path fill="#F97316" d="M83,95 H83 A3,3 0 0 1 86,98 V222 A3,3 0 0 1 83,225 H83 A3,3 0 0 1 80,222 V98 A3,3 0 0 1 83,95 Z" />
+  <text x="110" y="125" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F97316">纳米复合材料</text>
+  <text x="110" y="150" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">分散困难→团聚→强度不升反降</text>
+  <text x="110" y="172" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">回收难题→降级使用或焚烧</text>
+
+  <path fill="#111827" d="M471,95 H809 A6,6 0 0 1 815,101 V219 A6,6 0 0 1 809,225 H471 A6,6 0 0 1 465,219 V101 A6,6 0 0 1 471,95 Z" />
+  <path fill="#F97316" d="M468,95 H468 A3,3 0 0 1 471,98 V222 A3,3 0 0 1 468,225 H468 A3,3 0 0 1 465,222 V98 A3,3 0 0 1 468,95 Z" />
+  <text x="495" y="125" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F97316">半导体制造</text>
+  <text x="495" y="150" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">量子隧穿→芯片漏电发热</text>
+  <text x="495" y="172" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">纳米级灰尘→整片晶圆报废</text>
+
+  <path fill="#111827" d="M856,95 H1194 A6,6 0 0 1 1200,101 V219 A6,6 0 0 1 1194,225 H856 A6,6 0 0 1 850,219 V101 A6,6 0 0 1 856,95 Z" />
+  <path fill="#F97316" d="M853,95 H853 A3,3 0 0 1 856,98 V222 A3,3 0 0 1 853,225 H853 A3,3 0 0 1 850,222 V98 A3,3 0 0 1 853,95 Z" />
+  <text x="880" y="125" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F97316">纳米涂层</text>
+  <text x="880" y="150" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">耐久性差→物理强度先天不足</text>
+  <text x="880" y="172" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">维护成本高→1-2年局部失效</text>
+
+  
+  <path fill="#111827" d="M86,250 H424 A6,6 0 0 1 430,256 V374 A6,6 0 0 1 424,380 H86 A6,6 0 0 1 80,374 V256 A6,6 0 0 1 86,250 Z" />
+  <path fill="#22D3EE" d="M83,250 H83 A3,3 0 0 1 86,253 V377 A3,3 0 0 1 83,380 H83 A3,3 0 0 1 80,377 V253 A3,3 0 0 1 83,250 Z" />
+  <text x="110" y="280" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#22D3EE">纺织行业</text>
+  <text x="110" y="305" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">结合不牢→纳米颗粒"粘"而不"长"</text>
+  <text x="110" y="327" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">洗涤流失+环境风险+健康隐患</text>
+
+  <path fill="#111827" d="M471,250 H809 A6,6 0 0 1 815,256 V374 A6,6 0 0 1 809,380 H471 A6,6 0 0 1 465,374 V256 A6,6 0 0 1 471,250 Z" />
+  <path fill="#22D3EE" d="M468,250 H468 A3,3 0 0 1 471,253 V377 A3,3 0 0 1 468,380 H468 A3,3 0 0 1 465,377 V253 A3,3 0 0 1 468,250 Z" />
+  <text x="495" y="280" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#22D3EE">切削刀具</text>
+  <text x="495" y="305" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">界面剥离→涂层/基体剪切应力</text>
+  <text x="495" y="327" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">高温失效→1000°C再结晶/退火</text>
+
+  <path fill="#111827" d="M856,250 H1194 A6,6 0 0 1 1200,256 V374 A6,6 0 0 1 1194,380 H856 A6,6 0 0 1 850,374 V256 A6,6 0 0 1 856,250 Z" />
+  <path fill="#22D3EE" d="M853,250 H853 A3,3 0 0 1 856,253 V377 A3,3 0 0 1 853,380 H853 A3,3 0 0 1 850,377 V253 A3,3 0 0 1 853,250 Z" />
+  <text x="880" y="280" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#22D3EE">生物医疗</text>
+  <text x="880" y="305" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">动力供应→电池无法缩放至纳米</text>
+  <text x="880" y="327" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">免疫清除+靶向识别+通信盲区</text>
+
+  
+  <path fill="#060E1A" d="M86,420 H1194 A6,6 0 0 1 1200,426 V514 A6,6 0 0 1 1194,520 H86 A6,6 0 0 1 80,514 V426 A6,6 0 0 1 86,420 Z" />
+  <text x="120" y="460" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#080E18">共性根源</text>
+  <text x="120" y="495" font-family="Microsoft YaHei" font-size="14" fill="#7C8DB0">纳米级尺度下的物理极限与工程成本双重约束 | 微观性能优异但宏观环境适配困难 | 从"实验室可行"到"工厂可靠"的转化鸿沟</text>
+
+  
+  <path fill="#1A1208" d="M86,545 H424 A6,6 0 0 1 430,551 V649 A6,6 0 0 1 424,655 H86 A6,6 0 0 1 80,649 V551 A6,6 0 0 1 86,545 Z" />
+  <rect x="80" y="545" width="350" height="4" fill="#F97316" />
+  <text x="255" y="580" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#F97316" text-anchor="middle">量产成本高</text>
+  <text x="110" y="610" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">高纯度原料+昂贵真空/精密设备</text>
+  <text x="110" y="635" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">质控只能抽检，残次品浪费巨大</text>
+  <path fill="#1A1208" d="M471,545 H809 A6,6 0 0 1 815,551 V649 A6,6 0 0 1 809,655 H471 A6,6 0 0 1 465,649 V551 A6,6 0 0 1 471,545 Z" />
+  <rect x="465" y="545" width="350" height="4" fill="#F97316" />
+  <text x="640" y="580" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#F97316" text-anchor="middle">微→宏迁移难</text>
+  <text x="495" y="610" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">纳米尺度完美特性在宏观环境中</text>
+  <text x="495" y="635" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">极易失效，长期稳定性难以保证</text>
+  <path fill="#1A1208" d="M856,545 H1194 A6,6 0 0 1 1200,551 V649 A6,6 0 0 1 1194,655 H856 A6,6 0 0 1 850,649 V551 A6,6 0 0 1 856,545 Z" />
+  <rect x="850" y="545" width="350" height="4" fill="#F97316" />
+  <text x="1025" y="580" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#F97316" text-anchor="middle">检测极其困难</text>
+  <text x="880" y="610" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">产线高吞吐率下无法实时检测</text>
+  <text x="880" y="635" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">几纳米厚的涂层均匀性</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="end">13</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#1E293B" />
+</svg>

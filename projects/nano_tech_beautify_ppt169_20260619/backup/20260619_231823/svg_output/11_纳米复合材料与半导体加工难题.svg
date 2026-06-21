@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6"/>
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">纳米复合材料与半导体加工难题</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B"/>
+
+  <!-- Left: 纳米复合材料问题 -->
+  <rect x="60" y="90" width="560" height="580" rx="6" fill="#131926"/>
+  <text x="340" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">纳米复合材料问题</text>
+  <image href="../images/image54.png" x="100" y="155" width="480" height="130" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="80" y="310" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="105" cy="335" r="5" fill="#F59E0B"/>
+  <text x="125" y="330" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">分散困难</text>
+  <text x="125" y="355" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米颗粒表面能极高，在熔融基体中极易团聚</text>
+  <rect x="80" y="415" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="105" cy="440" r="5" fill="#F59E0B"/>
+  <text x="125" y="435" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">团聚后果</text>
+  <text x="125" y="460" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">结块处变成材料最脆弱的"断裂点"，强度不升反降</text>
+  <rect x="80" y="520" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="105" cy="545" r="5" fill="#F59E0B"/>
+  <text x="125" y="540" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">回收难题</text>
+  <text x="125" y="565" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米颗粒与基体极难分离，大多只能降级使用或焚烧</text>
+
+  <!-- Right: 半导体加工难题 -->
+  <rect x="660" y="90" width="560" height="580" rx="6" fill="#131926"/>
+  <text x="940" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">半导体加工难题</text>
+  <image href="../images/image61.png" x="700" y="155" width="480" height="130" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="680" y="310" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="705" cy="335" r="5" fill="#F59E0B"/>
+  <text x="725" y="330" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">物理瓶颈</text>
+  <text x="725" y="355" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">量子隧穿效应导致芯片严重漏电和发热</text>
+  <rect x="680" y="415" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="705" cy="440" r="5" fill="#F59E0B"/>
+  <text x="725" y="435" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">设备局限</text>
+  <text x="725" y="460" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">ASML极紫外光刻机售价数亿美元，极度耗电</text>
+  <rect x="680" y="520" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="705" cy="545" r="5" fill="#F59E0B"/>
+  <text x="725" y="540" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">良率挑战</text>
+  <text x="725" y="565" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">微纳米级灰尘即可导致整片晶圆报废</text>
+
+  <!-- Bottom note -->
+  <text x="640" y="700" font-family="Microsoft YaHei" font-size="12" fill="#8899AA" text-anchor="middle">两大领域均面临：纳米级尺度下的物理极限与工程成本双重约束</text>
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">11</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

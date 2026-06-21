@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#060E1A"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#22D3EE"/>
+  <rect x="390" y="280" width="500" height="2" fill="#22D3EE"/>
+  <text x="640" y="360" font-family="Arial" font-size="56" font-weight="bold" fill="#FFFFFF" text-anchor="middle">THANK YOU</text>
+  <rect x="390" y="420" width="500" height="2" fill="#22D3EE"/>
+  <text x="640" y="500" font-family="Microsoft YaHei" font-size="22" fill="#7C8DB0" text-anchor="middle">感谢聆听 · 欢迎指正</text>
+  <text x="640" y="550" font-family="Microsoft YaHei" font-size="16" fill="#667799" text-anchor="middle">天津大学 · 机械工程学院</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#0EA5E9"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#080E18"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#0EA5E9"/>
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#0EA5E9">纳米材料技术应用</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#1E293B"/>
+
+  <!-- Top: 3 images from paper -->
+  <rect x="80" y="95" width="340" height="200" rx="6" fill="#111827"/>
+  <image href="../images/学科前沿导论1__image_006.jpeg" x="90" y="105" width="320" height="140" preserveAspectRatio="xMidYMid slice"/>
+  <text x="250" y="270" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="middle">精密制造与仿真技术</text>
+
+  <rect x="470" y="95" width="340" height="200" rx="6" fill="#111827"/>
+  <image href="../images/学科前沿导论1__image_007.jpeg" x="480" y="105" width="320" height="140" preserveAspectRatio="xMidYMid slice"/>
+  <text x="640" y="270" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="middle">纳米材料介绍与应用</text>
+
+  <rect x="860" y="95" width="340" height="200" rx="6" fill="#111827"/>
+  <image href="../images/学科前沿导论1__image_008.png" x="870" y="105" width="320" height="140" preserveAspectRatio="xMidYMid slice"/>
+  <text x="1030" y="270" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="middle">纳米材料技术应用</text>
+
+  <!-- 4 application cards -->
+  <rect x="80" y="310" width="260" height="130" rx="6" fill="#111827"/>
+  <rect x="80" y="310" width="260" height="4" fill="#0EA5E9"/>
+  <text x="210" y="345" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#0EA5E9" text-anchor="middle">结构增强</text>
+  <text x="105" y="375" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">提升柔性构件抗疲劳性能</text>
+  <text x="105" y="398" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">轻质高强超越传统极限</text>
+
+  <rect x="360" y="310" width="260" height="130" rx="6" fill="#111827"/>
+  <rect x="360" y="310" width="260" height="4" fill="#22D3EE"/>
+  <text x="490" y="345" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#22D3EE" text-anchor="middle">功能驱动</text>
+  <text x="385" y="375" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">纳米压电/MXene材料</text>
+  <text x="385" y="398" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">实现驱动传感一体化</text>
+
+  <rect x="640" y="310" width="260" height="130" rx="6" fill="#111827"/>
+  <rect x="640" y="310" width="260" height="4" fill="#0EA5E9"/>
+  <text x="770" y="345" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#0EA5E9" text-anchor="middle">界面改性</text>
+  <text x="665" y="375" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">优化涂层降低微尺度磨损</text>
+  <text x="665" y="398" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">提升表面特性与生物相容性</text>
+
+  <rect x="920" y="310" width="260" height="130" rx="6" fill="#111827"/>
+  <rect x="920" y="310" width="260" height="4" fill="#22D3EE"/>
+  <text x="1050" y="345" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#22D3EE" text-anchor="middle">精准传感</text>
+  <text x="945" y="375" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">多模态感知融合</text>
+  <text x="945" y="398" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">驱动-感知-操作一体化</text>
+
+  <!-- Bottom: 挑战 + 对比 -->
+  <rect x="80" y="465" width="550" height="190" rx="6" fill="#111827"/>
+  <text x="110" y="495" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F97316">技术瓶颈：</text>
+  <text x="110" y="520" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">高端纳米薄膜制备工艺、复杂异形结构成型精度不足</text>
+  <text x="110" y="550" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">极端工况下材料性能衰减明显，多材料界面结合强度低</text>
+  <text x="110" y="580" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">材料-结构-驱动协同设计体系尚未完善</text>
+  <text x="110" y="610" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">材料成型一致性差，性能易受微环境干扰</text>
+
+  <rect x="660" y="465" width="540" height="190" rx="6" fill="#111827"/>
+  <text x="690" y="495" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#0EA5E9">国外</text>
+  <text x="690" y="520" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">高端定制化技术优势显著，国防/航空航天领域极限性能领先</text>
+  <text x="690" y="545" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">基础材料数据库完善，多尺度仿真工具链成熟</text>
+  <text x="690" y="580" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#22D3EE">国内</text>
+  <text x="690" y="605" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">工程化、产业化落地优势突出，成本控制与规模化能力领先</text>
+  <text x="690" y="630" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">应用驱动型创新活跃，场景迭代速度快</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="end">11</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#1E293B"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17" />
+  
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6" />
+  
+  <text x="60" y="72" font-family="Microsoft YaHei" font-size="28" font-weight="bold" fill="#FFFFFF">目  录</text>
+  
+  
+  <path fill="#131926" stroke="#1E293B" stroke-width="1" d="M68,130 H612 A8,8 0 0 1 620,138 V382 A8,8 0 0 1 612,390 H68 A8,8 0 0 1 60,382 V138 A8,8 0 0 1 68,130 Z" />
+  <text x="100" y="220" font-family="Arial" font-size="56" font-weight="bold" fill="#3B82F6">01</text>
+  <path fill="#3B82F6" d="M101,250 H159 A1,1 0 0 1 160,251 V252 A1,1 0 0 1 159,253 H101 A1,1 0 0 1 100,252 V251 A1,1 0 0 1 101,250 Z" />
+  <text x="100" y="320" font-family="Microsoft YaHei" font-size="22" font-weight="bold" fill="#FFFFFF">研究背景与发展历程</text>
+  
+  <path fill="#131926" stroke="#1E293B" stroke-width="1" d="M668,130 H1212 A8,8 0 0 1 1220,138 V382 A8,8 0 0 1 1212,390 H668 A8,8 0 0 1 660,382 V138 A8,8 0 0 1 668,130 Z" />
+  <text x="700" y="220" font-family="Arial" font-size="56" font-weight="bold" fill="#3B82F6">02</text>
+  <path fill="#3B82F6" d="M701,250 H759 A1,1 0 0 1 760,251 V252 A1,1 0 0 1 759,253 H701 A1,1 0 0 1 700,252 V251 A1,1 0 0 1 701,250 Z" />
+  <text x="700" y="320" font-family="Microsoft YaHei" font-size="22" font-weight="bold" fill="#FFFFFF">微纳操作技术应用现状</text>
+  
+  <path fill="#131926" stroke="#1E293B" stroke-width="1" d="M68,420 H612 A8,8 0 0 1 620,428 V672 A8,8 0 0 1 612,680 H68 A8,8 0 0 1 60,672 V428 A8,8 0 0 1 68,420 Z" />
+  <text x="100" y="510" font-family="Arial" font-size="56" font-weight="bold" fill="#3B82F6">03</text>
+  <path fill="#3B82F6" d="M101,540 H159 A1,1 0 0 1 160,541 V542 A1,1 0 0 1 159,543 H101 A1,1 0 0 1 100,542 V541 A1,1 0 0 1 101,540 Z" />
+  <text x="100" y="610" font-family="Microsoft YaHei" font-size="22" font-weight="bold" fill="#FFFFFF">当前面临的核心问题</text>
+  
+  <path fill="#131926" stroke="#1E293B" stroke-width="1" d="M668,420 H1212 A8,8 0 0 1 1220,428 V672 A8,8 0 0 1 1212,680 H668 A8,8 0 0 1 660,672 V428 A8,8 0 0 1 668,420 Z" />
+  <text x="700" y="510" font-family="Arial" font-size="56" font-weight="bold" fill="#3B82F6">04</text>
+  <path fill="#3B82F6" d="M701,540 H759 A1,1 0 0 1 760,541 V542 A1,1 0 0 1 759,543 H701 A1,1 0 0 1 700,542 V541 A1,1 0 0 1 701,540 Z" />
+  <text x="700" y="610" font-family="Microsoft YaHei" font-size="22" font-weight="bold" fill="#FFFFFF">未来展望与深度思考</text>
+  
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">2</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4" />
+</svg>

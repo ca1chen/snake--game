@@ -1,0 +1,85 @@
+{
+  "source": "C:\\Users\\ncthb\\Documents\\firstcc\\projects\\nano_tech_beautify_ppt169_20260619\\sources\\纳米技术及纳米机器人的应用和现状.pptx",
+  "slide_count": 19,
+  "canvas": {
+    "width_px": 1280,
+    "height_px": 720,
+    "aspect": 1.7778
+  },
+  "theme": {
+    "palette": {
+      "background": "#000000",
+      "background_alt": "#0F1423",
+      "text": "#FFFFFF",
+      "text_alt": "#FFFFFF",
+      "hyperlink": "#0563C1",
+      "accent1": "#4675FC",
+      "accent2": "#4589FB",
+      "accent3": "#54A6FB",
+      "accent4": "#47B2FA",
+      "accent5": "#4AC7F9",
+      "accent6": "#4DDBF8",
+      "primary": "#4675FC"
+    },
+    "fonts": {
+      "title": {
+        "latin": "Arial",
+        "ea": "微软雅黑"
+      },
+      "body": {
+        "latin": "Arial",
+        "ea": "微软雅黑"
+      }
+    }
+  },
+  "observed": {
+    "fonts": {
+      "latin": [
+        {
+          "value": "微软雅黑",
+          "count": 517
+        }
+      ],
+      "ea": [
+        {
+          "value": "微软雅黑",
+          "count": 517
+        }
+      ]
+    },
+    "colors": [
+      {
+        "value": "#FFFFFF",
+        "count": 766
+      },
+      {
+        "value": "#4675FC",
+        "count": 140
+      },
+      {
+        "value": "#4DDBF8",
+        "count": 53
+      },
+      {
+        "value": "#AEC4FF",
+        "count": 18
+      },
+      {
+        "value": "#285AC8",
+        "count": 4
+      },
+      {
+        "value": "#FBBF24",
+        "count": 4
+      },
+      {
+        "value": "#B6D6FF",
+        "count": 2
+      },
+      {
+        "value": "#BDE0FF",
+        "count": 2
+      }
+    ]
+  }
+}

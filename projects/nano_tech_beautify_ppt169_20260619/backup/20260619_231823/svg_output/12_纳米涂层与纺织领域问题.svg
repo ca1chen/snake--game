@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6"/>
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">纳米涂层与纺织领域问题</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B"/>
+
+  <!-- Left: 高性能纳米涂料 -->
+  <rect x="60" y="90" width="560" height="580" rx="6" fill="#131926"/>
+  <text x="340" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">高性能纳米涂料（建材 / 船舶）</text>
+  <rect x="80" y="155" width="500" height="100" rx="4" fill="#1E3A5F"/>
+  <circle cx="110" cy="185" r="5" fill="#F59E0B"/>
+  <text x="130" y="180" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">耐久性差</text>
+  <text x="130" y="205" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米涂层仅几十至几百纳米厚，物理强度先天不足</text>
+  <rect x="80" y="275" width="500" height="100" rx="4" fill="#1E3A5F"/>
+  <circle cx="110" cy="305" r="5" fill="#F59E0B"/>
+  <text x="130" y="300" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">环境侵蚀</text>
+  <text x="130" y="325" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">大风沙尘刮擦、酸雨腐蚀、紫外线照射迅速破坏微观结构</text>
+  <rect x="80" y="395" width="500" height="100" rx="4" fill="#1E3A5F"/>
+  <circle cx="110" cy="425" r="5" fill="#F59E0B"/>
+  <text x="130" y="420" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">维护成本高</text>
+  <text x="130" y="445" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">汽车纳米隐形车衣或玻璃自清洁涂层1-2年后局部失效</text>
+  <image href="../images/image104.png" x="100" y="520" width="480" height="130" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Right: 纺织服装业 -->
+  <rect x="660" y="90" width="560" height="580" rx="6" fill="#131926"/>
+  <text x="940" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">纺织服装业</text>
+  <rect x="680" y="155" width="500" height="100" rx="4" fill="#1E3A5F"/>
+  <circle cx="710" cy="185" r="5" fill="#F59E0B"/>
+  <text x="730" y="180" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">结合不牢</text>
+  <text x="730" y="205" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米颗粒"粘"在纤维表面而非长在内部</text>
+  <rect x="680" y="275" width="500" height="100" rx="4" fill="#1E3A5F"/>
+  <circle cx="710" cy="305" r="5" fill="#F59E0B"/>
+  <text x="730" y="300" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">洗涤流失</text>
+  <text x="730" y="325" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">洗衣机搅拌和洗衣粉化学作用下大量脱落</text>
+  <rect x="680" y="395" width="500" height="100" rx="4" fill="#1E1408"/>
+  <circle cx="710" cy="425" r="5" fill="#F59E0B"/>
+  <text x="730" y="420" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">环境风险</text>
+  <text x="730" y="445" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米银进入污水系统，杀死有益细菌，破坏生态平衡</text>
+  <rect x="680" y="515" width="500" height="100" rx="4" fill="#1E1408"/>
+  <circle cx="710" cy="545" r="5" fill="#F59E0B"/>
+  <text x="730" y="540" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">健康隐患</text>
+  <text x="730" y="565" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">极微小纳米颗粒可能通过皮肤毛孔进入人体循环</text>
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">12</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

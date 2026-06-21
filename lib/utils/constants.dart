@@ -61,6 +61,18 @@ const String dbName = 'firstcc.db';
 /// 数据库版本
 const int dbVersion = 1;
 
+/// 离线语音识别 Paraformer 中文 Small 模型（HuggingFace 国内镜像）
+const String sherpaOnnxModelUrl =
+    'https://hf-mirror.com/csukuangfj/'
+    'sherpa-onnx-paraformer-zh-small-2024-03-09/resolve/main/model.int8.onnx';
+
+const String sherpaOnnxTokensUrl =
+    'https://hf-mirror.com/csukuangfj/'
+    'sherpa-onnx-paraformer-zh-small-2024-03-09/resolve/main/tokens.txt';
+
+/// 模型存放子目录（相对于应用文档目录）
+const String sherpaOnnxModelSubDir = 'sherpa_onnx/paraformer-zh-small';
+
 /// 将 hex 颜色字符串解析为 Color
 /// 支持格式: #RGB, #RRGGBB, RGB, RRGGBB (大小写不敏感)
 /// 默认返回 #4A90D9（蓝色）

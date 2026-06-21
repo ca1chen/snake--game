@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#003D7C"/>
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#003D7C">微纳技术三大发展阶段</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#E0E4E8"/>
+
+  <!-- Timeline arrow -->
+  <rect x="80" y="330" width="1120" height="3" fill="#0066B3"/>
+  <!-- Phase 1 -->
+  <rect x="80" y="100" width="340" height="200" rx="6" fill="#F4F6F9"/>
+  <rect x="80" y="100" width="340" height="40" rx="6" fill="#003D7C"/>
+  <rect x="80" y="120" width="340" height="20" fill="#003D7C"/>
+  <text x="250" y="125" font-family="Microsoft YaHei" font-size="14" fill="#FFFFFF" text-anchor="middle">1960s – 1990s 初</text>
+  <text x="105" y="175" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#003D7C">理论萌芽与静态操控</text>
+  <text x="105" y="205" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">费曼微观机械构想 → 微米级</text>
+  <text x="105" y="228" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">简易结构加工，依赖人工辅助</text>
+  <text x="105" y="251" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">与显微设备，被动式操控范畴</text>
+  <circle cx="250" cy="333" r="8" fill="#003D7C"/>
+
+  <!-- Phase 2 -->
+  <rect x="470" y="100" width="340" height="200" rx="6" fill="#F4F6F9"/>
+  <rect x="470" y="100" width="340" height="40" rx="6" fill="#0066B3"/>
+  <rect x="470" y="120" width="340" height="20" fill="#0066B3"/>
+  <text x="640" y="125" font-family="Microsoft YaHei" font-size="14" fill="#FFFFFF" text-anchor="middle">1990s – 2000s 初</text>
+  <text x="495" y="175" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#0066B3">结构成型与主动驱动</text>
+  <text x="495" y="205" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">高精度光刻/微蚀刻/激光加工</text>
+  <text x="495" y="228" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">→ 柔性机构 + 压电/静电驱动</text>
+  <text x="495" y="251" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">→ 程序化动态作业体系</text>
+  <circle cx="640" cy="333" r="8" fill="#0066B3"/>
+
+  <!-- Phase 3 -->
+  <rect x="860" y="100" width="340" height="200" rx="6" fill="#F4F6F9"/>
+  <rect x="860" y="100" width="340" height="40" rx="6" fill="#003D7C"/>
+  <rect x="860" y="120" width="340" height="20" fill="#003D7C"/>
+  <text x="1030" y="125" font-family="Microsoft YaHei" font-size="14" fill="#FFFFFF" text-anchor="middle">2010s – 至今</text>
+  <text x="885" y="175" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#003D7C">智能融合与多功能集成</text>
+  <text x="885" y="205" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">微纳3D打印 + 机器视觉AI</text>
+  <text x="885" y="228" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">→ 石墨烯/水凝胶赋能</text>
+  <text x="885" y="251" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">→ 自适应智能作业新阶段</text>
+  <circle cx="1030" cy="333" r="8" fill="#003D7C"/>
+
+  <!-- Bottom key insight -->
+  <rect x="80" y="400" width="1120" height="270" rx="6" fill="#F4F6F9"/>
+  <text x="110" y="440" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#003D7C">演进主线</text>
+  <rect x="110" y="460" width="1060" height="40" rx="4" fill="#FFFFFF"/>
+  <text x="130" y="486" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">理论构想 → 结构落地 → 智能集成：精密制造、柔性驱动、纳米材料三大技术体系协同赋能</text>
+  <rect x="110" y="515" width="1060" height="40" rx="4" fill="#FFFFFF"/>
+  <text x="130" y="541" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">当前趋势：持续向高精度、高适配、智能化方向突破，为高端制造与精准医疗提供核心支撑</text>
+  <rect x="110" y="570" width="1060" height="40" rx="4" fill="#FFFFFF"/>
+  <text x="130" y="596" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">技术体系：从单一构件加工 → 多尺度/多材料一体化集成 → 多学科深度交叉融合</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#666E75" text-anchor="end">7</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#E0E4E8"/>
+</svg>

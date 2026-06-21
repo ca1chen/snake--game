@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#080E18"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#0EA5E9"/>
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#0EA5E9">精密制造与柔性驱动应用</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#1E293B"/>
+
+  <!-- Left: 机械微纳加工 -->
+  <rect x="80" y="95" width="550" height="560" rx="6" fill="#111827"/>
+  <rect x="80" y="95" width="550" height="40" rx="6" fill="#0EA5E9"/>
+  <rect x="80" y="115" width="550" height="20" fill="#0EA5E9"/>
+  <text x="355" y="120" font-family="Microsoft YaHei" font-size="17" font-weight="bold" fill="#FFFFFF" text-anchor="middle">机械微纳加工领域</text>
+  <!-- Image: 探针仿真 -->
+  <image href="../images/学科前沿导论1__image_003.png" x="105" y="150" width="500" height="150" preserveAspectRatio="xMidYMid slice"/>
+  <text x="105" y="325" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 分子动力学仿真实现探针与工件原子交互可视化</text>
+  <text x="105" y="350" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 多尺度耦合仿真兼顾微观原子变形与宏观应力场</text>
+  <text x="105" y="375" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 国外率先实现单原子层极限刻划，体系完备</text>
+  <text x="105" y="400" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 国内聚焦工程痛点，优化工艺参数组合</text>
+  <rect x="105" y="425" width="500" height="1" fill="#1E293B"/>
+  <text x="105" y="455" font-family="Microsoft YaHei" font-size="13" fill="#F97316">现存问题：仿真基于理想工况假设，与工程实际偏差大</text>
+  <text x="105" y="480" font-family="Microsoft YaHei" font-size="13" fill="#F97316">行业痛点：试验数据标准化程度低，统一工艺标准缺失</text>
+
+  <!-- Right: 柔性精密驱动 -->
+  <rect x="660" y="95" width="540" height="560" rx="6" fill="#111827"/>
+  <rect x="660" y="95" width="540" height="40" rx="6" fill="#22D3EE"/>
+  <rect x="660" y="115" width="540" height="20" fill="#22D3EE"/>
+  <text x="930" y="120" font-family="Microsoft YaHei" font-size="17" font-weight="bold" fill="#060E1A" text-anchor="middle">柔性机构与精密驱动领域</text>
+  <!-- Two images side by side -->
+  <image href="../images/学科前沿导论1__image_004.jpeg" x="685" y="150" width="240" height="130" preserveAspectRatio="xMidYMid slice"/>
+  <image href="../images/学科前沿导论1__image_005.png" x="940" y="150" width="240" height="130" preserveAspectRatio="xMidYMid slice"/>
+  <text x="805" y="300" font-family="Microsoft YaHei" font-size="10" fill="#64748B" text-anchor="middle">微纳加工装备  |  微纳平台</text>
+  <text x="685" y="340" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 攻克几何、材料、接触非线性仿真难题</text>
+  <text x="685" y="365" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 构建"力-电-热-结构"协同仿真体系</text>
+  <text x="685" y="390" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 从单自由度柔性铰链迭代至多自由度并联平台</text>
+  <text x="685" y="415" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">• 自主研发复合型柔性铰链、对称式柔性导向</text>
+  <rect x="685" y="440" width="500" height="1" fill="#1E293B"/>
+  <text x="685" y="470" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#22D3EE">精度指标：运动行程 mm→nm | 定位精度 纳米级 | 力控 微牛级</text>
+  <text x="685" y="500" font-family="Microsoft YaHei" font-size="13" fill="#F97316">现存问题：高端核心部件国产化稳定性欠缺</text>
+  <text x="685" y="525" font-family="Microsoft YaHei" font-size="13" fill="#F97316">技术难点：多自由度耦合驱动误差难以消除</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="end">10</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#1E293B"/>
+</svg>

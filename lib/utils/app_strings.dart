@@ -98,24 +98,26 @@ class AppStrings {
 
   // === 语音添加待办 ===
   static const String voiceAddTitle = '语音添加待办';
-  static const String voiceAddLongPressHint = '长按开始录音';
-  static const String voiceAddSpeakHint = '说出要做的事情，支持一句话多个任务';
-  static const String voiceAddReleaseHint = '松开停止录音';
-  static const String voiceAddRecognizing = '识别中...';
-  static const String voiceAddNoContent = '未检测到任务内容';
-  static const String voiceAddNoContentHint = '语音识别结果为空或无法解析出有效任务，请重新录音并尝试更清晰地表达。';
-  static const String voiceAddRetry = '重新录音';
-  static const String voiceAddSaveAll = '全部保存';
-  static const String voiceAddSaveAllCount = '全部保存 ({count} 条)';
-  static const String voiceAddSaved = '已保存 {count} 条待办';
-  static const String voiceAddPermissionDenied = '麦克风不可用';
-  static const String voiceAddPermissionDeniedHint = '请在系统设置中开启麦克风权限后重试';
+  static const String voiceHint = '长按开始录音';
+  static const String voiceListening = '正在聆听...';
+  static const String voiceStartFailed = '启动语音识别失败，请重试';
+  static const String voiceNoContent = '未识别到语音内容';
+  static const String voiceNoTask = '未检测到待办任务，请重新录音';
+  static const String voiceRetry = '重新录音';
+  static const String voiceRecognizedText = '识别文本';
+  static String voiceSaveAll(int count) => '全部保存 ($count 条)';
+  static String voiceSaved(int count) => '已保存 $count 条待办';
   static const String voiceAddManual = '手动添加';
   static const String voiceAddVoice = '语音添加';
-  static const String voiceAddSaving = '正在保存...';
-  static const String voiceAddParsedCount = '解析出 {count} 条待办';
-  static const String voiceAddRawText = '识别原文';
-  static const String voiceAddEditTitle = '任务名称';
+
+  // === 模型下载 ===
+  static const String modelDownloadTitle = '下载离线语音模型';
+  static const String modelDownloadDesc =
+      '首次使用语音识别需要下载中文语音模型（约 82 MB），'
+      '建议在 WiFi 环境下进行。\n下载后即可完全离线使用。';
+  static const String modelDownloadStart = '开始下载';
+  static const String modelDownloading = '正在下载模型...';
+  static const String modelDownloadFailed = '模型下载失败，请检查网络后重试';
 
   // === 学期 ===
   static const String semesterManagement = '学期管理';

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#080E18" />
+  <rect x="0" y="0" width="1280" height="4" fill="#0EA5E9" />
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#0EA5E9">微纳技术三大发展阶段</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#1E293B" />
+
+  
+  <rect x="80" y="330" width="1120" height="3" fill="#22D3EE" />
+  
+  <path fill="#111827" d="M86,100 H414 A6,6 0 0 1 420,106 V294 A6,6 0 0 1 414,300 H86 A6,6 0 0 1 80,294 V106 A6,6 0 0 1 86,100 Z" />
+  <path fill="#0EA5E9" d="M86,100 H414 A6,6 0 0 1 420,106 V134 A6,6 0 0 1 414,140 H86 A6,6 0 0 1 80,134 V106 A6,6 0 0 1 86,100 Z" />
+  <rect x="80" y="120" width="340" height="20" fill="#0EA5E9" />
+  <text x="250" y="125" font-family="Microsoft YaHei" font-size="14" fill="#080E18" text-anchor="middle">1960s – 1990s 初</text>
+  <text x="105" y="175" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#0EA5E9">理论萌芽与静态操控</text>
+  <text x="105" y="205" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">费曼微观机械构想 → 微米级</text>
+  <text x="105" y="228" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">简易结构加工，依赖人工辅助</text>
+  <text x="105" y="251" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">与显微设备，被动式操控范畴</text>
+  <circle cx="250" cy="333" r="8" fill="#0EA5E9" />
+
+  
+  <path fill="#111827" d="M476,100 H804 A6,6 0 0 1 810,106 V294 A6,6 0 0 1 804,300 H476 A6,6 0 0 1 470,294 V106 A6,6 0 0 1 476,100 Z" />
+  <path fill="#22D3EE" d="M476,100 H804 A6,6 0 0 1 810,106 V134 A6,6 0 0 1 804,140 H476 A6,6 0 0 1 470,134 V106 A6,6 0 0 1 476,100 Z" />
+  <rect x="470" y="120" width="340" height="20" fill="#22D3EE" />
+  <text x="640" y="125" font-family="Microsoft YaHei" font-size="14" fill="#080E18" text-anchor="middle">1990s – 2000s 初</text>
+  <text x="495" y="175" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#22D3EE">结构成型与主动驱动</text>
+  <text x="495" y="205" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">高精度光刻/微蚀刻/激光加工</text>
+  <text x="495" y="228" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">→ 柔性机构 + 压电/静电驱动</text>
+  <text x="495" y="251" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">→ 程序化动态作业体系</text>
+  <circle cx="640" cy="333" r="8" fill="#22D3EE" />
+
+  
+  <path fill="#111827" d="M866,100 H1194 A6,6 0 0 1 1200,106 V294 A6,6 0 0 1 1194,300 H866 A6,6 0 0 1 860,294 V106 A6,6 0 0 1 866,100 Z" />
+  <path fill="#0EA5E9" d="M866,100 H1194 A6,6 0 0 1 1200,106 V134 A6,6 0 0 1 1194,140 H866 A6,6 0 0 1 860,134 V106 A6,6 0 0 1 866,100 Z" />
+  <rect x="860" y="120" width="340" height="20" fill="#0EA5E9" />
+  <text x="1030" y="125" font-family="Microsoft YaHei" font-size="14" fill="#080E18" text-anchor="middle">2010s – 至今</text>
+  <text x="885" y="175" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#0EA5E9">智能融合与多功能集成</text>
+  <text x="885" y="205" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">微纳3D打印 + 机器视觉AI</text>
+  <text x="885" y="228" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">→ 石墨烯/水凝胶赋能</text>
+  <text x="885" y="251" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">→ 自适应智能作业新阶段</text>
+  <circle cx="1030" cy="333" r="8" fill="#0EA5E9" />
+
+  
+  <path fill="#111827" d="M86,400 H1194 A6,6 0 0 1 1200,406 V664 A6,6 0 0 1 1194,670 H86 A6,6 0 0 1 80,664 V406 A6,6 0 0 1 86,400 Z" />
+  <text x="110" y="440" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#0EA5E9">演进主线</text>
+  <path fill="#080E18" d="M114,460 H1166 A4,4 0 0 1 1170,464 V496 A4,4 0 0 1 1166,500 H114 A4,4 0 0 1 110,496 V464 A4,4 0 0 1 114,460 Z" />
+  <text x="130" y="486" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">理论构想 → 结构落地 → 智能集成：精密制造、柔性驱动、纳米材料三大技术体系协同赋能</text>
+  <path fill="#080E18" d="M114,515 H1166 A4,4 0 0 1 1170,519 V551 A4,4 0 0 1 1166,555 H114 A4,4 0 0 1 110,551 V519 A4,4 0 0 1 114,515 Z" />
+  <text x="130" y="541" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">当前趋势：持续向高精度、高适配、智能化方向突破，为高端制造与精准医疗提供核心支撑</text>
+  <path fill="#080E18" d="M114,570 H1166 A4,4 0 0 1 1170,574 V606 A4,4 0 0 1 1166,610 H114 A4,4 0 0 1 110,606 V574 A4,4 0 0 1 114,570 Z" />
+  <text x="130" y="596" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">技术体系：从单一构件加工 → 多尺度/多材料一体化集成 → 多学科深度交叉融合</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="end">7</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#1E293B" />
+</svg>

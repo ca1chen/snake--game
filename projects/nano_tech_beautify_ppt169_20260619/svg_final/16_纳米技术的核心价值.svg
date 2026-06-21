@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17" />
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6" />
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">纳米技术的核心价值</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B" />
+
+  
+  <path fill="#131926" d="M66,90 H614 A6,6 0 0 1 620,96 V354 A6,6 0 0 1 614,360 H66 A6,6 0 0 1 60,354 V96 A6,6 0 0 1 66,90 Z" />
+  <text x="340" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">核心价值体现</text>
+  <text x="100" y="175" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#FFFFFF">当材料被浓缩至纳米尺度，量子效应占据主导</text>
+  <text x="100" y="205" font-family="Microsoft YaHei" font-size="14" fill="#CCCCCC">展现出宏观状态下完全不具备的独特性质</text>
+  <path fill="#1E3A5F" d="M104,235 H326 A4,4 0 0 1 330,239 V331 A4,4 0 0 1 326,335 H104 A4,4 0 0 1 100,331 V239 A4,4 0 0 1 104,235 Z" />
+  <text x="215" y="270" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">结构与性能的飞跃</text>
+  <text x="215" y="310" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="middle">极高强度、极强催化活性、优异导电隔热</text>
+  <path fill="#1E3A5F" d="M364,235 H596 A4,4 0 0 1 600,239 V331 A4,4 0 0 1 596,335 H364 A4,4 0 0 1 360,331 V239 A4,4 0 0 1 364,235 Z" />
+  <text x="480" y="270" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">多学科深度交叉</text>
+  <text x="480" y="310" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="middle">物理、化学、生物、微电子和材料科学的交汇</text>
+
+  
+  <path fill="#131926" d="M666,90 H1214 A6,6 0 0 1 1220,96 V354 A6,6 0 0 1 1214,360 H666 A6,6 0 0 1 660,354 V96 A6,6 0 0 1 666,90 Z" />
+  <text x="940" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">已实现的产业化应用</text>
+  <path fill="#1E3A5F" d="M694,160 H801 A4,4 0 0 1 805,164 V236 A4,4 0 0 1 801,240 H694 A4,4 0 0 1 690,236 V164 A4,4 0 0 1 694,160 Z" />
+  <image href="../images/image139.png" x="695" y="165" width="105" height="70" preserveAspectRatio="xMidYMid slice" />
+  <text x="747" y="255" font-family="Microsoft YaHei" font-size="10" fill="#8899AA" text-anchor="middle">智能手机芯片</text>
+  <path fill="#1E3A5F" d="M829,160 H936 A4,4 0 0 1 940,164 V236 A4,4 0 0 1 936,240 H829 A4,4 0 0 1 825,236 V164 A4,4 0 0 1 829,160 Z" />
+  <image href="../images/image141.png" x="830" y="165" width="105" height="70" preserveAspectRatio="xMidYMid slice" />
+  <text x="882" y="255" font-family="Microsoft YaHei" font-size="10" fill="#8899AA" text-anchor="middle">汽车轻量化</text>
+  <path fill="#1E3A5F" d="M964,160 H1071 A4,4 0 0 1 1075,164 V236 A4,4 0 0 1 1071,240 H964 A4,4 0 0 1 960,236 V164 A4,4 0 0 1 964,160 Z" />
+  <image href="../images/image143.png" x="965" y="165" width="105" height="70" preserveAspectRatio="xMidYMid slice" />
+  <text x="1017" y="255" font-family="Microsoft YaHei" font-size="10" fill="#8899AA" text-anchor="middle">自清洁涂层</text>
+  <path fill="#1E3A5F" d="M1099,160 H1196 A4,4 0 0 1 1200,164 V236 A4,4 0 0 1 1196,240 H1099 A4,4 0 0 1 1095,236 V164 A4,4 0 0 1 1099,160 Z" />
+  <image href="../images/image145.png" x="1100" y="165" width="95" height="70" preserveAspectRatio="xMidYMid slice" />
+  <text x="1147" y="255" font-family="Microsoft YaHei" font-size="10" fill="#8899AA" text-anchor="middle">防臭抗菌面料</text>
+
+  
+  <path fill="#131926" d="M66,390 H1214 A6,6 0 0 1 1220,396 V654 A6,6 0 0 1 1214,660 H66 A6,6 0 0 1 60,654 V396 A6,6 0 0 1 66,390 Z" />
+  <image href="../images/image147.png" x="100" y="420" width="500" height="220" preserveAspectRatio="xMidYMid slice" />
+  <text x="650" y="450" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#3B82F6">纳米技术 = 在材料本征尺度上重新定义性能</text>
+  <text x="650" y="500" font-family="Microsoft YaHei" font-size="15" fill="#CCCCCC">宏观世界中相互矛盾的材料属性 — 强度与韧性、导电与隔热、</text>
+  <text x="650" y="530" font-family="Microsoft YaHei" font-size="15" fill="#CCCCCC">硬度与弹性 — 在纳米尺度下可以实现统一与协同优化</text>
+  <text x="650" y="580" font-family="Microsoft YaHei" font-size="13" fill="#8899AA">它是凝聚态物理、量子力学、微纳米力学和材料科学深度交叉的制高点</text>
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">16</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4" />
+</svg>

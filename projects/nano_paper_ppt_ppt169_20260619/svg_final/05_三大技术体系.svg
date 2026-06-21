@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#080E18" />
+  <rect x="0" y="0" width="1280" height="4" fill="#0EA5E9" />
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#0EA5E9">三大核心技术体系与研究目标</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#1E293B" />
+
+  
+  <path fill="#111827" d="M86,100 H424 A6,6 0 0 1 430,106 V374 A6,6 0 0 1 424,380 H86 A6,6 0 0 1 80,374 V106 A6,6 0 0 1 86,100 Z" />
+  <rect x="80" y="100" width="350" height="5" fill="#0EA5E9" />
+  <text x="255" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#0EA5E9" text-anchor="middle">精密机械制造</text>
+  <text x="110" y="185" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">飞秒激光微纳加工、微注塑成型、</text>
+  <text x="110" y="210" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">电化学刻蚀、高精度光刻等工艺</text>
+  <text x="110" y="240" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">实现微米级结构轮廓精度与纳米</text>
+  <text x="110" y="265" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">级表面粗糙度控制，多尺度一体化</text>
+  <text x="110" y="290" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">集成制造</text>
+  <rect x="110" y="320" width="300" height="1" fill="#1E293B" />
+  <text x="110" y="350" font-family="Microsoft YaHei" font-size="12" fill="#64748B">→ 决定结构精度与作业可靠性</text>
+
+  <path fill="#111827" d="M471,100 H809 A6,6 0 0 1 815,106 V374 A6,6 0 0 1 809,380 H471 A6,6 0 0 1 465,374 V106 A6,6 0 0 1 471,100 Z" />
+  <rect x="465" y="100" width="350" height="5" fill="#22D3EE" />
+  <text x="640" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#22D3EE" text-anchor="middle">柔性机构与精密驱动</text>
+  <text x="495" y="185" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">柔性机构依靠材料弹性变形实现</text>
+  <text x="495" y="210" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">运动与力控，无传动间隙和摩擦</text>
+  <text x="495" y="240" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">磨损；压电驱动为主流，磁/光</text>
+  <text x="495" y="265" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">驱动适配生物微环境无损伤作业</text>
+  <rect x="495" y="320" width="300" height="1" fill="#1E293B" />
+  <text x="495" y="350" font-family="Microsoft YaHei" font-size="12" fill="#64748B">→ 实现高精度、自适应作业</text>
+
+  <path fill="#111827" d="M856,100 H1194 A6,6 0 0 1 1200,106 V374 A6,6 0 0 1 1194,380 H856 A6,6 0 0 1 850,374 V106 A6,6 0 0 1 856,100 Z" />
+  <rect x="850" y="100" width="350" height="5" fill="#0EA5E9" />
+  <text x="1025" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#0EA5E9" text-anchor="middle">功能纳米材料</text>
+  <text x="880" y="185" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">石墨烯、碳纳米管、智能水凝胶、</text>
+  <text x="880" y="210" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">介电弹性体等，实现驱动、感知、</text>
+  <text x="880" y="240" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">操作一体化，纳米复合材料提升</text>
+  <text x="880" y="265" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">抗疲劳性，涂层优化表面特性</text>
+  <rect x="880" y="320" width="300" height="1" fill="#1E293B" />
+  <text x="880" y="350" font-family="Microsoft YaHei" font-size="12" fill="#64748B">→ 性能突破与功能拓展关键载体</text>
+
+  
+  <path fill="#060E1A" d="M86,420 H1194 A6,6 0 0 1 1200,426 V534 A6,6 0 0 1 1194,540 H86 A6,6 0 0 1 80,534 V426 A6,6 0 0 1 86,420 Z" />
+  <text x="640" y="465" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#080E18" text-anchor="middle">研究目标</text>
+  <text x="640" y="500" font-family="Microsoft YaHei" font-size="15" fill="#7C8DB0" text-anchor="middle">构建 "材料改性 — 结构优化 — 精密制造 — 精准驱动" 一体化研发体系</text>
+
+  
+  <path fill="#1A1208" d="M86,560 H1194 A6,6 0 0 1 1200,566 V674 A6,6 0 0 1 1194,680 H86 A6,6 0 0 1 80,674 V566 A6,6 0 0 1 86,560 Z" />
+  <rect x="80" y="560" width="1120" height="4" fill="#F97316" />
+  <text x="110" y="600" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F97316">核心论断</text>
+  <text x="110" y="630" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">单一领域创新已无法突破现有技术瓶颈 → 亟需三大技术体系深度耦合、协同攻关</text>
+  <text x="110" y="655" font-family="Microsoft YaHei" font-size="13" fill="#CCD6E0">攻克尺度精度不足、驱动控制滞后、材料性能受限等关键难题</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="end">5</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#1E293B" />
+</svg>

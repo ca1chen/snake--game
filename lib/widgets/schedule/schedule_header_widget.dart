@@ -3,6 +3,7 @@ import '../../utils/constants.dart';
 import '../../utils/date_utils.dart' as DateHelper;
 import '../../utils/app_strings.dart';
 import '../../models/semester.dart';
+import '../../services/course_import_service.dart';
 
 /// 周视图表头组件：周次切换 + 日期显示
 class ScheduleHeader extends StatelessWidget {
@@ -26,6 +27,10 @@ class ScheduleHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    // 日期行计算只用一次，不放在 List.generate 循环里
+    final effectiveStart = currentSemester != null
+        ? CourseImportService.estimateSemesterStart(currentSemester!.name)
+        : null;
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -92,12 +97,11 @@ class ScheduleHeader extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           // 日期行（周一 ～ 周日）
-          if (currentSemester != null)
+          if (effectiveStart != null)
             Row(
               children: List.generate(7, (index) {
-                final day = index + 1; // 1=周一
                 final date = DateHelper.DateUtils.getWeekStartDate(
-                  currentSemester!.startDate,
+                  effectiveStart,
                   currentWeek,
                 ).add(Duration(days: index));
                 final isToday = DateHelper.DateUtils.isSameDay(date, DateTime.now());
@@ -114,7 +118,7 @@ class ScheduleHeader extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          weekdayLabels[day - 1],
+                          weekdayLabels[index],
                           style: theme.textTheme.bodySmall?.copyWith(
                             fontWeight: isToday ? FontWeight.w700 : FontWeight.w400,
                             color: isToday

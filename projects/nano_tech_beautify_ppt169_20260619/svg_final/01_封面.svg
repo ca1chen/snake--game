@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0E17" />
+      <stop offset="100%" stop-color="#131926" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGrad)" />
+  
+  <path fill="#3B82F6" d="M122,180 H122 A2,2 0 0 1 124,182 V538 A2,2 0 0 1 122,540 H122 A2,2 0 0 1 120,538 V182 A2,2 0 0 1 122,180 Z" />
+  
+  <path fill="#3B82F6" opacity="0.5" d="M161,260 H439 A1,1 0 0 1 440,261 V261 A1,1 0 0 1 439,262 H161 A1,1 0 0 1 160,261 V261 A1,1 0 0 1 161,260 Z" />
+  <path fill="#3B82F6" opacity="0.3" d="M161,480 H359 A1,1 0 0 1 360,481 V481 A1,1 0 0 1 359,482 H161 A1,1 0 0 1 160,481 V481 A1,1 0 0 1 161,480 Z" />
+  
+  <text x="160" y="340" font-family="Microsoft YaHei" font-size="48" font-weight="bold" fill="#FFFFFF">纳米技术及纳米机器人的</text>
+  <text x="160" y="410" font-family="Microsoft YaHei" font-size="48" font-weight="bold" fill="#FFFFFF">应用和现状</text>
+  
+  <text x="160" y="540" font-family="Microsoft YaHei" font-size="18" fill="#60A5FA">汇报人：马锦龙</text>
+  
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4" />
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#060E1A"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#22D3EE"/>
+  <image href="../images/学科前沿导论1__image_001.jpeg" x="920" y="35" width="320" height="65" preserveAspectRatio="xMidYMid meet"/>
+  <image href="../images/学科前沿导论1__image_002.jpeg" x="80" y="50" width="90" height="82" preserveAspectRatio="xMidYMid meet"/>
+  <rect x="200" y="180" width="3" height="340" rx="1" fill="#22D3EE"/>
+  <text x="240" y="240" font-family="Microsoft YaHei" font-size="18" fill="#8899BB">天津大学 · 机械工程学院</text>
+  <text x="240" y="320" font-family="Microsoft YaHei" font-size="42" font-weight="bold" fill="#FFFFFF">纳米技术及纳米机器人的</text>
+  <text x="240" y="385" font-family="Microsoft YaHei" font-size="42" font-weight="bold" fill="#FFFFFF">应用和现状</text>
+  <rect x="240" y="420" width="160" height="3" fill="#22D3EE"/>
+  <text x="240" y="480" font-family="Microsoft YaHei" font-size="16" fill="#8899BB">汪翔天 · 黄子烨 · 钟乐昕 · 马锦龙</text>
+  <text x="240" y="520" font-family="Microsoft YaHei" font-size="14" fill="#667788">智能制造工程 · 机械设计制造及其自动化</text>
+  <text x="240" y="550" font-family="Microsoft YaHei" font-size="14" fill="#667788">2025级</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#0EA5E9"/>
+</svg>

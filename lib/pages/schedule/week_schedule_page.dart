@@ -4,6 +4,7 @@ import '../../models/semester.dart';
 import '../../providers/semester_provider.dart';
 import '../../providers/course_provider.dart';
 import '../../providers/todo_provider.dart';
+import '../../services/course_import_service.dart';
 import '../../utils/date_utils.dart' as DateHelper;
 import '../../widgets/schedule/schedule_header_widget.dart';
 import '../../utils/app_strings.dart';
@@ -109,9 +110,8 @@ class WeekSchedulePage extends ConsumerWidget {
   }
 
   int _getTodayWeek(Semester semester) {
-    final week = DateHelper.DateUtils.getWeekNumber(semester.startDate, DateTime.now());
-    if (week < 1) return 1;
-    if (week > semester.totalWeeks) return semester.totalWeeks;
-    return week;
+    final effectiveStart = CourseImportService.estimateSemesterStart(semester.name);
+    return DateHelper.DateUtils.getWeekNumber(effectiveStart, DateTime.now())
+        .clamp(1, semester.totalWeeks);
   }
 }

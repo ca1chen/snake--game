@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sherpa_onnx/sherpa_onnx.dart';
 import 'app.dart';
 import 'utils/logger.dart';
 
@@ -20,6 +21,14 @@ Future<void> main() async {
       statusBarIconBrightness: Brightness.dark,
     ),
   );
+
+  // 初始化 sherpa_onnx 离线语音识别引擎
+  try {
+    initBindings();
+    Logger.d('App', 'sherpa_onnx bindings initialized');
+  } catch (e) {
+    Logger.d('App', 'sherpa_onnx init failed: $e');
+  }
 
   Logger.d('App', 'Starting FirstCC...');
 

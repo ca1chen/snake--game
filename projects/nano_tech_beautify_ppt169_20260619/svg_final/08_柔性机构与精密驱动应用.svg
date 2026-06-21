@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6"/>
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">柔性机构与精密驱动应用</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B"/>
+
+  <!-- Left: 仿真技术突破 -->
+  <rect x="60" y="90" width="560" height="580" rx="6" fill="#131926"/>
+  <rect x="60" y="90" width="560" height="40" rx="6" fill="#1E3A5F"/>
+  <rect x="60" y="110" width="560" height="20" fill="#1E3A5F"/>
+  <text x="340" y="115" font-family="Microsoft YaHei" font-size="17" font-weight="bold" fill="#3B82F6" text-anchor="middle">仿真技术突破</text>
+  <image href="../images/image61.png" x="80" y="145" width="520" height="160" preserveAspectRatio="xMidYMid slice"/>
+  <text x="80" y="335" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">• 攻克几何、材料、接触非线性仿真难题</text>
+  <text x="80" y="360" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">• 引入加工残余应力、装配误差、环境扰动等实际干扰因素</text>
+  <text x="80" y="385" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">• 构建"力-电-热-结构"协同仿真体系</text>
+  <text x="80" y="410" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">• 精准预判设备定位偏差</text>
+  <rect x="80" y="435" width="520" height="1" fill="#1E293B"/>
+  <text x="80" y="465" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">精度指标</text>
+  <text x="80" y="495" font-family="Microsoft YaHei" font-size="12" fill="#8899AA">运动行程：毫米级 → 纳米级 &nbsp;&nbsp;|&nbsp;&nbsp; 定位精度：纳米级 &nbsp;&nbsp;|&nbsp;&nbsp; 力控精度：微牛顿级</text>
+  <rect x="80" y="520" width="520" height="1" fill="#1E293B"/>
+  <text x="80" y="550" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">现存问题：仿真模型与真实服役工况适配性不足</text>
+
+  <!-- Right: 系统结构开发 -->
+  <rect x="660" y="90" width="560" height="580" rx="6" fill="#131926"/>
+  <rect x="660" y="90" width="560" height="40" rx="6" fill="#1E3A5F"/>
+  <rect x="660" y="110" width="560" height="20" fill="#1E3A5F"/>
+  <text x="940" y="115" font-family="Microsoft YaHei" font-size="17" font-weight="bold" fill="#3B82F6" text-anchor="middle">系统结构开发</text>
+  <image href="../images/image63.png" x="680" y="145" width="520" height="160" preserveAspectRatio="xMidYMid slice"/>
+  <text x="680" y="335" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">• 从单自由度柔性铰链迭代至多自由度并联</text>
+  <text x="680" y="360" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">• 自主研发复合型柔性铰链、对称式柔性导向</text>
+  <text x="680" y="385" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">• 复合柔性构型 + 多维并联柔性平台</text>
+  <rect x="680" y="415" width="520" height="1" fill="#1E293B"/>
+  <text x="680" y="450" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">国内外对比</text>
+  <image href="../images/image65.png" x="690" y="465" width="240" height="80" preserveAspectRatio="xMidYMid slice"/>
+  <image href="../images/image67.png" x="940" y="465" width="230" height="80" preserveAspectRatio="xMidYMid slice"/>
+  <text x="810" y="475" font-family="Microsoft YaHei" font-size="10" fill="#8899AA" text-anchor="middle">国外</text>
+  <text x="1055" y="475" font-family="Microsoft YaHei" font-size="10" fill="#8899AA" text-anchor="middle">国内</text>
+  <text x="680" y="575" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">现存问题：高端核心部件国产化稳定性欠缺，多自由度耦合驱动误差难以消除</text>
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">8</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

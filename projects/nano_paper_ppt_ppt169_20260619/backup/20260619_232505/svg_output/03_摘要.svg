@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#003D7C"/>
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#003D7C">摘  要</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#E0E4E8"/>
+
+  <!-- Chinese abstract -->
+  <rect x="80" y="90" width="540" height="580" rx="6" fill="#F4F6F9"/>
+  <rect x="80" y="90" width="6" height="580" rx="3" fill="#003D7C"/>
+  <text x="110" y="125" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#003D7C">中文摘要</text>
+  <text x="110" y="160" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">微纳尺度技术是精密工程、机器人学与材料科学</text>
+  <text x="110" y="185" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">交叉形成的前沿学科。本文以纳米技术与纳米</text>
+  <text x="110" y="210" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">机器人为研究对象，首先梳理三大发展阶段，</text>
+  <text x="110" y="235" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">系统对比国内外在精密加工、柔顺机构、纳米</text>
+  <text x="110" y="260" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">材料方向的研究优势与不足。</text>
+  <text x="110" y="300" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">其次分别阐述机械微纳加工、柔性精密驱动、</text>
+  <text x="110" y="325" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">纳米材料改性三大场景的应用现状，剖析仿真</text>
+  <text x="110" y="350" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">建模、装备开发、试验验证全链条技术短板。</text>
+  <text x="110" y="390" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">随后从复合材料、半导体制造、纳米涂层、</text>
+  <text x="110" y="415" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">纺织、刀具、生物医疗六大领域，归纳产业化</text>
+  <text x="110" y="440" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">落地共性难题与三大行业痛点。</text>
+  <text x="110" y="480" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">最后对精准医疗、清洁能源、信息芯片、脑机</text>
+  <text x="110" y="505" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">接口等方向进行展望，辩证分析潜在风险，</text>
+  <text x="110" y="530" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">提出同步完善毒理研究、建立全球监管规范</text>
+  <text x="110" y="555" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">的发展思路。</text>
+  <text x="110" y="610" font-family="Microsoft YaHei" font-size="12" fill="#666E75">关键词：纳米技术；微纳米机器人；柔性驱动；</text>
+  <text x="110" y="635" font-family="Microsoft YaHei" font-size="12" fill="#666E75">纳米材料；精密制造；生物医疗</text>
+
+  <!-- English abstract -->
+  <rect x="660" y="90" width="540" height="580" rx="6" fill="#F4F6F9"/>
+  <rect x="660" y="90" width="6" height="580" rx="3" fill="#0066B3"/>
+  <text x="690" y="125" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#0066B3">Abstract</text>
+  <text x="690" y="160" font-family="Arial" font-size="11" fill="#1A1A1A">As an interdisciplinary frontier integrating</text>
+  <text x="690" y="182" font-family="Arial" font-size="11" fill="#1A1A1A">precision engineering, robotics and materials</text>
+  <text x="690" y="204" font-family="Arial" font-size="11" fill="#1A1A1A">science, this paper systematically reviews</text>
+  <text x="690" y="226" font-family="Arial" font-size="11" fill="#1A1A1A">nanotechnology and nanorobots across three</text>
+  <text x="690" y="248" font-family="Arial" font-size="11" fill="#1A1A1A">development stages, comparing domestic and</text>
+  <text x="690" y="270" font-family="Arial" font-size="11" fill="#1A1A1A">international research in precision machining,</text>
+  <text x="690" y="292" font-family="Arial" font-size="11" fill="#1A1A1A">compliant mechanisms, and nanomaterials.</text>
+  <text x="690" y="330" font-family="Arial" font-size="11" fill="#1A1A1A">It elaborates application status in mechanical</text>
+  <text x="690" y="352" font-family="Arial" font-size="11" fill="#1A1A1A">micro-nano machining, flexible actuation, and</text>
+  <text x="690" y="374" font-family="Arial" font-size="11" fill="#1A1A1A">nanomaterial modification, analyzing technical</text>
+  <text x="690" y="396" font-family="Arial" font-size="11" fill="#1A1A1A">shortcomings in simulation, equipment, and</text>
+  <text x="690" y="418" font-family="Arial" font-size="11" fill="#1A1A1A">experimental verification.</text>
+  <text x="690" y="456" font-family="Arial" font-size="11" fill="#1A1A1A">Furthermore, it summarizes industrialization</text>
+  <text x="690" y="478" font-family="Arial" font-size="11" fill="#1A1A1A">challenges across six fields and identifies</text>
+  <text x="690" y="500" font-family="Arial" font-size="11" fill="#1A1A1A">three universal industrial pain points.</text>
+  <text x="690" y="538" font-family="Arial" font-size="11" fill="#1A1A1A">Finally, prospects for breakthroughs in</text>
+  <text x="690" y="560" font-family="Arial" font-size="11" fill="#1A1A1A">precision medicine, clean energy, next-gen</text>
+  <text x="690" y="582" font-family="Arial" font-size="11" fill="#1A1A1A">chips, and BCI are presented with risk analysis.</text>
+  <text x="690" y="630" font-family="Arial" font-size="11" fill="#666E75">Keywords: Nanotechnology; Micro-nanorobots;</text>
+  <text x="690" y="652" font-family="Arial" font-size="11" fill="#666E75">Flexible Actuation; Nanomaterials; Biomedical</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#666E75" text-anchor="end">3</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#E0E4E8"/>
+</svg>

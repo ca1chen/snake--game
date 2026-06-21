@@ -10,6 +10,7 @@ import '../../models/semester.dart';
 import '../../widgets/schedule/day_timeline_widget.dart';
 import '../../widgets/common/empty_state_widget.dart';
 import '../../router/app_router.dart';
+import '../../services/course_import_service.dart';
 
 /// 日视图课程页面
 class DaySchedulePage extends ConsumerStatefulWidget {
@@ -38,8 +39,10 @@ class _DaySchedulePageState extends ConsumerState<DaySchedulePage> {
     final courses = courseState.coursesByDay[_selectedDay] ?? [];
     final semester = semesterState.currentSemester;
     final dateStr = semester != null
-        ? DateHelper.DateUtils.getWeekStartDate(semester.startDate, courseState.currentWeek)
-            .add(Duration(days: _selectedDay - 1))
+        ? DateHelper.DateUtils.getWeekStartDate(
+            CourseImportService.estimateSemesterStart(semester.name),
+            courseState.currentWeek,
+          ).add(Duration(days: _selectedDay - 1))
         : DateTime.now();
     final dateLabel = DateHelper.DateUtils.formatDateCN(dateStr);
 
@@ -132,18 +135,20 @@ class _DaySchedulePageState extends ConsumerState<DaySchedulePage> {
     );
   }
 
-  void _pickDate(Semester? semester) {
-    // 简化：不做 DatePicker，切换到带参数的路由
+  Future<void> _pickDate(Semester? semester) async {
     if (semester == null) return;
-    showDialog(
+    final picked = await showDatePicker(
       context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('选择日期'),
-        content: const Text('请在周视图中点击课程查看详情，或使用星期标签切换日期。'),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('好的')),
-        ],
-      ),
+      initialDate: DateTime.now(),
+      firstDate: semester.startDate,
+      lastDate: semester.endDate,
     );
+    if (picked != null && mounted) {
+      final effectiveStart = CourseImportService.estimateSemesterStart(semester.name);
+      final week = DateHelper.DateUtils.getWeekNumber(effectiveStart, picked)
+          .clamp(1, semester.totalWeeks);
+      setState(() => _selectedDay = picked.weekday);
+      ref.read(courseProvider.notifier).setWeek(week);
+    }
   }
 }

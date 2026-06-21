@@ -41,18 +41,18 @@ class TodoCard extends StatelessWidget {
               GestureDetector(
                 onTap: onToggle,
                 child: Container(
-                  width: 22,
-                  height: 22,
+                  width: 44,
+                  height: 44,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: todo.isCompleted ? Colors.green : theme.colorScheme.outline,
-                      width: 2,
+                      width: 3,
                     ),
                     color: todo.isCompleted ? Colors.green : null,
                   ),
                   child: todo.isCompleted
-                      ? const Icon(Icons.check, size: 14, color: Colors.white)
+                      ? const Icon(Icons.check, size: 28, color: Colors.white)
                       : null,
                 ),
               ),

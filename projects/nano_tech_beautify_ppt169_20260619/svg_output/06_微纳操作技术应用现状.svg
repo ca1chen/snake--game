@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <text x="120" y="400" font-family="Arial" font-size="120" font-weight="bold" fill="#3B82F6" opacity="0.15">02</text>
+  <text x="120" y="420" font-family="Arial" font-size="80" font-weight="bold" fill="#3B82F6">02</text>
+  <rect x="380" y="260" width="3" height="200" rx="1" fill="#3B82F6"/>
+  <text x="440" y="380" font-family="Microsoft YaHei" font-size="42" font-weight="bold" fill="#FFFFFF">微纳操作技术应用现状</text>
+  <rect x="120" y="520" width="800" height="2" fill="#3B82F6" opacity="0.4"/>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

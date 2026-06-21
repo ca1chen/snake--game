@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#080E18" />
+  <rect x="0" y="0" width="1280" height="4" fill="#0EA5E9" />
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#0EA5E9">国内外研究现状对比</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#1E293B" />
+
+  
+  <path fill="#111827" d="M86,95 H614 A6,6 0 0 1 620,101 V639 A6,6 0 0 1 614,645 H86 A6,6 0 0 1 80,639 V101 A6,6 0 0 1 86,95 Z" />
+  <path fill="#0EA5E9" d="M86,95 H614 A6,6 0 0 1 620,101 V134 A6,6 0 0 1 614,140 H86 A6,6 0 0 1 80,134 V101 A6,6 0 0 1 86,95 Z" />
+  <rect x="80" y="120" width="540" height="20" fill="#0EA5E9" />
+  <text x="350" y="125" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#080E18" text-anchor="middle">国外研究优势</text>
+  <path fill="#080E18" d="M109,165 H591 A4,4 0 0 1 595,169 V246 A4,4 0 0 1 591,250 H109 A4,4 0 0 1 105,246 V169 A4,4 0 0 1 109,165 Z" />
+  <text x="120" y="195" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#0EA5E9">精密制造 — 起步早，体系成熟</text>
+  <text x="120" y="220" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">MIT/Caltech建立微纳一体化制造工艺体系，微尺度误差补偿理论完善</text>
+  <path fill="#080E18" d="M109,265 H591 A4,4 0 0 1 595,269 V346 A4,4 0 0 1 591,350 H109 A4,4 0 0 1 105,346 V269 A4,4 0 0 1 109,265 Z" />
+  <text x="120" y="295" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#0EA5E9">柔顺机构 — 理论奠基，原创领先</text>
+  <text x="120" y="320" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">伪刚体模型/拓扑优化等经典方法由欧美团队提出，多场耦合驱动体系成熟</text>
+  <path fill="#080E18" d="M109,365 H591 A4,4 0 0 1 595,369 V446 A4,4 0 0 1 591,450 H109 A4,4 0 0 1 105,446 V369 A4,4 0 0 1 109,365 Z" />
+  <text x="120" y="395" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#0EA5E9">驱动器件 — 高性能，长寿命</text>
+  <text x="120" y="420" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">压电/磁致伸缩微驱动器具备纳米级分辨率与微秒级动态响应，稳定耐久</text>
+  <path fill="#080E18" d="M109,465 H591 A4,4 0 0 1 595,469 V546 A4,4 0 0 1 591,550 H109 A4,4 0 0 1 105,546 V469 A4,4 0 0 1 109,465 Z" />
+  <text x="120" y="495" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#0EA5E9">智能控制 — 集群协作，自主规划</text>
+  <text x="120" y="520" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">自主轨迹规划、集群控制起步更早，复杂微环境自适应作业能力领先</text>
+
+  
+  <path fill="#111827" d="M666,95 H1194 A6,6 0 0 1 1200,101 V639 A6,6 0 0 1 1194,645 H666 A6,6 0 0 1 660,639 V101 A6,6 0 0 1 666,95 Z" />
+  <path fill="#22D3EE" d="M666,95 H1194 A6,6 0 0 1 1200,101 V134 A6,6 0 0 1 1194,140 H666 A6,6 0 0 1 660,134 V101 A6,6 0 0 1 666,95 Z" />
+  <rect x="660" y="120" width="540" height="20" fill="#22D3EE" />
+  <text x="930" y="125" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#080E18" text-anchor="middle">国内研究特色</text>
+  <path fill="#080E18" d="M689,165 H1171 A4,4 0 0 1 1175,169 V246 A4,4 0 0 1 1171,250 H689 A4,4 0 0 1 685,246 V169 A4,4 0 0 1 689,165 Z" />
+  <text x="700" y="195" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#22D3EE">工程化能力 — 快速赶超，产业化落地</text>
+  <text x="700" y="220" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">突破微构件残余应力控制、批量加工一致性等行业难题，性价比优势突出</text>
+  <path fill="#080E18" d="M689,265 H1171 A4,4 0 0 1 1175,269 V346 A4,4 0 0 1 1171,350 H689 A4,4 0 0 1 685,346 V269 A4,4 0 0 1 689,265 Z" />
+  <text x="700" y="295" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#22D3EE">装备自研 — 纳米级表面精度控制</text>
+  <text x="700" y="320" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">国产微纳加工装备实现突破，关键指标追赶国际先进水平</text>
+  <path fill="#080E18" d="M689,365 H1171 A4,4 0 0 1 1175,369 V446 A4,4 0 0 1 1171,450 H689 A4,4 0 0 1 685,446 V369 A4,4 0 0 1 689,365 Z" />
+  <text x="700" y="395" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#22D3EE">场景应用 — 迭代迅速，差异化竞争</text>
+  <text x="700" y="420" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">智能控制、自主规划、多机协同等层面优势明显，应用落地速度领先</text>
+  <path fill="#1A1208" d="M689,465 H1171 A4,4 0 0 1 1175,469 V546 A4,4 0 0 1 1171,550 H689 A4,4 0 0 1 685,546 V469 A4,4 0 0 1 689,465 Z" />
+  <text x="700" y="495" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F97316">现存短板</text>
+  <text x="700" y="520" font-family="Microsoft YaHei" font-size="12" fill="#CCD6E0">高端传感芯片/核心探针部分依赖进口，基础理论积累与原创性仍需加强</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#64748B" text-anchor="end">8</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#1E293B" />
+</svg>

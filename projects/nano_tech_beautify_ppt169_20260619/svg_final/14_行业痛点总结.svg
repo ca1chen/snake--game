@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17" />
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6" />
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">三大行业痛点总结</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B" />
+
+  
+  <path fill="#131926" d="M66,100 H334 A6,6 0 0 1 340,106 V624 A6,6 0 0 1 334,630 H66 A6,6 0 0 1 60,624 V106 A6,6 0 0 1 66,100 Z" />
+  <rect x="60" y="100" width="280" height="4" fill="#F59E0B" />
+  <text x="200" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">制造昂贵</text>
+  <image href="../images/image129.png" x="80" y="170" width="240" height="140" preserveAspectRatio="xMidYMid slice" />
+  <text x="80" y="340" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">需要极高纯度的原料</text>
+  <text x="80" y="370" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">昂贵的真空、精密控制设备</text>
+  <text x="80" y="400" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">质控成本高昂，通常只能</text>
+  <text x="80" y="425" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">抽检或等出厂后发现次品</text>
+
+  
+  <path fill="#131926" d="M366,100 H634 A6,6 0 0 1 640,106 V624 A6,6 0 0 1 634,630 H366 A6,6 0 0 1 360,624 V106 A6,6 0 0 1 366,100 Z" />
+  <rect x="360" y="100" width="280" height="4" fill="#F59E0B" />
+  <text x="500" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">微观完美，宏观脆弱</text>
+  <image href="../images/image131.png" x="380" y="170" width="240" height="140" preserveAspectRatio="xMidYMid slice" />
+  <text x="380" y="340" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">纳米尺度下完美的物理特性</text>
+  <text x="380" y="370" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">在复杂宏观环境中极易失效</text>
+
+  
+  <path fill="#131926" d="M666,100 H934 A6,6 0 0 1 940,106 V624 A6,6 0 0 1 934,630 H666 A6,6 0 0 1 660,624 V106 A6,6 0 0 1 666,100 Z" />
+  <rect x="660" y="100" width="280" height="4" fill="#F59E0B" />
+  <text x="800" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">检测极其困难</text>
+  <image href="../images/image133.png" x="680" y="170" width="240" height="140" preserveAspectRatio="xMidYMid slice" />
+  <text x="680" y="340" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">纳米尺度缺陷难以检测</text>
+
+  
+  <path fill="#131926" d="M966,100 H1214 A6,6 0 0 1 1220,106 V624 A6,6 0 0 1 1214,630 H966 A6,6 0 0 1 960,624 V106 A6,6 0 0 1 966,100 Z" />
+  <rect x="960" y="100" width="260" height="4" fill="#F59E0B" />
+  <text x="1090" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">实时检测难</text>
+  <image href="../images/image135.png" x="980" y="170" width="220" height="140" preserveAspectRatio="xMidYMid slice" />
+  <text x="980" y="340" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">工厂流水线很难实时检测</text>
+  <text x="980" y="370" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">几纳米厚的涂层是否均匀</text>
+
+  
+  <path fill="#1E1408" d="M64,650 H1216 A4,4 0 0 1 1220,654 V696 A4,4 0 0 1 1216,700 H64 A4,4 0 0 1 60,696 V654 A4,4 0 0 1 64,650 Z" />
+  <text x="640" y="680" font-family="Microsoft YaHei" font-size="14" fill="#F59E0B" text-anchor="middle">纳米产业的核心矛盾：原子级精度追求 vs 工程化成本现实</text>
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">14</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4" />
+</svg>

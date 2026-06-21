@@ -2,10 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/course.dart';
 import '../models/semester.dart';
 import '../repositories/course_repository.dart';
-import '../repositories/semester_repository.dart';
 import '../services/course_import_service.dart';
 import '../utils/date_utils.dart' as DateHelper;
-import '../utils/logger.dart';
 import 'semester_provider.dart';
 
 /// 课程列表状态
@@ -49,7 +47,10 @@ class CourseNotifier extends StateNotifier<CourseState> {
   CourseNotifier(this._semesterNotifier) : super(const CourseState());
 
   /// 加载当前学期的课程
-  Future<void> loadCourses() async {
+  /// [week] 指定要加载的周次；为 null 时自动判断：
+  ///   - 首次加载（currentWeek 还是默认 1）→ 按今天日期计算
+  ///   - 用户已手动切过周 → 保持当前周不变
+  Future<void> loadCourses({int? week}) async {
     Semester? semester = _semesterNotifier.state.currentSemester;
     final semesterId = semester?.id;
     if (semesterId == null) {
@@ -57,32 +58,20 @@ class CourseNotifier extends StateNotifier<CourseState> {
       return;
     }
 
-    // 自动修正学期开学日期（DB 旧数据可能不准）
-    final correctStart = CourseImportService.estimateSemesterStart(semester!.name);
-    if (semester.startDate.difference(correctStart).inDays.abs() > 3) {
-      Logger.d('Course', 'Auto-correcting semester startDate: ${semester.startDate} → $correctStart');
-      final endDate = correctStart.add(Duration(days: semester.totalWeeks * 7 - 1));
-      final fixed = semester.copyWith(startDate: correctStart, endDate: endDate);
-      await SemesterRepository().update(fixed);
-      // 通知 semesterProvider 重新加载
-      await _semesterNotifier.loadSemesters();
-      semester = _semesterNotifier.state.currentSemester ?? fixed;
-    }
+    // 确定要加载的周次
+    final currentWeek = week ?? (() {
+      if (state.currentWeek > 1) return state.currentWeek;
+      final effectiveStart = CourseImportService.estimateSemesterStart(semester!.name);
+      return DateHelper.DateUtils.getWeekNumber(effectiveStart, DateTime.now())
+          .clamp(1, semester.totalWeeks);
+    })();
 
-    // 自动计算当前周次（如果从未设置过）
-    var week = state.currentWeek;
-    if (week <= 1) {
-      week = DateHelper.DateUtils.getWeekNumber(semester.startDate, DateTime.now());
-      if (week < 1) week = 1;
-      if (week > semester.totalWeeks) week = semester.totalWeeks;
-    }
-
-    state = state.copyWith(currentWeek: week, isLoading: true, error: null);
+    state = state.copyWith(currentWeek: currentWeek, isLoading: true, error: null);
     try {
       final courses = await _repo.getBySemester(semesterId);
       final byDay = await _repo.getActiveForWeek(
         semesterId,
-        week,
+        currentWeek,
       );
       state = state.copyWith(
         courses: courses,
@@ -96,8 +85,7 @@ class CourseNotifier extends StateNotifier<CourseState> {
 
   /// 设置当前周次并重新加载
   Future<void> setWeek(int week) async {
-    state = state.copyWith(currentWeek: week);
-    await loadCourses();
+    await loadCourses(week: week);
   }
 
   /// 添加课程

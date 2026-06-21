@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0E17"/>
+      <stop offset="100%" stop-color="#131926"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+  <!-- Decorative vertical line -->
+  <rect x="120" y="180" width="4" height="360" rx="2" fill="#3B82F6"/>
+  <!-- Decorative horizontal accent lines -->
+  <rect x="160" y="260" width="280" height="2" rx="1" fill="#3B82F6" opacity="0.5"/>
+  <rect x="160" y="480" width="200" height="2" rx="1" fill="#3B82F6" opacity="0.3"/>
+  <!-- Title -->
+  <text x="160" y="340" font-family="Microsoft YaHei" font-size="48" font-weight="bold" fill="#FFFFFF">纳米技术及纳米机器人的</text>
+  <text x="160" y="410" font-family="Microsoft YaHei" font-size="48" font-weight="bold" fill="#FFFFFF">应用和现状</text>
+  <!-- Reporter -->
+  <text x="160" y="540" font-family="Microsoft YaHei" font-size="18" fill="#60A5FA">汇报人：马锦龙</text>
+  <!-- Bottom line -->
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

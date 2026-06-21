@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../pages/home_page.dart';
 import '../pages/schedule/week_schedule_page.dart';
@@ -14,6 +15,7 @@ import '../pages/todo/todo_detail_page.dart';
 import '../pages/todo/todo_voice_add_page.dart';
 import '../pages/settings/settings_page.dart';
 import '../pages/settings/semester_manage_page.dart';
+import '../providers/todo_provider.dart';
 
 /// 全局导航 Key（用于 NotificationService 回调、跨 async 操作的 dialog 等场景）
 final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -29,9 +31,9 @@ class AppRoutes {
   static const courseEdit = '/courses/edit';
   static const todoList = '/todos';
   static const todoAdd = '/todos/add';
+  static const todoVoiceAdd = '/todos/voice-add';
   static const todoDetail = '/todos/detail';
   static const todoEdit = '/todos/edit';
-  static const todoVoiceAdd = '/todos/voice-add';
   static const settings = '/settings';
   static const semesters = '/settings/semesters';
 }
@@ -140,6 +142,10 @@ final GoRouter appRouter = GoRouter(
       },
     ),
     GoRoute(
+      path: AppRoutes.todoVoiceAdd,
+      builder: (context, state) => const TodoVoiceAddPage(),
+    ),
+    GoRoute(
       path: '${AppRoutes.todoDetail}/:todoId',
       builder: (context, state) {
         final id = int.tryParse(state.pathParameters['todoId'] ?? '');
@@ -152,13 +158,12 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '${AppRoutes.todoEdit}/:todoId',
       builder: (context, state) {
-        // 需要从 state.extra 传入 todo，简化为重新加载
-        return const TodoEditPage();
+        final id = int.tryParse(state.pathParameters['todoId'] ?? '');
+        if (id == null) {
+          return const Scaffold(body: Center(child: Text('缺少待办ID')));
+        }
+        return _TodoEditWrapper(todoId: id);
       },
-    ),
-    GoRoute(
-      path: AppRoutes.todoVoiceAdd,
-      builder: (context, state) => const TodoVoiceAddPage(),
     ),
     GoRoute(
       path: AppRoutes.semesters,
@@ -186,9 +191,30 @@ class AppRouter {
     context.push(uri);
   }
   static void goTodoDetail(BuildContext context, int id) => context.push('${AppRoutes.todoDetail}/$id');
-  static void goTodoEdit(BuildContext context, int id) => context.push('${AppRoutes.todoEdit}/$id');
   static void goTodoVoiceAdd(BuildContext context) => context.push(AppRoutes.todoVoiceAdd);
+  static void goTodoEdit(BuildContext context, int id) => context.push('${AppRoutes.todoEdit}/$id');
 
   // 设置相关
   static void goSemesters(BuildContext context) => context.push(AppRoutes.semesters);
+}
+
+/// 从 provider 中取 todo 传给 TodoEditPage（编辑模式）
+class _TodoEditWrapper extends ConsumerWidget {
+  final int todoId;
+  const _TodoEditWrapper({required this.todoId});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final todoState = ref.watch(todoProvider);
+    final todo = todoState.todos.where((t) => t.id == todoId).firstOrNull;
+
+    if (todo == null) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('编辑待办')),
+        body: const Center(child: CircularProgressIndicator()),
+      );
+    }
+
+    return TodoEditPage(todo: todo);
+  }
 }

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6"/>
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">深度思考：风险与治理</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B"/>
+
+  <!-- 3-column layout -->
+  <!-- Column 1: 科学层面 -->
+  <rect x="60" y="90" width="370" height="420" rx="6" fill="#131926"/>
+  <rect x="60" y="90" width="370" height="4" fill="#3B82F6"/>
+  <text x="245" y="130" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#3B82F6" text-anchor="middle">科学层面</text>
+  <text x="85" y="175" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">微观完美与宏观脆弱的平衡：</text>
+  <text x="85" y="200" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">实验室表现惊艳，</text>
+  <text x="85" y="225" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">复杂现实中易失效</text>
+  <text x="85" y="270" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">长期稳定性与高性价比量产</text>
+  <text x="85" y="295" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">是必须跨越的鸿沟</text>
+  <image href="../images/image159.png" x="85" y="320" width="330" height="170" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Column 2: 环境与健康 -->
+  <rect x="455" y="90" width="370" height="420" rx="6" fill="#131926"/>
+  <rect x="455" y="90" width="370" height="4" fill="#F59E0B"/>
+  <text x="640" y="130" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#F59E0B" text-anchor="middle">环境与健康层面</text>
+  <text x="480" y="175" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">纳米毒理学缺失：</text>
+  <text x="480" y="200" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">对新型纳米颗粒在自然界循环、</text>
+  <text x="480" y="225" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">食物链富集、人体内长期滞留</text>
+  <text x="480" y="250" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">的毒理机制知之甚少</text>
+  <text x="480" y="295" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">新型环境污染：</text>
+  <text x="480" y="320" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">纳米产品普及可能对微观生态</text>
+  <text x="480" y="345" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">系统造成难以逆转的破坏</text>
+  <image href="../images/image175.png" x="480" y="370" width="320" height="120" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Column 3: 社会与伦理 -->
+  <rect x="850" y="90" width="370" height="420" rx="6" fill="#131926"/>
+  <rect x="850" y="90" width="370" height="4" fill="#F59E0B"/>
+  <text x="1035" y="130" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#F59E0B" text-anchor="middle">社会与伦理层面</text>
+  <text x="875" y="175" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">技术"平权"问题：</text>
+  <text x="875" y="200" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">纳米医疗可能固化阶级鸿沟，</text>
+  <text x="875" y="225" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">导致"超人类"与普通人的分裂</text>
+  <text x="875" y="270" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">安全与武器化风险：</text>
+  <text x="875" y="295" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">纳米技术用于制造隐蔽性极强</text>
+  <text x="875" y="320" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">的生物/化学武器</text>
+  <image href="../images/image172.png" x="880" y="345" width="320" height="145" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Bottom: 发展路径 -->
+  <rect x="60" y="540" width="1160" height="130" rx="6" fill="#0D1A2E"/>
+  <rect x="60" y="540" width="1160" height="3" fill="#3B82F6"/>
+  <text x="100" y="580" font-family="Microsoft YaHei" font-size="17" font-weight="bold" fill="#3B82F6">发展路径建议</text>
+  <text x="100" y="615" font-family="Microsoft YaHei" font-size="14" fill="#FFFFFF">❶ 同步建立严密的纳米安全红线 &nbsp;&nbsp; ❷ 完善纳米毒理学基础研究 &nbsp;&nbsp; ❸ 出台全球统一的伦理监管框架</text>
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">18</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6"/>
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">机械加工与医疗领域挑战</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B"/>
+
+  <!-- Left: 机械加工刀具 -->
+  <rect x="60" y="90" width="560" height="300" rx="6" fill="#131926"/>
+  <text x="340" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">机械加工刀具</text>
+  <rect x="80" y="160" width="500" height="90" rx="4" fill="#1E3A5F"/>
+  <circle cx="110" cy="190" r="5" fill="#F59E0B"/>
+  <text x="130" y="185" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">界面剥离</text>
+  <text x="130" y="210" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米涂层与硬质合金刀基体交界处产生巨大剪切应力</text>
+  <rect x="80" y="270" width="500" height="90" rx="4" fill="#1E3A5F"/>
+  <circle cx="110" cy="300" r="5" fill="#F59E0B"/>
+  <text x="130" y="295" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">高温失效</text>
+  <text x="130" y="320" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">切削温度突破1000°C时，纳米结构发生再结晶或退火</text>
+  <image href="../images/image126.png" x="100" y="380" width="200" height="80" preserveAspectRatio="xMidYMid slice"/>
+  <image href="../images/image128.png" x="320" y="380" width="220" height="80" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Right: 医疗领域 -->
+  <rect x="660" y="90" width="560" height="580" rx="6" fill="#131926"/>
+  <text x="940" y="130" font-family="Microsoft YaHei" font-size="19" font-weight="bold" fill="#3B82F6" text-anchor="middle">医疗领域纳米机器人核心问题</text>
+  <rect x="680" y="160" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="710" cy="188" r="5" fill="#F59E0B"/>
+  <text x="730" y="183" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">动力供应</text>
+  <text x="730" y="208" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">传统电池无法缩放至纳米体积，外部驱动信号在深层组织衰减</text>
+  <rect x="680" y="265" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="710" cy="293" r="5" fill="#F59E0B"/>
+  <text x="730" y="288" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">流体阻力</text>
+  <text x="730" y="313" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">低雷诺数环境下，血液黏稠度如同厚重蜂蜜</text>
+  <rect x="680" y="370" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="710" cy="398" r="5" fill="#F59E0B"/>
+  <text x="730" y="393" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">靶向识别</text>
+  <text x="730" y="418" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">免疫系统清除、材料毒性、代谢难题未解</text>
+  <rect x="680" y="475" width="500" height="90" rx="4" fill="#1E1408"/>
+  <circle cx="710" cy="503" r="5" fill="#F59E0B"/>
+  <text x="730" y="498" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#F59E0B">通信反馈</text>
+  <text x="730" y="523" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">无法安装天线或传感器，只能"半盲操"</text>
+  <image href="../images/image120.png" x="700" y="580" width="230" height="70" preserveAspectRatio="xMidYMid slice"/>
+  <image href="../images/image87.png" x="940" y="580" width="240" height="70" preserveAspectRatio="xMidYMid slice"/>
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">13</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

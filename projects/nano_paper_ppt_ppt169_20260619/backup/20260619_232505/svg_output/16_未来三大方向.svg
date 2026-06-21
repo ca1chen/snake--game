@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#003D7C"/>
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#003D7C">未来三大突破方向</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#E0E4E8"/>
+
+  <!-- Card 1 -->
+  <rect x="80" y="95" width="350" height="370" rx="6" fill="#F4F6F9"/>
+  <rect x="80" y="95" width="350" height="50" rx="6" fill="#003D7C"/>
+  <rect x="80" y="125" width="350" height="20" fill="#003D7C"/>
+  <text x="255" y="128" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">精准医疗</text>
+  <text x="115" y="185" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#003D7C">智能靶向给药</text>
+  <text x="115" y="210" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">识别特定癌细胞标志物</text>
+  <text x="115" y="232" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">实现"零副作用"治愈癌症</text>
+  <rect x="115" y="255" width="290" height="1" fill="#E0E4E8"/>
+  <text x="115" y="280" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#003D7C">体内实时监测</text>
+  <text x="115" y="305" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">纳米传感器网络在发病</text>
+  <text x="115" y="327" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">前数月甚至数秒内预警</text>
+  <rect x="115" y="350" width="290" height="1" fill="#E0E4E8"/>
+  <text x="115" y="375" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#003D7C">人工器官与组织工程</text>
+  <text x="115" y="400" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">纳米级3D打印模拟</text>
+  <text x="115" y="422" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">人体细胞外基质</text>
+
+  <!-- Card 2 -->
+  <rect x="465" y="95" width="350" height="370" rx="6" fill="#F4F6F9"/>
+  <rect x="465" y="95" width="350" height="50" rx="6" fill="#0066B3"/>
+  <rect x="465" y="125" width="350" height="20" fill="#0066B3"/>
+  <text x="640" y="128" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">清洁能源与环境</text>
+  <text x="500" y="185" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#0066B3">下一代高效能源</text>
+  <text x="500" y="210" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">太阳能电池光电转换效率</text>
+  <text x="500" y="232" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">突破现有理论极限</text>
+  <rect x="500" y="255" width="290" height="1" fill="#E0E4E8"/>
+  <text x="500" y="280" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#0066B3">分子级环境治理</text>
+  <text x="500" y="305" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">纳米催化剂分解塑料微粒</text>
+  <text x="500" y="327" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">吸附重金属、捕集CO2</text>
+  <rect x="500" y="350" width="290" height="1" fill="#E0E4E8"/>
+  <text x="500" y="375" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#0066B3">碳中和纳米技术</text>
+  <text x="500" y="400" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">新型碳捕集纳米材料</text>
+  <text x="500" y="422" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">助力全球碳中和目标</text>
+
+  <!-- Card 3 -->
+  <rect x="850" y="95" width="350" height="370" rx="6" fill="#F4F6F9"/>
+  <rect x="850" y="95" width="350" height="50" rx="6" fill="#003D7C"/>
+  <rect x="850" y="125" width="350" height="20" fill="#003D7C"/>
+  <text x="1025" y="128" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">信息技术与人机融合</text>
+  <text x="885" y="185" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#003D7C">超越摩尔定律</text>
+  <text x="885" y="210" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">基于二维纳米材料的</text>
+  <text x="885" y="232" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">光子芯片或量子芯片</text>
+  <rect x="885" y="255" width="290" height="1" fill="#E0E4E8"/>
+  <text x="885" y="280" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#003D7C">微观脑机接口</text>
+  <text x="885" y="305" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">纳米电极穿过血脑屏障</text>
+  <text x="885" y="327" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">高分辨率神经信号读写</text>
+  <rect x="885" y="350" width="290" height="1" fill="#E0E4E8"/>
+  <text x="885" y="375" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#003D7C">量子-纳米混合计算</text>
+  <text x="885" y="400" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">纳米结构与量子比特</text>
+  <text x="885" y="422" font-family="Microsoft YaHei" font-size="12" fill="#1A1A1A">深度融合计算架构</text>
+
+  <!-- Conclusion box -->
+  <rect x="80" y="500" width="1120" height="170" rx="6" fill="#0B1D3A"/>
+  <text x="640" y="545" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">研究结论</text>
+  <text x="120" y="585" font-family="Microsoft YaHei" font-size="14" fill="#8899BB">构建"材料改性 — 结构优化 — 精密制造 — 精准驱动"一体化研发体系，</text>
+  <text x="120" y="615" font-family="Microsoft YaHei" font-size="14" fill="#8899BB">攻克尺度适配、多场耦合、生物兼容等关键难题，是推动纳米机器人规模化工程应用、</text>
+  <text x="120" y="645" font-family="Microsoft YaHei" font-size="14" fill="#8899BB">实现纳米技术可持续健康发展的核心路径。</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#666E75" text-anchor="end">16</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#E0E4E8"/>
+</svg>

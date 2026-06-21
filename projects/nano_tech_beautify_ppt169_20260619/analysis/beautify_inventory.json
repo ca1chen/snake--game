@@ -1,0 +1,5224 @@
+{
+  "schema": "beautify_inventory.v1",
+  "source": "C:\\Users\\ncthb\\Documents\\firstcc\\projects\\nano_tech_beautify_ppt169_20260619\\sources\\纳米技术及纳米机器人的应用和现状.pptx",
+  "slide_count": 19,
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "page_type": "cover_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s01_sh6",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s01_sh3",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s01_sh4",
+          "role": "title_candidate",
+          "text": "纳米技术及纳米机器人的应用和现状",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s01_sh5",
+          "role": "label_candidate",
+          "text": "汇报人：马锦龙",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 2,
+      "page_type": "toc_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s02_sh3",
+          "role": "title_candidate",
+          "text": "目录",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 583,
+            "y": 48,
+            "width": 114,
+            "height": 50
+          }
+        },
+        {
+          "slot_id": "s02_sh4",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 72,
+            "y": 188,
+            "width": 557,
+            "height": 173
+          }
+        },
+        {
+          "slot_id": "s02_sh6",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 101,
+            "y": 277,
+            "width": 32,
+            "height": 3
+          }
+        },
+        {
+          "slot_id": "s02_sh7",
+          "role": "label_candidate",
+          "text": "研究背景与发展历程",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 101,
+            "y": 290,
+            "width": 500,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s02_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 650,
+            "y": 188,
+            "width": 557,
+            "height": 173
+          }
+        },
+        {
+          "slot_id": "s02_sh10",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 679,
+            "y": 277,
+            "width": 32,
+            "height": 3
+          }
+        },
+        {
+          "slot_id": "s02_sh11",
+          "role": "label_candidate",
+          "text": "微纳操作技术应用现状",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 679,
+            "y": 290,
+            "width": 500,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s02_sh12",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 72,
+            "y": 440,
+            "width": 557,
+            "height": 173
+          }
+        },
+        {
+          "slot_id": "s02_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 101,
+            "y": 529,
+            "width": 32,
+            "height": 3
+          }
+        },
+        {
+          "slot_id": "s02_sh15",
+          "role": "label_candidate",
+          "text": "当前面临的核心问题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 101,
+            "y": 542,
+            "width": 500,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s02_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 650,
+            "y": 440,
+            "width": 557,
+            "height": 173
+          }
+        },
+        {
+          "slot_id": "s02_sh18",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 679,
+            "y": 529,
+            "width": 32,
+            "height": 3
+          }
+        },
+        {
+          "slot_id": "s02_sh19",
+          "role": "label_candidate",
+          "text": "未来展望与深度思考",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 679,
+            "y": 542,
+            "width": 500,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s02_sh5",
+          "role": "label_candidate",
+          "text": "01",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 101,
+            "y": 223,
+            "width": 500,
+            "height": 45
+          }
+        },
+        {
+          "slot_id": "s02_sh9",
+          "role": "label_candidate",
+          "text": "02",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 679,
+            "y": 223,
+            "width": 500,
+            "height": 45
+          }
+        },
+        {
+          "slot_id": "s02_sh13",
+          "role": "label_candidate",
+          "text": "03",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 101,
+            "y": 475,
+            "width": 500,
+            "height": 45
+          }
+        },
+        {
+          "slot_id": "s02_sh17",
+          "role": "label_candidate",
+          "text": "04",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 679,
+            "y": 475,
+            "width": 500,
+            "height": 45
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 3,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s03_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s03_sh3",
+          "role": "title_candidate",
+          "text": "研究背景与发展历程",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s03_sh4",
+          "role": "label_candidate",
+          "text": "01",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 4,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s04_sh3",
+          "role": "title_candidate",
+          "text": "微纳技术三大发展阶段",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s04_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 80,
+            "y": 136,
+            "width": 291,
+            "height": 523
+          }
+        },
+        {
+          "slot_id": "s04_sh5",
+          "role": "title_candidate",
+          "text": "20世纪60-90年代初",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 101,
+            "y": 157,
+            "width": 250,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s04_sh6",
+          "role": "label_candidate",
+          "text": "理论萌芽与静态操控阶段",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 101,
+            "y": 180,
+            "width": 250,
+            "height": 73
+          }
+        },
+        {
+          "slot_id": "s04_sh7",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 101,
+            "y": 314,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh9",
+          "role": "label_candidate",
+          "text": "1959年费曼提出微观机械构想，开启微纳尺度工程研究先河",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 312,
+            "width": 214,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s04_sh10",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 101,
+            "y": 408,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh12",
+          "role": "label_candidate",
+          "text": "精密制造仅能完成微米级简易结构加工，工艺精度不足",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 407,
+            "width": 214,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s04_sh13",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 101,
+            "y": 503,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh15",
+          "role": "label_candidate",
+          "text": "作业依赖人工辅助与显微设备，属于被动式操控范畴",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 501,
+            "width": 214,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s04_sh16",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 439,
+            "y": 137,
+            "width": 401,
+            "height": 522
+          }
+        },
+        {
+          "slot_id": "s04_sh17",
+          "role": "title_candidate",
+          "text": "20世纪90年代-21世纪初",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 460,
+            "y": 158,
+            "width": 359,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s04_sh18",
+          "role": "label_candidate",
+          "text": "结构成型与主动驱动阶段",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 460,
+            "y": 181,
+            "width": 359,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s04_sh19",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 460,
+            "y": 340,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh21",
+          "role": "label_candidate",
+          "text": "高精度光刻、微蚀刻、激光微加工等工艺日趋成熟",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 496,
+            "y": 338,
+            "width": 323,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s04_sh22",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 460,
+            "y": 405,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh24",
+          "role": "label_candidate",
+          "text": "柔性机构设计理念首次落地，规避刚性结构的作业冲击问题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 496,
+            "y": 404,
+            "width": 323,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s04_sh25",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 460,
+            "y": 471,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh27",
+          "role": "label_candidate",
+          "text": "压电、静电等精密驱动技术实现纳米级位移分辨率",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 496,
+            "y": 469,
+            "width": 323,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s04_sh28",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 908,
+            "y": 136,
+            "width": 291,
+            "height": 523
+          }
+        },
+        {
+          "slot_id": "s04_sh29",
+          "role": "title_candidate",
+          "text": "21世纪10年代至今",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 929,
+            "y": 157,
+            "width": 250,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s04_sh30",
+          "role": "label_candidate",
+          "text": "智能融合与多功能集成阶段",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 929,
+            "y": 180,
+            "width": 250,
+            "height": 73
+          }
+        },
+        {
+          "slot_id": "s04_sh31",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 929,
+            "y": 328,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh33",
+          "role": "label_candidate",
+          "text": "微纳3D打印、异质材料一体化加工等先进工艺突破",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 965,
+            "y": 327,
+            "width": 214,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s04_sh34",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 929,
+            "y": 394,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh36",
+          "role": "label_candidate",
+          "text": "机器视觉与智能算法融入，赋予机器人环境感知能力",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 965,
+            "y": 392,
+            "width": 214,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s04_sh37",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 929,
+            "y": 488,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s04_sh39",
+          "role": "label_candidate",
+          "text": "石墨烯、智能水凝胶等功能纳米材料成为核心赋能载体",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 965,
+            "y": 487,
+            "width": 214,
+            "height": 89
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 5,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s05_sh3",
+          "role": "title_candidate",
+          "text": "国内外研究现状对比",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s05_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 565,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s05_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 269,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s05_sh7",
+          "role": "label_candidate",
+          "text": "国外研究优势",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 272,
+            "width": 196,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s05_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 329,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh10",
+          "role": "label_candidate",
+          "text": "基础理论深厚",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 328,
+            "width": 288,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh12",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 399,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh14",
+          "role": "label_candidate",
+          "text": "原创技术密集",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 398,
+            "width": 396,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 469,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh18",
+          "role": "label_candidate",
+          "text": "核心器件领先",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 467,
+            "width": 414,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh11",
+          "role": "label_candidate",
+          "text": "率先建立微纳柔顺机构核心设计理论",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 357,
+            "width": 306,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh15",
+          "role": "label_candidate",
+          "text": "伪刚体模型、拓扑优化等经典方法由欧美团队提出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 427,
+            "width": 432,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh19",
+          "role": "label_candidate",
+          "text": "高性能压电、磁致伸缩微驱动器件具备纳米级分辨率",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 496,
+            "width": 450,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh20",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 654,
+            "y": 116,
+            "width": 565,
+            "height": 317
+          }
+        },
+        {
+          "slot_id": "s05_sh21",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 146,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s05_sh23",
+          "role": "title_candidate",
+          "text": "国内研究特色",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 731,
+            "y": 149,
+            "width": 196,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s05_sh24",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 206,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh26",
+          "role": "label_candidate",
+          "text": "工程化适配强",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 715,
+            "y": 205,
+            "width": 432,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh27",
+          "role": "label_candidate",
+          "text": "突破微构件残余应力控制、批量加工一致性等行业难题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 715,
+            "y": 234,
+            "width": 468,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh28",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 276,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh30",
+          "role": "label_candidate",
+          "text": "装备自研能力突出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 715,
+            "y": 275,
+            "width": 342,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh31",
+          "role": "label_candidate",
+          "text": "国产微纳加工装备实现纳米级表面精度控制",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 715,
+            "y": 304,
+            "width": 360,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh32",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 346,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh34",
+          "role": "label_candidate",
+          "text": "场景化应用迭代迅速",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 715,
+            "y": 344,
+            "width": 432,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s05_sh35",
+          "role": "label_candidate",
+          "text": "在智能控制、自主规划、多机协同等应用层面优势明显",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 715,
+            "y": 373,
+            "width": 468,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh36",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 654,
+            "y": 454,
+            "width": 565,
+            "height": 225
+          }
+        },
+        {
+          "slot_id": "s05_sh37",
+          "role": "label_candidate",
+          "text": "共性技术瓶颈",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 675,
+            "y": 499,
+            "width": 118,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s05_sh38",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 546,
+            "width": 5,
+            "height": 5
+          }
+        },
+        {
+          "slot_id": "s05_sh39",
+          "role": "body_candidate",
+          "text": "材料-结构-驱动协同设计体系不完善",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 688,
+            "y": 531,
+            "width": 306,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh40",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 583,
+            "width": 5,
+            "height": 5
+          }
+        },
+        {
+          "slot_id": "s05_sh41",
+          "role": "label_candidate",
+          "text": "柔性微机构承载能力与稳定性矛盾突出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 688,
+            "y": 568,
+            "width": 324,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s05_sh42",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 619,
+            "width": 5,
+            "height": 5
+          }
+        },
+        {
+          "slot_id": "s05_sh43",
+          "role": "label_candidate",
+          "text": "纳米材料成型一致性、界面结合强度偏低",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 688,
+            "y": 604,
+            "width": 342,
+            "height": 31
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 6,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s06_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s06_sh3",
+          "role": "title_candidate",
+          "text": "微纳操作技术应用现状",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s06_sh4",
+          "role": "label_candidate",
+          "text": "02",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 7,
+      "page_type": "chapter_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s07_sh3",
+          "role": "title_candidate",
+          "text": "机械制造领域应用",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s07_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 331,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s07_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 150,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s07_sh7",
+          "role": "title_candidate",
+          "text": "探针针尖纳米通道刻划建模仿真",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 135,
+            "width": 234,
+            "height": 73
+          }
+        },
+        {
+          "slot_id": "s07_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 339,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s07_sh10",
+          "role": "label_candidate",
+          "text": "分子动力学仿真实现探针与工件原子交互过程可视化",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 117,
+            "y": 335,
+            "width": 254,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s07_sh11",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 404,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s07_sh13",
+          "role": "label_candidate",
+          "text": "多尺度耦合仿真兼顾微观原子变形与宏观应力场计算",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 117,
+            "y": 401,
+            "width": 254,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s07_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 468,
+            "width": 290,
+            "height": 74
+          }
+        },
+        {
+          "slot_id": "s07_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 89,
+            "y": 478,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s07_sh17",
+          "role": "label_candidate",
+          "text": "现存问题：仿真模型基于理想工况假设，与试验偏差较大",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 125,
+            "y": 474,
+            "width": 238,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s07_sh18",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 419,
+            "y": 116,
+            "width": 442,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s07_sh19",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 439,
+            "y": 161,
+            "width": 52,
+            "height": 52
+          }
+        },
+        {
+          "slot_id": "s07_sh21",
+          "role": "title_candidate",
+          "text": "微纳加工装备探针系统开发",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 503,
+            "y": 135,
+            "width": 337,
+            "height": 105
+          }
+        },
+        {
+          "slot_id": "s07_sh23",
+          "role": "label_candidate",
+          "text": "国外",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 463,
+            "y": 306,
+            "width": 167,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s07_sh24",
+          "role": "label_candidate",
+          "text": "创新设计多自由度柔性执行机构，运动分辨率达纳米级",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 439,
+            "y": 344,
+            "width": 191,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s07_sh25",
+          "role": "label_candidate",
+          "text": "率先实现高精度微纳运动控制技术突破",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 439,
+            "y": 438,
+            "width": 191,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s07_sh27",
+          "role": "label_candidate",
+          "text": "国内",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 674,
+            "y": 306,
+            "width": 167,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s07_sh28",
+          "role": "label_candidate",
+          "text": "攻克高精度微驱动、微力传感、姿态调控等核心技术",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 650,
+            "y": 344,
+            "width": 191,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s07_sh29",
+          "role": "label_candidate",
+          "text": "实现关键技术的自主可控突破",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 650,
+            "y": 438,
+            "width": 191,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s07_sh30",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 439,
+            "y": 514,
+            "width": 401,
+            "height": 87
+          }
+        },
+        {
+          "slot_id": "s07_sh32",
+          "role": "label_candidate",
+          "text": "现存短板",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 475,
+            "y": 524,
+            "width": 353,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s07_sh33",
+          "role": "label_candidate",
+          "text": "高端传感芯片、核心探针部件部分依赖进口",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 451,
+            "y": 558,
+            "width": 377,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s07_sh34",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 888,
+            "y": 116,
+            "width": 331,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s07_sh35",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 909,
+            "y": 150,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s07_sh37",
+          "role": "title_candidate",
+          "text": "针尖微纳加工试验验证",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 965,
+            "y": 135,
+            "width": 234,
+            "height": 73
+          }
+        },
+        {
+          "slot_id": "s07_sh38",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 909,
+            "y": 339,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s07_sh40",
+          "role": "label_candidate",
+          "text": "国外试验体系完备，率先实现单原子层极限刻划",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 945,
+            "y": 335,
+            "width": 254,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s07_sh41",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 909,
+            "y": 404,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s07_sh43",
+          "role": "label_candidate",
+          "text": "国内试验聚焦工程痛点，优化工艺参数组合",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 945,
+            "y": 401,
+            "width": 254,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s07_sh44",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 909,
+            "y": 468,
+            "width": 290,
+            "height": 74
+          }
+        },
+        {
+          "slot_id": "s07_sh45",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 917,
+            "y": 478,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s07_sh47",
+          "role": "label_candidate",
+          "text": "行业痛点：试验数据标准化程度低，统一工艺标准缺失",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 953,
+            "y": 474,
+            "width": 238,
+            "height": 60
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 8,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s08_sh3",
+          "role": "title_candidate",
+          "text": "柔性机构与精密驱动应用",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s08_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 626,
+            "height": 271
+          }
+        },
+        {
+          "slot_id": "s08_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 137,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s08_sh7",
+          "role": "title_candidate",
+          "text": "仿真技术突破",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 140,
+            "width": 196,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s08_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 197,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s08_sh10",
+          "role": "label_candidate",
+          "text": "国外",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 198,
+            "width": 60,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s08_sh11",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 249,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh12",
+          "role": "label_candidate",
+          "text": "攻克几何、材料、接触非线性仿真难题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 93,
+            "y": 235,
+            "width": 270,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s08_sh13",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 315,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh14",
+          "role": "body_candidate",
+          "text": "构建\"力-电-热-结构\"协同仿真体系",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 93,
+            "y": 301,
+            "width": 270,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s08_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 383,
+            "y": 197,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s08_sh17",
+          "role": "label_candidate",
+          "text": "国内",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 423,
+            "y": 198,
+            "width": 60,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s08_sh18",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 383,
+            "y": 249,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh19",
+          "role": "label_candidate",
+          "text": "引入加工残余应力、装配误差、环境扰动等实际干扰因素",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 235,
+            "width": 270,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s08_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 383,
+            "y": 315,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh21",
+          "role": "label_candidate",
+          "text": "精准预判设备定位偏差",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 301,
+            "width": 198,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s08_sh22",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 408,
+            "width": 626,
+            "height": 271
+          }
+        },
+        {
+          "slot_id": "s08_sh23",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 429,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s08_sh25",
+          "role": "label_candidate",
+          "text": "系统结构开发",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 432,
+            "width": 196,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s08_sh26",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 489,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s08_sh28",
+          "role": "label_candidate",
+          "text": "国外",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 121,
+            "y": 490,
+            "width": 60,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s08_sh29",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 541,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh30",
+          "role": "label_candidate",
+          "text": "从单自由度柔性铰链迭代至多自由度并联",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 93,
+            "y": 527,
+            "width": 270,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s08_sh31",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 607,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh32",
+          "role": "label_candidate",
+          "text": "复合柔性构型",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 93,
+            "y": 593,
+            "width": 126,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s08_sh33",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 383,
+            "y": 489,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s08_sh35",
+          "role": "label_candidate",
+          "text": "国内",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 423,
+            "y": 490,
+            "width": 60,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s08_sh36",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 383,
+            "y": 541,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh37",
+          "role": "label_candidate",
+          "text": "自主研发复合型柔性铰链、对称式柔性导向",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 527,
+            "width": 270,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s08_sh38",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 383,
+            "y": 607,
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "slot_id": "s08_sh39",
+          "role": "label_candidate",
+          "text": "多维并联柔性平台",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 593,
+            "width": 162,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s08_sh40",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 709,
+            "y": 116,
+            "width": 156,
+            "height": 270
+          }
+        },
+        {
+          "slot_id": "s08_sh41",
+          "role": "label_candidate",
+          "text": "毫米级",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 739,
+            "y": 215,
+            "width": 128,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s08_sh42",
+          "role": "label_candidate",
+          "text": "运动行程",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 755,
+            "y": 265,
+            "width": 80,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s08_sh43",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 886,
+            "y": 116,
+            "width": 156,
+            "height": 270
+          }
+        },
+        {
+          "slot_id": "s08_sh44",
+          "role": "label_candidate",
+          "text": "纳米级",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 916,
+            "y": 215,
+            "width": 128,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s08_sh45",
+          "role": "label_candidate",
+          "text": "定位精度",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 932,
+            "y": 265,
+            "width": 80,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s08_sh46",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 1063,
+            "y": 116,
+            "width": 156,
+            "height": 270
+          }
+        },
+        {
+          "slot_id": "s08_sh47",
+          "role": "label_candidate",
+          "text": "微牛顿级",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1084,
+            "y": 195,
+            "width": 115,
+            "height": 84
+          }
+        },
+        {
+          "slot_id": "s08_sh48",
+          "role": "label_candidate",
+          "text": "力控精度",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1109,
+            "y": 285,
+            "width": 80,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s08_sh49",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 709,
+            "y": 409,
+            "width": 510,
+            "height": 270
+          }
+        },
+        {
+          "slot_id": "s08_sh50",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 730,
+            "y": 454,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s08_sh52",
+          "role": "label_candidate",
+          "text": "现存问题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 786,
+            "y": 457,
+            "width": 140,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s08_sh53",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 730,
+            "y": 516,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s08_sh55",
+          "role": "label_candidate",
+          "text": "仿真模型与真实服役工况适配性不足",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 770,
+            "y": 513,
+            "width": 340,
+            "height": 35
+          }
+        },
+        {
+          "slot_id": "s08_sh56",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 730,
+            "y": 560,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s08_sh58",
+          "role": "label_candidate",
+          "text": "高端核心部件国产化稳定性欠缺",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 770,
+            "y": 557,
+            "width": 300,
+            "height": 35
+          }
+        },
+        {
+          "slot_id": "s08_sh59",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 730,
+            "y": 604,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s08_sh61",
+          "role": "label_candidate",
+          "text": "多自由度耦合驱动误差难以消除",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 770,
+            "y": 601,
+            "width": 300,
+            "height": 35
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 9,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s09_sh3",
+          "role": "title_candidate",
+          "text": "纳米材料技术应用",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s09_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 626,
+            "height": 165
+          }
+        },
+        {
+          "slot_id": "s09_sh5",
+          "role": "title_candidate",
+          "text": "多尺度建模仿真",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 78,
+            "y": 134,
+            "width": 590,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s09_sh6",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 78,
+            "y": 196,
+            "width": 39,
+            "height": 39
+          }
+        },
+        {
+          "slot_id": "s09_sh8",
+          "role": "label_candidate",
+          "text": "分子动力学仿真精准解析材料拉伸、弯曲、界面脱粘等微观机理",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 131,
+            "y": 172,
+            "width": 234,
+            "height": 86
+          }
+        },
+        {
+          "slot_id": "s09_sh9",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 382,
+            "y": 196,
+            "width": 39,
+            "height": 39
+          }
+        },
+        {
+          "slot_id": "s09_sh11",
+          "role": "label_candidate",
+          "text": "从单一材料线弹性仿真迭代至多材料、多场耦合多尺度仿真体系",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 435,
+            "y": 172,
+            "width": 234,
+            "height": 86
+          }
+        },
+        {
+          "slot_id": "s09_sh12",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 284,
+            "width": 626,
+            "height": 229
+          }
+        },
+        {
+          "slot_id": "s09_sh13",
+          "role": "label_candidate",
+          "text": "四大应用体系",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 78,
+            "y": 302,
+            "width": 590,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s09_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 79,
+            "y": 333,
+            "width": 139,
+            "height": 163
+          }
+        },
+        {
+          "slot_id": "s09_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 132,
+            "y": 347,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "slot_id": "s09_sh17",
+          "role": "label_candidate",
+          "text": "结构增强",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 109,
+            "y": 386,
+            "width": 79,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s09_sh18",
+          "role": "label_candidate",
+          "text": "提升柔性构件抗疲劳性能与形变稳定性",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 99,
+            "y": 413,
+            "width": 98,
+            "height": 69
+          }
+        },
+        {
+          "slot_id": "s09_sh19",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 229,
+            "y": 344,
+            "width": 139,
+            "height": 140
+          }
+        },
+        {
+          "slot_id": "s09_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 283,
+            "y": 359,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "slot_id": "s09_sh22",
+          "role": "label_candidate",
+          "text": "界面改性",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 259,
+            "y": 397,
+            "width": 79,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s09_sh23",
+          "role": "label_candidate",
+          "text": "优化涂层工艺降低微尺度磨损",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 249,
+            "y": 424,
+            "width": 98,
+            "height": 46
+          }
+        },
+        {
+          "slot_id": "s09_sh24",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 379,
+            "y": 333,
+            "width": 139,
+            "height": 163
+          }
+        },
+        {
+          "slot_id": "s09_sh25",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 433,
+            "y": 347,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "slot_id": "s09_sh27",
+          "role": "label_candidate",
+          "text": "功能驱动",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 409,
+            "y": 386,
+            "width": 79,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s09_sh28",
+          "role": "label_candidate",
+          "text": "纳米压电、MXene驱动传感一体化单元",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 397,
+            "y": 413,
+            "width": 103,
+            "height": 69
+          }
+        },
+        {
+          "slot_id": "s09_sh29",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 529,
+            "y": 344,
+            "width": 139,
+            "height": 140
+          }
+        },
+        {
+          "slot_id": "s09_sh30",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 583,
+            "y": 359,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "slot_id": "s09_sh32",
+          "role": "label_candidate",
+          "text": "精准传感",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 559,
+            "y": 397,
+            "width": 79,
+            "height": 21
+          }
+        },
+        {
+          "slot_id": "s09_sh33",
+          "role": "label_candidate",
+          "text": "实现驱动、感知、操作一体化",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 546,
+            "y": 424,
+            "width": 105,
+            "height": 46
+          }
+        },
+        {
+          "slot_id": "s09_sh34",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 515,
+            "width": 626,
+            "height": 165
+          }
+        },
+        {
+          "slot_id": "s09_sh35",
+          "role": "label_candidate",
+          "text": "国内外对比",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 78,
+            "y": 533,
+            "width": 590,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s09_sh36",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 78,
+            "y": 564,
+            "width": 286,
+            "height": 97
+          }
+        },
+        {
+          "slot_id": "s09_sh37",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 92,
+            "y": 569,
+            "width": 42,
+            "height": 22
+          }
+        },
+        {
+          "slot_id": "s09_sh38",
+          "role": "label_candidate",
+          "text": "国外",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 99,
+            "y": 571,
+            "width": 42,
+            "height": 18
+          }
+        },
+        {
+          "slot_id": "s09_sh39",
+          "role": "label_candidate",
+          "text": "高端定制化技术优势显著，极限性能领先",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 92,
+            "y": 598,
+            "width": 258,
+            "height": 58
+          }
+        },
+        {
+          "slot_id": "s09_sh40",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 382,
+            "y": 564,
+            "width": 286,
+            "height": 97
+          }
+        },
+        {
+          "slot_id": "s09_sh41",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 396,
+            "y": 569,
+            "width": 42,
+            "height": 22
+          }
+        },
+        {
+          "slot_id": "s09_sh42",
+          "role": "label_candidate",
+          "text": "国内",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 403,
+            "y": 571,
+            "width": 42,
+            "height": 18
+          }
+        },
+        {
+          "slot_id": "s09_sh43",
+          "role": "label_candidate",
+          "text": "工程化、产业化落地优势突出，性价比高",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 396,
+            "y": 598,
+            "width": 258,
+            "height": 58
+          }
+        },
+        {
+          "slot_id": "s09_sh45",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 709,
+            "y": 116,
+            "width": 510,
+            "height": 270
+          }
+        },
+        {
+          "slot_id": "s09_sh46",
+          "role": "title_candidate",
+          "text": "技术瓶颈",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 730,
+            "y": 137,
+            "width": 469,
+            "height": 32
+          }
+        },
+        {
+          "slot_id": "s09_sh47",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 730,
+            "y": 202,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s09_sh49",
+          "role": "label_candidate",
+          "text": "高端纳米薄膜制备工艺、复杂异形结构成型精度不足",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 790,
+            "y": 206,
+            "width": 409,
+            "height": 67
+          }
+        },
+        {
+          "slot_id": "s09_sh50",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 730,
+            "y": 305,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s09_sh52",
+          "role": "label_candidate",
+          "text": "极端工况下材料性能衰减明显",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 790,
+            "y": 309,
+            "width": 280,
+            "height": 35
+          }
+        },
+        {
+          "slot_id": "s09_sh53",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 709,
+            "y": 409,
+            "width": 510,
+            "height": 270
+          }
+        },
+        {
+          "slot_id": "s09_sh54",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 924,
+            "y": 464,
+            "width": 80,
+            "height": 80
+          }
+        },
+        {
+          "slot_id": "s09_sh56",
+          "role": "label_candidate",
+          "text": "纳米材料微观结构示意图",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 856,
+            "y": 560,
+            "width": 216,
+            "height": 24
+          }
+        },
+        {
+          "slot_id": "s09_sh57",
+          "role": "label_candidate",
+          "text": "分子动力学仿真场景：原子级材料拉伸与界面脱粘机理可视化",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 732,
+            "y": 599,
+            "width": 464,
+            "height": 27
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 10,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s10_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s10_sh3",
+          "role": "title_candidate",
+          "text": "当前面临的核心问题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s10_sh4",
+          "role": "label_candidate",
+          "text": "03",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 11,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s11_sh3",
+          "role": "title_candidate",
+          "text": "纳米复合材料与半导体加工难题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s11_sh36",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 654,
+            "y": 601,
+            "width": 565,
+            "height": 78
+          }
+        },
+        {
+          "slot_id": "s11_sh37",
+          "role": "label_candidate",
+          "text": "两大领域均面临",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 671,
+            "y": 617,
+            "width": 125,
+            "height": 48
+          }
+        },
+        {
+          "slot_id": "s11_sh38",
+          "role": "label_candidate",
+          "text": "纳米级尺度下的物理极限与工程成本双重约束",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 808,
+            "y": 614,
+            "width": 395,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s11_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 565,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s11_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 269,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s11_sh7",
+          "role": "label_candidate",
+          "text": "纳米复合材料问题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 272,
+            "width": 252,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s11_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 329,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s11_sh10",
+          "role": "label_candidate",
+          "text": "分散困难",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 328,
+            "width": 476,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s11_sh11",
+          "role": "label_candidate",
+          "text": "纳米颗粒表面能极高，在熔融基体中极易团聚",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 357,
+            "width": 476,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s11_sh12",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 399,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s11_sh14",
+          "role": "label_candidate",
+          "text": "团聚后果",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 398,
+            "width": 476,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s11_sh15",
+          "role": "body_candidate",
+          "text": "结块处变成材料最脆弱的\"断裂点\"，强度不升反降",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 427,
+            "width": 476,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s11_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 469,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s11_sh18",
+          "role": "label_candidate",
+          "text": "回收难题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 467,
+            "width": 476,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s11_sh19",
+          "role": "label_candidate",
+          "text": "纳米颗粒与基体极难分离，大多只能降级使用或焚烧",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 496,
+            "width": 476,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s11_sh20",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 654,
+            "y": 116,
+            "width": 565,
+            "height": 464
+          }
+        },
+        {
+          "slot_id": "s11_sh21",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 220,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s11_sh23",
+          "role": "label_candidate",
+          "text": "半导体加工难题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 731,
+            "y": 223,
+            "width": 224,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s11_sh24",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 280,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s11_sh26",
+          "role": "label_candidate",
+          "text": "物理瓶颈",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 723,
+            "y": 278,
+            "width": 476,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s11_sh27",
+          "role": "label_candidate",
+          "text": "量子隧穿效应导致芯片严重漏电和发热",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 723,
+            "y": 307,
+            "width": 476,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s11_sh28",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 350,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s11_sh30",
+          "role": "label_candidate",
+          "text": "设备局限",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 723,
+            "y": 348,
+            "width": 476,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s11_sh31",
+          "role": "label_candidate",
+          "text": "ASML极紫外光刻机售价数亿美元，极度耗电",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 723,
+            "y": 377,
+            "width": 476,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s11_sh32",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 675,
+            "y": 419,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s11_sh34",
+          "role": "label_candidate",
+          "text": "良率挑战",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 723,
+            "y": 418,
+            "width": 476,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s11_sh35",
+          "role": "label_candidate",
+          "text": "微纳米级灰尘即可导致整片晶圆报废",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 723,
+            "y": 447,
+            "width": 476,
+            "height": 31
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 12,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s12_sh3",
+          "role": "title_candidate",
+          "text": "纳米涂层与纺织领域问题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s12_sh4",
+          "role": "title_candidate",
+          "text": "高性能纳米涂料（建材/船舶）",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 114,
+            "width": 1160,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s12_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 397,
+            "width": 1160,
+            "height": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh21",
+          "role": "label_candidate",
+          "text": "纺织服装业",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 413,
+            "width": 1160,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s12_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 163,
+            "width": 372,
+            "height": 218
+          }
+        },
+        {
+          "slot_id": "s12_sh6",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 184,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s12_sh8",
+          "role": "label_candidate",
+          "text": "耐久性差",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 189,
+            "width": 120,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s12_sh9",
+          "role": "label_candidate",
+          "text": "纳米涂层仅几十至几百纳米厚，物理强度先天不足",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 238,
+            "width": 331,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s12_sh10",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 454,
+            "y": 163,
+            "width": 372,
+            "height": 218
+          }
+        },
+        {
+          "slot_id": "s12_sh11",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 474,
+            "y": 184,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s12_sh13",
+          "role": "label_candidate",
+          "text": "环境侵蚀",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 530,
+            "y": 189,
+            "width": 120,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s12_sh14",
+          "role": "label_candidate",
+          "text": "大风沙尘刮擦、酸雨腐蚀、紫外线照射迅速破坏微观结构",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 474,
+            "y": 238,
+            "width": 331,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s12_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 847,
+            "y": 163,
+            "width": 372,
+            "height": 218
+          }
+        },
+        {
+          "slot_id": "s12_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 868,
+            "y": 184,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s12_sh18",
+          "role": "label_candidate",
+          "text": "维护成本高",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 924,
+            "y": 189,
+            "width": 144,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s12_sh19",
+          "role": "label_candidate",
+          "text": "汽车纳米隐形车衣或玻璃自清洁涂层1-2年后局部失效",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 868,
+            "y": 238,
+            "width": 331,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s12_sh22",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 462,
+            "width": 274,
+            "height": 217
+          }
+        },
+        {
+          "slot_id": "s12_sh23",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 482,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s12_sh25",
+          "role": "label_candidate",
+          "text": "结合不牢",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 488,
+            "width": 120,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s12_sh26",
+          "role": "body_candidate",
+          "text": "纳米颗粒\"粘\"在纤维表面而非长在内部",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 537,
+            "width": 233,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s12_sh27",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 355,
+            "y": 462,
+            "width": 274,
+            "height": 217
+          }
+        },
+        {
+          "slot_id": "s12_sh28",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 376,
+            "y": 482,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s12_sh30",
+          "role": "label_candidate",
+          "text": "洗涤流失",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 432,
+            "y": 488,
+            "width": 120,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s12_sh31",
+          "role": "label_candidate",
+          "text": "洗衣机搅拌和洗衣粉化学作用下大量脱落",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 376,
+            "y": 537,
+            "width": 233,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s12_sh32",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 650,
+            "y": 462,
+            "width": 274,
+            "height": 217
+          }
+        },
+        {
+          "slot_id": "s12_sh33",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 671,
+            "y": 482,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s12_sh35",
+          "role": "label_candidate",
+          "text": "环境风险",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 727,
+            "y": 488,
+            "width": 120,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s12_sh36",
+          "role": "label_candidate",
+          "text": "纳米银进入污水系统，杀死有益细菌，破坏生态平衡",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 671,
+            "y": 537,
+            "width": 233,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s12_sh37",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 945,
+            "y": 462,
+            "width": 274,
+            "height": 217
+          }
+        },
+        {
+          "slot_id": "s12_sh38",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 966,
+            "y": 482,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s12_sh40",
+          "role": "label_candidate",
+          "text": "健康隐患",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1022,
+            "y": 488,
+            "width": 120,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s12_sh41",
+          "role": "label_candidate",
+          "text": "极微小纳米颗粒可能通过皮肤毛孔进入人体循环",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 966,
+            "y": 537,
+            "width": 233,
+            "height": 60
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 13,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s13_sh3",
+          "role": "title_candidate",
+          "text": "机械加工与医疗领域挑战",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s13_sh4",
+          "role": "title_candidate",
+          "text": "机械加工刀具",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 114,
+            "width": 396,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s13_sh15",
+          "role": "title_candidate",
+          "text": "医疗领域纳米机器人核心问题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 484,
+            "y": 114,
+            "width": 736,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s13_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 484,
+            "y": 215,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s13_sh18",
+          "role": "label_candidate",
+          "text": "动力供应",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 203,
+            "width": 684,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s13_sh19",
+          "role": "label_candidate",
+          "text": "传统电池无法缩放至纳米体积，外部驱动信号在深层组织衰减",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 232,
+            "width": 684,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s13_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 484,
+            "y": 310,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s13_sh22",
+          "role": "label_candidate",
+          "text": "流体阻力",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 298,
+            "width": 684,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s13_sh23",
+          "role": "label_candidate",
+          "text": "低雷诺数环境下，血液黏稠度如同厚重蜂蜜",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 327,
+            "width": 684,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s13_sh24",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 484,
+            "y": 405,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s13_sh26",
+          "role": "label_candidate",
+          "text": "靶向识别",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 393,
+            "width": 684,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s13_sh27",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 536,
+            "y": 422,
+            "width": 684,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s13_sh28",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 484,
+            "y": 501,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s13_sh30",
+          "role": "label_candidate",
+          "text": "生物安全",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 488,
+            "width": 684,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s13_sh31",
+          "role": "label_candidate",
+          "text": "免疫系统清除、材料毒性、代谢难题未解",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 517,
+            "width": 684,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s13_sh32",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 484,
+            "y": 596,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s13_sh34",
+          "role": "label_candidate",
+          "text": "通信反馈",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 583,
+            "width": 684,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s13_sh35",
+          "role": "body_candidate",
+          "text": "无法安装天线或传感器，只能\"半盲操\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 536,
+            "y": 612,
+            "width": 684,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s13_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 171,
+            "width": 187,
+            "height": 508
+          }
+        },
+        {
+          "slot_id": "s13_sh6",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 352,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s13_sh8",
+          "role": "label_candidate",
+          "text": "界面剥离",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 343,
+            "width": 90,
+            "height": 63
+          }
+        },
+        {
+          "slot_id": "s13_sh9",
+          "role": "label_candidate",
+          "text": "纳米涂层与硬质合金刀基体交界处产生巨大剪切应力",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 419,
+            "width": 146,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s13_sh10",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 269,
+            "y": 171,
+            "width": 187,
+            "height": 508
+          }
+        },
+        {
+          "slot_id": "s13_sh11",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 289,
+            "y": 338,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s13_sh13",
+          "role": "label_candidate",
+          "text": "高温失效",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 345,
+            "y": 328,
+            "width": 90,
+            "height": 63
+          }
+        },
+        {
+          "slot_id": "s13_sh14",
+          "role": "body_candidate",
+          "text": "切削温度突破\n1000°C时，纳米结构发生再结晶或退火",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 289,
+            "y": 404,
+            "width": 146,
+            "height": 118
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 14,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s14_sh3",
+          "role": "title_candidate",
+          "text": "三大行业痛点总结",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s14_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 365,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s14_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 326,
+            "width": 52,
+            "height": 52
+          }
+        },
+        {
+          "slot_id": "s14_sh7",
+          "role": "label_candidate",
+          "text": "生产不便宜",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 145,
+            "y": 333,
+            "width": 168,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s14_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 407,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "slot_id": "s14_sh9",
+          "role": "label_candidate",
+          "text": "需要极高纯度的原料",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 95,
+            "y": 393,
+            "width": 200,
+            "height": 35
+          }
+        },
+        {
+          "slot_id": "s14_sh10",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 451,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "slot_id": "s14_sh11",
+          "role": "label_candidate",
+          "text": "昂贵的真空、精密控制设备",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 95,
+            "y": 437,
+            "width": 260,
+            "height": 35
+          }
+        },
+        {
+          "slot_id": "s14_sh12",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 452,
+            "y": 116,
+            "width": 376,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s14_sh13",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 614,
+            "y": 304,
+            "width": 52,
+            "height": 52
+          }
+        },
+        {
+          "slot_id": "s14_sh15",
+          "role": "label_candidate",
+          "text": "微观完美，宏观脆弱",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 480,
+            "y": 370,
+            "width": 320,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s14_sh16",
+          "role": "label_candidate",
+          "text": "纳米尺度下完美的物理特性，在复杂宏观环境中极易失效",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 480,
+            "y": 427,
+            "width": 320,
+            "height": 67
+          }
+        },
+        {
+          "slot_id": "s14_sh17",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 855,
+            "y": 116,
+            "width": 365,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s14_sh18",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 875,
+            "y": 283,
+            "width": 52,
+            "height": 52
+          }
+        },
+        {
+          "slot_id": "s14_sh20",
+          "role": "label_candidate",
+          "text": "检测极其困难",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 939,
+            "y": 290,
+            "width": 196,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s14_sh21",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 875,
+            "y": 351,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s14_sh23",
+          "role": "label_candidate",
+          "text": "实时检测难",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 911,
+            "y": 351,
+            "width": 120,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s14_sh24",
+          "role": "label_candidate",
+          "text": "工厂流水线很难实时检测几纳米厚\n的涂层是否均匀",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 911,
+            "y": 381,
+            "width": 288,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s14_sh25",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 875,
+            "y": 452,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s14_sh27",
+          "role": "label_candidate",
+          "text": "质控成本高昂",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 911,
+            "y": 452,
+            "width": 140,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s14_sh28",
+          "role": "label_candidate",
+          "text": "通常只能抽检或等出厂后发现次品",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 911,
+            "y": 483,
+            "width": 288,
+            "height": 31
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 15,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s15_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s15_sh3",
+          "role": "title_candidate",
+          "text": "未来展望与深度思考",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s15_sh4",
+          "role": "label_candidate",
+          "text": "04",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 16,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s16_sh3",
+          "role": "title_candidate",
+          "text": "纳米技术的核心价值",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s16_sh7",
+          "role": "label_candidate",
+          "text": "已实现的产业化应用",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 300,
+            "width": 1160,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s16_sh24",
+          "role": "label_candidate",
+          "text": "核心价值体现",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 499,
+            "width": 1160,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s16_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 1159,
+            "height": 161
+          }
+        },
+        {
+          "slot_id": "s16_sh5",
+          "role": "title_candidate",
+          "text": "当材料被浓缩至纳米尺度，量子效应占据主导",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 178,
+            "y": 135,
+            "width": 924,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s16_sh6",
+          "role": "label_candidate",
+          "text": "展现出宏观状态下完全不具备的独特性质",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 336,
+            "y": 202,
+            "width": 608,
+            "height": 55
+          }
+        },
+        {
+          "slot_id": "s16_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 344,
+            "width": 274,
+            "height": 136
+          }
+        },
+        {
+          "slot_id": "s16_sh9",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 175,
+            "y": 371,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s16_sh11",
+          "role": "label_candidate",
+          "text": "智能手机芯片",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 128,
+            "y": 427,
+            "width": 140,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s16_sh12",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 355,
+            "y": 344,
+            "width": 274,
+            "height": 136
+          }
+        },
+        {
+          "slot_id": "s16_sh13",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 470,
+            "y": 371,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s16_sh15",
+          "role": "label_candidate",
+          "text": "汽车轻量化纳米复合材料",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 373,
+            "y": 427,
+            "width": 240,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s16_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 650,
+            "y": 344,
+            "width": 274,
+            "height": 136
+          }
+        },
+        {
+          "slot_id": "s16_sh17",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 765,
+            "y": 371,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s16_sh19",
+          "role": "label_candidate",
+          "text": "高楼大厦自清洁涂层",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 688,
+            "y": 427,
+            "width": 200,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s16_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 945,
+            "y": 344,
+            "width": 274,
+            "height": 136
+          }
+        },
+        {
+          "slot_id": "s16_sh21",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 1060,
+            "y": 371,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s16_sh23",
+          "role": "label_candidate",
+          "text": "防臭抗菌衣物面料",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 993,
+            "y": 427,
+            "width": 180,
+            "height": 27
+          }
+        },
+        {
+          "slot_id": "s16_sh25",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 543,
+            "width": 569,
+            "height": 136
+          }
+        },
+        {
+          "slot_id": "s16_sh26",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 589,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s16_sh28",
+          "role": "label_candidate",
+          "text": "结构与性能的飞跃",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 141,
+            "y": 574,
+            "width": 420,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s16_sh29",
+          "role": "label_candidate",
+          "text": "极高强度、极强催化活性、优异导电或隔热性能",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 141,
+            "y": 614,
+            "width": 460,
+            "height": 35
+          }
+        },
+        {
+          "slot_id": "s16_sh30",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 650,
+            "y": 543,
+            "width": 569,
+            "height": 136
+          }
+        },
+        {
+          "slot_id": "s16_sh31",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 671,
+            "y": 589,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s16_sh33",
+          "role": "label_candidate",
+          "text": "多学科深度交叉",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 731,
+            "y": 574,
+            "width": 460,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s16_sh34",
+          "role": "label_candidate",
+          "text": "物理、化学、生物学、微电子学和材料科学的交汇点",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 731,
+            "y": 614,
+            "width": 500,
+            "height": 35
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 17,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s17_sh3",
+          "role": "title_candidate",
+          "text": "未来三大颠覆性领域",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s17_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 365,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s17_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 150,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s17_sh7",
+          "role": "title_candidate",
+          "text": "医疗领域的\"精准革命\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 137,
+            "y": 135,
+            "width": 268,
+            "height": 73
+          }
+        },
+        {
+          "slot_id": "s17_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 223,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s17_sh10",
+          "role": "label_candidate",
+          "text": "智能靶向给药",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 222,
+            "width": 276,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s17_sh11",
+          "role": "body_candidate",
+          "text": "识别特定癌细胞标志物，实现\"零副作用\"治愈癌症",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 250,
+            "width": 276,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s17_sh12",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 322,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s17_sh14",
+          "role": "label_candidate",
+          "text": "体内实时监测",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 320,
+            "width": 276,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s17_sh15",
+          "role": "label_candidate",
+          "text": "纳米传感器网络在疾病发生前数月甚至数秒内发出预警",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 349,
+            "width": 276,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s17_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 420,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s17_sh18",
+          "role": "label_candidate",
+          "text": "人工器官与组织工程",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 419,
+            "width": 276,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s17_sh19",
+          "role": "label_candidate",
+          "text": "纳米级3D打印完美模拟人体细胞外基质",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 448,
+            "width": 276,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s17_sh20",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 452,
+            "y": 116,
+            "width": 376,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s17_sh21",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 473,
+            "y": 150,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s17_sh23",
+          "role": "title_candidate",
+          "text": "能源与环境的\"绿色解药\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 529,
+            "y": 135,
+            "width": 279,
+            "height": 73
+          }
+        },
+        {
+          "slot_id": "s17_sh24",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 473,
+            "y": 223,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s17_sh26",
+          "role": "label_candidate",
+          "text": "下一代高效能源",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 521,
+            "y": 222,
+            "width": 287,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s17_sh28",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 473,
+            "y": 322,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s17_sh30",
+          "role": "label_candidate",
+          "text": "分子级环境治理",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 521,
+            "y": 320,
+            "width": 287,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s17_sh27",
+          "role": "label_candidate",
+          "text": "太阳能电池光电转换效率突破现有极限",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 521,
+            "y": 250,
+            "width": 287,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s17_sh31",
+          "role": "label_candidate",
+          "text": "纳米催化剂分解塑料微粒、吸附重金属、捕集二氧化碳",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 521,
+            "y": 349,
+            "width": 287,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s17_sh32",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 855,
+            "y": 116,
+            "width": 365,
+            "height": 563
+          }
+        },
+        {
+          "slot_id": "s17_sh33",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 875,
+            "y": 137,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s17_sh35",
+          "role": "title_candidate",
+          "text": "信息技术与人机融合",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 931,
+            "y": 140,
+            "width": 280,
+            "height": 38
+          }
+        },
+        {
+          "slot_id": "s17_sh36",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 875,
+            "y": 197,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s17_sh38",
+          "role": "label_candidate",
+          "text": "超越摩尔定律",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 923,
+            "y": 196,
+            "width": 276,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s17_sh39",
+          "role": "label_candidate",
+          "text": "基于二维纳米材料的光子芯片或量子芯片",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 923,
+            "y": 224,
+            "width": 276,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s17_sh40",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 875,
+            "y": 296,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s17_sh42",
+          "role": "label_candidate",
+          "text": "微观脑机接口",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 923,
+            "y": 294,
+            "width": 276,
+            "height": 28
+          }
+        },
+        {
+          "slot_id": "s17_sh43",
+          "role": "label_candidate",
+          "text": "纳米电极穿过血脑屏障，实现高分辨率神经信号读写",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 923,
+            "y": 323,
+            "width": 276,
+            "height": 60
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 18,
+      "page_type": "content_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s18_sh3",
+          "role": "title_candidate",
+          "text": "深度思考：风险与治理",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 56,
+            "y": 38,
+            "width": 1168,
+            "height": 53
+          }
+        },
+        {
+          "slot_id": "s18_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 116,
+            "width": 1159,
+            "height": 136
+          }
+        },
+        {
+          "slot_id": "s18_sh5",
+          "role": "label_candidate",
+          "text": "深度思考：风险与治理",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 461,
+            "y": 162,
+            "width": 358,
+            "height": 44
+          }
+        },
+        {
+          "slot_id": "s18_sh6",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 277,
+            "width": 453,
+            "height": 191
+          }
+        },
+        {
+          "slot_id": "s18_sh7",
+          "role": "label_candidate",
+          "text": "科学层面",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 299,
+            "width": 412,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s18_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 354,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh10",
+          "role": "label_candidate",
+          "text": "微观完美与宏观脆弱的平衡：实验室表现惊艳，复杂现实中易失效",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 341,
+            "width": 364,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s18_sh11",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 409,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh13",
+          "role": "label_candidate",
+          "text": "长期稳定性与高性价比量产是必须跨越的鸿沟",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 411,
+            "width": 378,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s18_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 489,
+            "width": 453,
+            "height": 190
+          }
+        },
+        {
+          "slot_id": "s18_sh15",
+          "role": "label_candidate",
+          "text": "环境与健康层面",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 508,
+            "width": 412,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s18_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 558,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh18",
+          "role": "label_candidate",
+          "text": "纳米毒理学缺失：对新型纳米颗粒在自然界循环、食物链富集、人体内长期滞留的毒理机制知之甚少",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 531,
+            "width": 364,
+            "height": 89
+          }
+        },
+        {
+          "slot_id": "s18_sh19",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 81,
+            "y": 620,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh21",
+          "role": "label_candidate",
+          "text": "新型环境污染：纳米产品普及可能对微观生态系统造成难以逆转的破坏",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 129,
+            "y": 607,
+            "width": 364,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s18_sh22",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 539,
+            "y": 277,
+            "width": 681,
+            "height": 191
+          }
+        },
+        {
+          "slot_id": "s18_sh23",
+          "role": "label_candidate",
+          "text": "社会与伦理层面",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 559,
+            "y": 299,
+            "width": 640,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s18_sh24",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 559,
+            "y": 354,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh26",
+          "role": "body_candidate",
+          "text": "技术\"平权\"问题：纳米医疗可能固化阶级鸿沟，导致\"超人类\"与普通人的分裂",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 607,
+            "y": 341,
+            "width": 592,
+            "height": 60
+          }
+        },
+        {
+          "slot_id": "s18_sh27",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 559,
+            "y": 409,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh29",
+          "role": "label_candidate",
+          "text": "安全与武器化风险：纳米技术用于制造隐蔽性极强的生物/化学武器",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 607,
+            "y": 411,
+            "width": 565,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s18_sh30",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 539,
+            "y": 489,
+            "width": 681,
+            "height": 190
+          }
+        },
+        {
+          "slot_id": "s18_sh31",
+          "role": "label_candidate",
+          "text": "发展路径",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 559,
+            "y": 508,
+            "width": 640,
+            "height": 33
+          }
+        },
+        {
+          "slot_id": "s18_sh32",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 559,
+            "y": 546,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh34",
+          "role": "label_candidate",
+          "text": "同步建立严密的纳米安全红线",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 607,
+            "y": 548,
+            "width": 252,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s18_sh35",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 559,
+            "y": 586,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh37",
+          "role": "label_candidate",
+          "text": "完善纳米毒理学研究",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 607,
+            "y": 588,
+            "width": 180,
+            "height": 31
+          }
+        },
+        {
+          "slot_id": "s18_sh38",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 559,
+            "y": 625,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "slot_id": "s18_sh40",
+          "role": "label_candidate",
+          "text": "出台全球统一的伦理监管框架",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 607,
+            "y": 627,
+            "width": 252,
+            "height": 31
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    },
+    {
+      "slide_index": 19,
+      "page_type": "ending_candidate",
+      "text_blocks": [
+        {
+          "slot_id": "s19_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s19_sh3",
+          "role": "title_candidate",
+          "text": "THE END",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        },
+        {
+          "slot_id": "s19_sh4",
+          "role": "title_candidate",
+          "text": "感谢聆听",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": null,
+            "y": null,
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "images": [],
+      "ignored": [],
+      "needs_confirmation": []
+    }
+  ]
+}

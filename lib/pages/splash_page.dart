@@ -69,12 +69,14 @@ class _SplashPageState extends ConsumerState<SplashPage> {
 
     setState(() => _status = AppStrings.splashSeedData);
 
-    // 创建学期
+    // 创建学期（使用天大校历开学日期）
+    const semesterName = '2025-2026学年第二学期';
+    final startDate = CourseImportService.estimateSemesterStart(semesterName);
     final semester = Semester(
-      name: '2025-2026学年第二学期',
-      startDate: DateTime(2026, 2, 23),
-      endDate: DateTime(2026, 6, 21),
-      totalWeeks: 17,
+      name: semesterName,
+      startDate: startDate,
+      endDate: startDate.add(const Duration(days: 18 * 7 - 1)),
+      totalWeeks: 18,
       isCurrent: true,
     );
     final semesterId = await semRepo.insert(semester);
@@ -161,12 +163,11 @@ class _SplashPageState extends ConsumerState<SplashPage> {
       if (semester != null) {
         semesterId = semester.id!;
       } else {
-        final now = DateTime.now();
-        final monday = now.subtract(Duration(days: now.weekday - 1));
+        final startDate = CourseImportService.estimateSemesterStart(importResult.semesterName);
         final newSem = Semester(
           name: importResult.semesterName,
-          startDate: monday,
-          endDate: monday.add(const Duration(days: 18 * 7 - 1)),
+          startDate: startDate,
+          endDate: startDate.add(const Duration(days: 18 * 7 - 1)),
           totalWeeks: 18,
           isCurrent: semesters.isEmpty,
         );

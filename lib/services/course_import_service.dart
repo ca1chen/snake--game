@@ -242,8 +242,7 @@ class CourseImportService {
   }
 
   /// 根据学期名称推算天大开学第一周周一日期
-  /// "2025-2026学年第2学期" → 2026-03-09
-  /// "2025-2026学年第1学期" → 2025-09-29
+  /// "2025-2026学年第2学期" 或 "2025-2026学年第二学期" → 2026-03-09
   static DateTime estimateSemesterStart(String semesterName) {
     // 天大已知校历（第一周周一）
     const knownStarts = <String, Map<int, String>>{
@@ -253,12 +252,14 @@ class CourseImportService {
       '2027-2028': {1: '2027-09-06', 2: '2028-03-06'},
     };
 
-    final match =
-        RegExp(r'(\d{4})-(\d{4})学年第(\d)学期').firstMatch(semesterName);
+    // 兼容 "第2学期" 和 "第二学期" 两种写法
+    final match = RegExp(
+      r'(\d{4})-(\d{4})学年第([\d一二三四五六七八九]+)学期',
+    ).firstMatch(semesterName);
     if (match != null) {
       final year1 = match.group(1)!;
       final year2 = match.group(2)!;
-      final term = int.parse(match.group(3)!);
+      final term = _parseTerm(match.group(3)!);
       final key = '$year1-$year2';
       if (knownStarts.containsKey(key)) {
         final dateStr = knownStarts[key]![term];
@@ -277,6 +278,14 @@ class CourseImportService {
     // 完全无法解析时回退到当前周一
     final now = DateTime.now();
     return now.subtract(Duration(days: now.weekday - 1));
+  }
+
+  /// 将学期序号转为 int：支持 "2"、"二" 等
+  static const _cnNum = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  static int _parseTerm(String raw) {
+    final intVal = int.tryParse(raw);
+    if (intVal != null) return intVal;
+    return _cnNum.indexOf(raw); // 中文数字 → int，未找到返回 -1
   }
 }
 

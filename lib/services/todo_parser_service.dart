@@ -1,345 +1,307 @@
-import '../models/parsed_todo.dart';
+import 'package:intl/intl.dart';
 import '../models/todo_item.dart';
+import '../models/parsed_todo.dart';
 
-/// 语音文本智能解析器
-/// 将自然语言文本解析为结构化待办数据
-/// 纯规则引擎，无需外部 API，完全离线可用
+/// 纯规则引擎：语音文本 → 待办事项列表
 class TodoParserService {
-  /// 解析原始语音文本，返回待办列表
-  /// 返回空列表表示未检测到有效任务
-  static List<ParsedTodo> parse(String rawText) {
-    if (rawText.trim().isEmpty) return [];
+  static const _weekDayMap = {
+    '一': 1, '二': 2, '三': 3, '四': 4, '五': 5, '六': 6, '天': 7, '日': 7,
+  };
 
-    // 1. 分割段落
-    final segments = _splitSegments(rawText);
-    if (segments.isEmpty) return [];
+  // ---- 中文数字处理 ----
 
-    // 2. 逐段解析
-    final results = <ParsedTodo>[];
-    for (int i = 0; i < segments.length; i++) {
-      final segment = segments[i].trim();
-      if (segment.isEmpty) continue;
+  /// 将常见中文数字字符串转换为 int，失败返回 null
+  /// 支持：零～十、十五、二十、二十五、三十等（最大到九十九）
+  static int? _parseChineseNumber(String cn) {
+    const single = {
+      '零': 0, '一': 1, '二': 2, '两': 2,
+      '三': 3, '四': 4, '五': 5,
+      '六': 6, '七': 7, '八': 8, '九': 9,
+    };
+    if (cn.isEmpty) return null;
+    if (single.containsKey(cn)) return single[cn]!;
 
-      String remaining = segment;
-
-      // 2a. 提取优先级
-      final priorityResult = _extractPriority(remaining);
-      final priority = priorityResult.priority;
-      remaining = priorityResult.remaining;
-
-      // 2b. 提取日期
-      final dateResult = _extractDate(remaining);
-      final dueDate = dateResult.date;
-      remaining = dateResult.remaining;
-
-      // 2c. 提取时间
-      final timeResult = _extractTime(remaining);
-      final dueTime = timeResult.time;
-      remaining = timeResult.remaining;
-
-      // 2d. 清理标题
-      final title = _cleanTitle(remaining);
-
-      if (title.isEmpty) continue;
-
-      results.add(ParsedTodo(
-        index: i,
-        title: title,
-        priority: priority,
-        dueDate: dueDate,
-        dueTime: dueTime,
-        rawText: segment,
-      ));
+    if (cn == '十') return 10;
+    if (cn.startsWith('十')) {
+      // 十一～十九
+      final ones = single[cn.substring(1)];
+      return ones != null ? 10 + ones : null;
     }
-
-    return results;
-  }
-
-  // --- 1. 分割 ---
-
-  static final RegExp _splitPattern = RegExp(
-    r'[；;。！!\n]|然后|还有|另外|接着|下一步|接下来|以及|再者|还有还有|其次',
-  );
-
-  static List<String> _splitSegments(String text) {
-    // 先用标点分割
-    final parts = text.split(_splitPattern);
-    return parts.where((p) => p.trim().isNotEmpty).toList();
-  }
-
-  // --- 2a. 优先级提取 ---
-
-  static final List<_PriorityRule> _priorityRules = [
-    _PriorityRule(RegExp(r'(很紧急|特别紧急|非常紧急|特急|紧急|马上|立刻|立即|尽快|火速|赶紧)'), Priority.high),
-    _PriorityRule(RegExp(r'(中等|中级|重要|优先|着重|必做)'), Priority.medium),
-    _PriorityRule(RegExp(r'(不着急|不急|普通|一般|低优|随意|无所谓|不急迫|不急办)'), Priority.low),
-  ];
-
-  static _PriorityResult _extractPriority(String text) {
-    for (final rule in _priorityRules) {
-      final match = rule.pattern.firstMatch(text);
-      if (match != null) {
-        // 移除匹配的关键词及其后可能的标点
-        final cleaned = text.replaceRange(match.start, match.end, '').trim();
-        return _PriorityResult(rule.priority, cleaned);
-      }
+    if (cn.endsWith('十')) {
+      // 二十、三十...
+      final tens = single[cn.substring(0, 1)];
+      return tens != null ? tens * 10 : null;
     }
-    return _PriorityResult(Priority.medium, text);
-  }
-
-  // --- 2b. 日期提取 ---
-
-  /// 日期提取结果
-  static _DateResult _extractDate(String text) {
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
-
-    // 尝试各种日期模式（按优先级）
-
-    // 模式 A：相对日
-    final relative = _matchRelativeDay(text, today);
-    if (relative != null) return relative;
-
-    // 模式 B：周X
-    final weekday = _matchWeekday(text, today);
-    if (weekday != null) return weekday;
-
-    // 模式 C：M月D日
-    final monthDay = _matchMonthDay(text, today);
-    if (monthDay != null) return monthDay;
-
-    // 模式 D：D号
-    final dayOnly = _matchDayOnly(text, today);
-    if (dayOnly != null) return dayOnly;
-
-    // 无日期匹配 → 默认今天
-    return _DateResult(_formatDate(today), text);
-  }
-
-  /// 今天/明天/后天/大后天
-  static _DateResult? _matchRelativeDay(String text, DateTime today) {
-    final patterns = [
-      (RegExp(r'今天'), 0),
-      (RegExp(r'明天|明日'), 1),
-      (RegExp(r'后天|后日'), 2),
-      (RegExp(r'大后天'), 3),
-    ];
-
-    for (final (pattern, offset) in patterns) {
-      final match = pattern.firstMatch(text);
-      if (match != null) {
-        final date = today.add(Duration(days: offset));
-        final cleaned = text.replaceRange(match.start, match.end, '').trim();
-        return _DateResult(_formatDate(date), cleaned);
-      }
+    // 二十一、三十五 … 两位数
+    if (cn.length == 2) {
+      final tens = single[cn[0]];
+      final ones = single[cn[1]];
+      if (tens != null && ones != null) return tens * 10 + ones;
     }
     return null;
   }
 
-  /// 下周X / 这周X / 周X
-  static _DateResult? _matchWeekday(String text, DateTime today) {
-    final pattern = RegExp(r'(下周|下个星期|下星期|这周|这个星期|这星期|本周)?周([一二三四五六日天])');
-    final match = pattern.firstMatch(text);
-    if (match == null) return null;
+  /// 从文本中提取第一个数字（支持阿拉伯和中文），返回数字和剩余文本
+  /// 只处理简单的 1-2 位数字（日期/时间中够用）
+  static (int? number, String remaining) _extractNumber(String text) {
+    final arabic = RegExp(r'^(\d{1,2})').firstMatch(text);
+    if (arabic != null) {
+      return (int.parse(arabic.group(1)!), text.substring(arabic.end));
+    }
+    final chinese = RegExp(r'^([零一二三四五六七八九十]{1,2})').firstMatch(text);
+    if (chinese != null) {
+      final val = _parseChineseNumber(chinese.group(1)!);
+      return (val, text.substring(chinese.end));
+    }
+    return (null, text);
+  }
 
-    final prefix = match.group(1) ?? '';
-    final dayChar = match.group(2)!;
+  // ---- 主解析 ----
 
-    const dayMap = <String, int>{
-      '一': 1, '二': 2, '三': 3, '四': 4,
-      '五': 5, '六': 6, '日': 7, '天': 7,
-    };
-    final targetDay = dayMap[dayChar]!;
-    final todayDay = today.weekday;
+  static List<ParsedTodo> parse(String rawText) {
+    if (rawText.trim().isEmpty) return [];
+    final segments = _splitSegments(rawText);
+    final today = DateTime.now();
+    final todayStr = DateFormat('yyyy-MM-dd').format(today);
 
-    DateTime date;
-    if (prefix.contains('下')) {
-      // 下周X
-      final daysUntil = (targetDay - todayDay + 7) % 7;
-      date = today.add(Duration(days: daysUntil == 0 ? 7 : daysUntil + 7));
-    } else if (prefix.contains('这') || prefix.contains('本')) {
-      // 这周X
-      final daysUntil = (targetDay - todayDay + 7) % 7;
-      date = today.add(Duration(days: daysUntil));
-    } else {
-      // 裸"周X" — 默认本周（已过则下周）
-      final daysUntil = (targetDay - todayDay + 7) % 7;
-      final candidate = today.add(Duration(days: daysUntil));
-      if (candidate.isBefore(today) || candidate == today) {
-        date = candidate.add(const Duration(days: 7));
+    String? previousDate; // 上一个有效日期，初始为空
+
+    final result = <ParsedTodo>[];
+    for (var i = 0; i < segments.length; i++) {
+      var text = segments[i].trim();
+      if (text.isEmpty) continue;
+      final raw = text;
+
+      final priority = _extractPriority(text);
+      text = _removePriority(text);
+
+      final dateResult = _extractDate(text, today);
+      text = dateResult.remaining;
+      String dueDate;
+
+      if (dateResult.date != null) {
+        dueDate = dateResult.date!;
+        previousDate = dueDate; // 更新为当前新日期
       } else {
-        date = candidate;
+        // 没有日期 → 继承上一个有效日期，若无则使用今天
+        if (previousDate != null) {
+          dueDate = previousDate;
+        } else {
+          dueDate = todayStr;
+          previousDate = todayStr; // 把今天也视为一个有效日期，方便后续继承
+        }
       }
-    }
 
-    final cleaned = text.replaceRange(match.start, match.end, '').trim();
-    return _DateResult(_formatDate(date), cleaned);
+      final timeResult = _extractTime(text);
+      text = timeResult.remaining;
+      final dueTime = timeResult.time;
+
+      text = _cleanTitle(text);
+      if (text.isEmpty) text = raw;
+
+      result.add(ParsedTodo(
+        index: i,
+        title: text,
+        priority: priority,
+        dueDate: dueDate,
+        dueTime: dueTime,
+        rawText: raw,
+      ));
+    }
+    return result;
   }
 
-  /// M月D日
-  static _DateResult? _matchMonthDay(String text, DateTime today) {
-    final pattern = RegExp(r'(\d{1,2})月(\d{1,2})[日号]');
-    final match = pattern.firstMatch(text);
-    if (match == null) return null;
+  // ---- 分割 ----
 
-    final month = int.parse(match.group(1)!);
-    final day = int.parse(match.group(2)!);
-    if (month < 1 || month > 12 || day < 1 || day > 31) return null;
+  /// 按中英文标点、连接词分割为多个待办候选
+  static List<String> _splitSegments(String text) {
+    // 将常见的分隔符号统一替换为标记
+    final parts = text
+        .replaceAll(RegExp(r'[；;。！!，,？?\n、]+'), '|SPLIT|')
+        .split('|SPLIT|');
+    final result = <String>[];
+    for (final part in parts) {
+      // 进一步按连接词分割
+      final sub = part
+          .replaceAll(RegExp(r'(然后|还有|另外|接着|下一步|其次|再者)'), '|SPLIT|')
+          .split('|SPLIT|');
+      result.addAll(sub);
+    }
+    return result.where((s) => s.trim().isNotEmpty).toList();
+  }
 
-    DateTime date;
+  // ---- 优先级 ----
+
+  static Priority _extractPriority(String text) {
+    if (RegExp(r'紧急|马上|立刻|立即|尽快|火速|赶快').hasMatch(text)) return Priority.high;
+    if (RegExp(r'普通|一般|不急|低优|不着急').hasMatch(text)) return Priority.low;
+    if (RegExp(r'重要|优先').hasMatch(text)) return Priority.medium;
+    return Priority.medium;
+  }
+
+  static String _removePriority(String text) =>
+      text.replaceAll(RegExp(r'紧急|马上|立刻|立即|尽快|火速|赶快|普通|一般|不急|低优|不着急|重要|优先'), '');
+
+  // ---- 日期提取（已修正下周 bug，并增加合法性校验） ----
+
+  static _ParseResult _extractDate(String text, DateTime today) {
+    // 相对日期：今天/明天/后天/大后天
+    final relativeMatch = RegExp(r'(今天|明天|后天|大后天)').firstMatch(text);
+    if (relativeMatch != null) {
+      final offset = {
+        '今天': 0, '明天': 1, '后天': 2, '大后天': 3
+      }[relativeMatch.group(1)]!;
+      return _ParseResult(
+        date: DateFormat('yyyy-MM-dd').format(today.add(Duration(days: offset))),
+        remaining: text.replaceFirst(relativeMatch.group(1)!, ''),
+      );
+    }
+    // 下周X
+    final nextWeek = RegExp(r'下周([一二三四五六日天])').firstMatch(text);
+    if (nextWeek != null) {
+      final targetDay = _weekDayMap[nextWeek.group(1)]!;
+      final diff = (targetDay - today.weekday + 7) % 7;
+      final daysToAdd = diff == 0 ? 7 : diff; // 修正：去掉多余的+7
+      return _ParseResult(
+        date: DateFormat('yyyy-MM-dd').format(today.add(Duration(days: daysToAdd))),
+        remaining: text.replaceFirst(nextWeek.group(0)!, ''),
+      );
+    }
+    // 周X（本周）
+    final thisWeek = RegExp(r'周([一二三四五六日天])').firstMatch(text);
+    if (thisWeek != null) {
+      final targetDay = _weekDayMap[thisWeek.group(1)]!;
+      final diff = (targetDay - today.weekday + 7) % 7;
+      return _ParseResult(
+        date: DateFormat('yyyy-MM-dd').format(today.add(Duration(days: diff))),
+        remaining: text.replaceFirst(thisWeek.group(0)!, ''),
+      );
+    }
+    // M月D日/D号（支持中文数字）
+    final mdMatch = RegExp(
+        r'(\d{1,2}|[零一二三四五六七八九十]{1,2})月(\d{1,2}|[零一二三四五六七八九十]{1,2})[日号]')
+        .firstMatch(text);
+    if (mdMatch != null) {
+      final mStr = mdMatch.group(1)!;
+      final dStr = mdMatch.group(2)!;
+      final m = int.tryParse(mStr) ?? _parseChineseNumber(mStr);
+      final d = int.tryParse(dStr) ?? _parseChineseNumber(dStr);
+      if (m != null && d != null && _isValidDate(today.year, m, d)) {
+        return _ParseResult(
+          date: DateFormat('yyyy-MM-dd').format(DateTime(today.year, m, d)),
+          remaining: text.replaceFirst(mdMatch.group(0)!, ''),
+        );
+      }
+    }
+    // D号/日（当月，允许顺延到下月，支持中文数字）
+    final dMatch = RegExp(r'(\d{1,2}|[零一二三四五六七八九十]{1,2})[号日]').firstMatch(text);
+    if (dMatch != null) {
+      final dStr = dMatch.group(1)!;
+      final d = int.tryParse(dStr) ?? _parseChineseNumber(dStr);
+      if (d != null) {
+        DateTime date;
+        if (_isValidDate(today.year, today.month, d)) {
+          date = DateTime(today.year, today.month, d);
+        } else if (_isValidDate(today.year, today.month + 1, d)) {
+          date = DateTime(today.year, today.month + 1, d);
+        } else {
+          return _ParseResult(date: null, remaining: text);
+        }
+        return _ParseResult(
+          date: DateFormat('yyyy-MM-dd').format(date),
+          remaining: text.replaceFirst(dMatch.group(0)!, ''),
+        );
+      }
+    }
+    return _ParseResult(date: null, remaining: text);
+  }
+
+  static bool _isValidDate(int year, int month, int day) {
+    if (month < 1 || month > 12 || day < 1) return false;
     try {
-      date = DateTime(today.year, month, day);
+      final date = DateTime(year, month, day);
+      return date.year == year && date.month == month && date.day == day;
     } catch (_) {
-      return null;
+      return false;
     }
-
-    final cleaned = text.replaceRange(match.start, match.end, '').trim();
-    return _DateResult(_formatDate(date), cleaned);
   }
 
-  /// D号（推断当月或下月）
-  static _DateResult? _matchDayOnly(String text, DateTime today) {
-    final pattern = RegExp(r'(下个月|下月)?(\d{1,2})[日号]');
-    final match = pattern.firstMatch(text);
-    if (match == null) return null;
+  // ---- 时间提取（支持中文数字） ----
 
-    final nextMonth = match.group(1) != null;
-    final day = int.parse(match.group(2)!);
-    if (day < 1 || day > 31) return null;
+  static _ParseResult _extractTime(String text) {
+    // 匹配模式：可选的时段（上午/下午/晚上），然后数字（阿拉伯或中文），再点/时，可选的分钟
+    final tm = RegExp(
+      r'(上午|下午|晚上)?'
+      r'(\d{1,2}|[零一二三四五六七八九十]{1,2})'
+      r'[点时]'
+      r'(半|(\d{1,2}|[零一二三四五六七八九十]{1,2})分?)?'
+    ).firstMatch(text);
 
-    DateTime date;
-    if (nextMonth) {
-      // 下月X号
-      final next = DateTime(today.year, today.month + 1, 1);
-      try {
-        date = DateTime(next.year, next.month, day);
-      } catch (_) {
-        return null;
+    if (tm != null) {
+      final period = tm.group(1) ?? '';
+      final hourStr = tm.group(2)!;
+      final minutePart = tm.group(3); // "半" 或 数字
+      final minuteNumStr = tm.group(4); // 数字
+
+      var hour = int.tryParse(hourStr) ?? _parseChineseNumber(hourStr);
+      if (hour == null) {
+        // 无法解析小时，跳过
+        return _ParseResult(time: null, remaining: text);
       }
-    } else {
-      // 当月X号（已过则下月）
-      try {
-        final candidate = DateTime(today.year, today.month, day);
-        date = candidate.isBefore(today) && !_isSameDay(candidate, today)
-            ? DateTime(today.year, today.month + 1, day)
-            : candidate;
-      } catch (_) {
-        return null;
-      }
-    }
 
-    final cleaned = text.replaceRange(match.start, match.end, '').trim();
-    return _DateResult(_formatDate(date), cleaned);
-  }
-
-  // --- 2c. 时间提取 ---
-
-  static _TimeResult _extractTime(String text) {
-    // 模式 1："下午3点半"、"上午9点20分"、"晚上8点"
-    final cnPattern1 = RegExp(
-      r'(上午|下午|中午|晚上|早上|傍晚|凌晨|午)?(\d{1,2})点(半|(\d{1,2})分?)?',
-    );
-
-    final match1 = cnPattern1.firstMatch(text);
-    if (match1 != null) {
-      final modifier = match1.group(1) ?? '';
-      int hour = int.parse(match1.group(2)!);
-      final half = match1.group(3) == '半';
-      final minuteStr = match1.group(4);
       int minute = 0;
-
-      if (half) {
+      if (minutePart == '半') {
         minute = 30;
-      } else if (minuteStr != null) {
-        minute = int.parse(minuteStr);
+      } else if (minuteNumStr != null) {
+        minute = int.tryParse(minuteNumStr) ?? _parseChineseNumber(minuteNumStr) ?? 0;
       }
 
-      // 根据修饰词调整小时
-      if (modifier.contains('下') || modifier.contains('晚') || modifier.contains('傍晚')) {
-        if (hour < 12) hour += 12; // 下午/晚上：1→13, 8→20
-        if (hour == 12 && modifier.contains('晚')) hour = 0; // 晚上12点 = 00:00
-      } else if (modifier.contains('上') || modifier.contains('早') || modifier.contains('凌晨')) {
-        if (hour == 12) hour = 0; // 上午12点 → 0点
-      } else if (modifier.contains('中') || modifier.contains('午')) {
-        if (hour < 12) hour += 12; // 中午1点 = 13点
-      }
-      // 无修饰词且 hour < 8 → 可能是下午
-      else if (modifier.isEmpty && hour < 8) {
-        hour += 12;
+      // 时段调整
+      if (period == '下午' && hour < 12) hour += 12;
+      if (period == '晚上' && hour < 12) hour += 12;
+      if (period == '上午' && hour == 12) hour = 0;
+
+      // 基本合法性
+      if (hour > 23 || minute > 59) {
+        return _ParseResult(time: null, remaining: text);
       }
 
-      if (hour > 23) hour = 23;
-      if (minute > 59) minute = 59;
-
-      final cleaned = text.replaceRange(match1.start, match1.end, '').trim();
-      return _TimeResult(
-        '${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, '0')}',
-        cleaned,
+      return _ParseResult(
+        time: '${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, '0')}',
+        remaining: text.replaceFirst(tm.group(0)!, ''),
       );
     }
 
-    // 模式 2："15:30"、"9:00"
-    final colonPattern = RegExp(r'(\d{1,2}):(\d{2})');
-    final match2 = colonPattern.firstMatch(text);
-    if (match2 != null) {
-      final hour = int.parse(match2.group(1)!).clamp(0, 23);
-      final minute = int.parse(match2.group(2)!).clamp(0, 59);
-      final cleaned = text.replaceRange(match2.start, match2.end, '').trim();
-      return _TimeResult(
-        '${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, '0')}',
-        cleaned,
-      );
+    // HH:MM 格式（阿拉伯数字）
+    final hhmm = RegExp(r'(\d{1,2}):(\d{2})').firstMatch(text);
+    if (hhmm != null) {
+      final h = int.parse(hhmm.group(1)!);
+      final m = int.parse(hhmm.group(2)!);
+      if (h >= 0 && h <= 23 && m >= 0 && m <= 59) {
+        return _ParseResult(
+          time: '${h.toString().padLeft(2, '0')}:${m.toString().padLeft(2, '0')}',
+          remaining: text.replaceFirst(hhmm.group(0)!, ''),
+        );
+      }
     }
 
-    return _TimeResult(null, text);
+    return _ParseResult(time: null, remaining: text);
   }
 
-  // --- 2d. 标题清理 ---
+  // ---- 标题清理 ----
 
   static String _cleanTitle(String text) {
-    return text
-        // 去除首尾标点和空白
-        .replaceAll(RegExp(r'^[,，。.、\s]+|[,，。.、\s]+$'), '')
-        // 去除噪声词
-        .replaceAll(RegExp(r'^(一下|一个|帮我|请|麻烦|帮忙|给我|帮我在?)[,，]?\s*'), '')
-        // 去除动词前缀
-        .replaceAll(RegExp(r'^(做|完成|写|复习|预习|看|背|提交|交|整理|去|要|记得|别忘了?)[，,]?\s*'), '')
+    text = text
+        .replaceAll(RegExp(r'[；;。！!，,？?]+'), ' ')
+        .replaceAll(RegExp(r'一下|一个|帮我|请|麻烦|帮忙|替我'), '')
         .trim();
-  }
-
-  // --- 辅助 ---
-
-  static String _formatDate(DateTime date) {
-    return '${date.year}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
-  }
-
-  static bool _isSameDay(DateTime a, DateTime b) {
-    return a.year == b.year && a.month == b.month && a.day == b.day;
+    return text.replaceAll(RegExp(r'^[，,。!！？?\s]+|[，,。!！？?\s]+$'), '');
   }
 }
 
-// --- 内部辅助类型 ---
-
-class _PriorityRule {
-  final RegExp pattern;
-  final Priority priority;
-  _PriorityRule(this.pattern, this.priority);
-}
-
-class _PriorityResult {
-  final Priority priority;
+class _ParseResult {
+  final String? date;
+  final String? time;
   final String remaining;
-  _PriorityResult(this.priority, this.remaining);
-}
-
-class _DateResult {
-  final String date; // yyyy-MM-dd
-  final String remaining;
-  _DateResult(this.date, this.remaining);
-}
-
-class _TimeResult {
-  final String? time; // HH:mm 或 null
-  final String remaining;
-  _TimeResult(this.time, this.remaining);
+  const _ParseResult({this.date, this.time, required this.remaining});
 }

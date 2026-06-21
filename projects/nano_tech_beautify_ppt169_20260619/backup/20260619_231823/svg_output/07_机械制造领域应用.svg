@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6"/>
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">机械制造领域应用</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B"/>
+
+  <!-- Card 1: 探针针尖纳米通道刻划 -->
+  <rect x="60" y="90" width="370" height="580" rx="6" fill="#131926"/>
+  <rect x="60" y="90" width="370" height="40" rx="6" fill="#1E3A5F"/>
+  <rect x="60" y="110" width="370" height="20" fill="#1E3A5F"/>
+  <text x="245" y="115" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#3B82F6" text-anchor="middle">探针针尖纳米通道刻划建模仿真</text>
+  <image href="../images/image38.png" x="80" y="145" width="330" height="180" preserveAspectRatio="xMidYMid slice"/>
+  <text x="80" y="350" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">分子动力学仿真实现探针与工件</text>
+  <text x="80" y="375" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">原子交互过程可视化</text>
+  <text x="80" y="410" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">多尺度耦合仿真兼顾微观原子</text>
+  <text x="80" y="435" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">变形与宏观应力场计算</text>
+  <rect x="80" y="460" width="330" height="1" fill="#1E293B"/>
+  <text x="80" y="490" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">现存问题：仿真模型基于理想</text>
+  <text x="80" y="512" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">工况假设，与试验偏差较大</text>
+
+  <!-- Card 2: 微纳加工试验验证 -->
+  <rect x="455" y="90" width="370" height="580" rx="6" fill="#131926"/>
+  <rect x="455" y="90" width="370" height="40" rx="6" fill="#1E3A5F"/>
+  <rect x="455" y="110" width="370" height="20" fill="#1E3A5F"/>
+  <text x="640" y="115" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#3B82F6" text-anchor="middle">微纳加工试验验证</text>
+  <image href="../images/image46.png" x="475" y="145" width="330" height="180" preserveAspectRatio="xMidYMid slice"/>
+  <text x="475" y="350" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">国外试验体系完备，率先实现</text>
+  <text x="475" y="375" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">单原子层极限刻划</text>
+  <text x="475" y="410" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">国内试验聚焦工程痛点，</text>
+  <text x="475" y="435" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">优化工艺参数组合</text>
+  <rect x="475" y="460" width="330" height="1" fill="#1E293B"/>
+  <text x="475" y="490" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">行业痛点：试验数据标准</text>
+  <text x="475" y="512" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">化程度低，统一工艺标准缺失</text>
+
+  <!-- Card 3: 微纳装配检测系统 -->
+  <rect x="850" y="90" width="370" height="580" rx="6" fill="#131926"/>
+  <rect x="850" y="90" width="370" height="40" rx="6" fill="#1E3A5F"/>
+  <rect x="850" y="110" width="370" height="20" fill="#1E3A5F"/>
+  <text x="1035" y="115" font-family="Microsoft YaHei" font-size="15" font-weight="bold" fill="#3B82F6" text-anchor="middle">微纳装配检测系统集成</text>
+  <image href="../images/image40.png" x="870" y="145" width="330" height="180" preserveAspectRatio="xMidYMid slice"/>
+  <text x="870" y="350" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">创新设计多自由度柔性执行</text>
+  <text x="870" y="375" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">机构，运动分辨率达纳米级</text>
+  <text x="870" y="410" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">攻克高精度微驱动、微力传感、</text>
+  <text x="870" y="435" font-family="Microsoft YaHei" font-size="13" fill="#CCCCCC">姿态调控等核心技术</text>
+  <rect x="870" y="460" width="330" height="1" fill="#1E293B"/>
+  <text x="870" y="490" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">现存短板：高端传感芯片、</text>
+  <text x="870" y="512" font-family="Microsoft YaHei" font-size="12" fill="#F59E0B">核心探针部件部分依赖进口</text>
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">7</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

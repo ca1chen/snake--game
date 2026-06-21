@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17"/>
+  <!-- Decorative lines -->
+  <rect x="340" y="290" width="600" height="2" fill="#3B82F6" opacity="0.5"/>
+  <text x="640" y="360" font-family="Arial" font-size="56" font-weight="bold" fill="#FFFFFF" text-anchor="middle">THANK YOU</text>
+  <rect x="340" y="430" width="600" height="2" fill="#3B82F6" opacity="0.5"/>
+  <text x="640" y="510" font-family="Microsoft YaHei" font-size="22" fill="#60A5FA" text-anchor="middle">感谢聆听 · 欢迎指正</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4"/>
+</svg>

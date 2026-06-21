@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0A0E17" />
+  <rect x="0" y="0" width="1280" height="3" fill="#3B82F6" />
+  <text x="60" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#FFFFFF">未来三大颠覆性领域</text>
+  <rect x="60" y="70" width="1160" height="1" fill="#1E293B" />
+
+  
+  <path fill="#131926" d="M66,90 H424 A6,6 0 0 1 430,96 V664 A6,6 0 0 1 424,670 H66 A6,6 0 0 1 60,664 V96 A6,6 0 0 1 66,90 Z" />
+  <path fill="#1E3A5F" d="M66,90 H424 A6,6 0 0 1 430,96 V124 A6,6 0 0 1 424,130 H66 A6,6 0 0 1 60,124 V96 A6,6 0 0 1 66,90 Z" />
+  <rect x="60" y="110" width="370" height="20" fill="#1E3A5F" />
+  <text x="245" y="115" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#3B82F6" text-anchor="middle">医疗领域的"精准革命"</text>
+  <path fill="#0D1A2E" d="M84,155 H406 A4,4 0 0 1 410,159 V381 A4,4 0 0 1 406,385 H84 A4,4 0 0 1 80,381 V159 A4,4 0 0 1 84,155 Z" />
+  <image href="../images/image61.png" x="90" y="165" width="310" height="100" preserveAspectRatio="xMidYMid slice" />
+  <text x="95" y="290" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">智能靶向给药</text>
+  <text x="95" y="315" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">识别特定癌细胞标志物，实现</text>
+  <text x="95" y="335" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">"零副作用"治愈癌症</text>
+  <image href="../images/image151.png" x="90" y="285" width="15" height="15" preserveAspectRatio="xMidYMid slice" />
+  <path fill="#0D1A2E" d="M84,400 H406 A4,4 0 0 1 410,404 V486 A4,4 0 0 1 406,490 H84 A4,4 0 0 1 80,486 V404 A4,4 0 0 1 84,400 Z" />
+  <text x="100" y="430" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">体内实时监测</text>
+  <text x="100" y="455" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米传感器网络在疾病发生前</text>
+  <text x="100" y="475" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">数月甚至数秒内发出预警</text>
+  <path fill="#0D1A2E" d="M84,510 H406 A4,4 0 0 1 410,514 V596 A4,4 0 0 1 406,600 H84 A4,4 0 0 1 80,596 V514 A4,4 0 0 1 84,510 Z" />
+  <text x="100" y="540" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">人工器官与组织工程</text>
+  <text x="100" y="565" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米级3D打印完美模拟人体</text>
+  <text x="100" y="585" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">细胞外基质</text>
+
+  
+  <path fill="#131926" d="M461,90 H819 A6,6 0 0 1 825,96 V664 A6,6 0 0 1 819,670 H461 A6,6 0 0 1 455,664 V96 A6,6 0 0 1 461,90 Z" />
+  <path fill="#1E3A5F" d="M461,90 H819 A6,6 0 0 1 825,96 V124 A6,6 0 0 1 819,130 H461 A6,6 0 0 1 455,124 V96 A6,6 0 0 1 461,90 Z" />
+  <rect x="455" y="110" width="370" height="20" fill="#1E3A5F" />
+  <text x="640" y="115" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#3B82F6" text-anchor="middle">能源与环境的"绿色解药"</text>
+  <path fill="#0D1A2E" d="M479,155 H801 A4,4 0 0 1 805,159 V381 A4,4 0 0 1 801,385 H479 A4,4 0 0 1 475,381 V159 A4,4 0 0 1 479,155 Z" />
+  <image href="../images/image114.png" x="485" y="165" width="310" height="100" preserveAspectRatio="xMidYMid slice" />
+  <text x="490" y="290" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">下一代高效能源</text>
+  <text x="490" y="315" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">太阳能电池光电转换效率</text>
+  <text x="490" y="335" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">突破现有极限</text>
+  <path fill="#0D1A2E" d="M479,400 H801 A4,4 0 0 1 805,404 V486 A4,4 0 0 1 801,490 H479 A4,4 0 0 1 475,486 V404 A4,4 0 0 1 479,400 Z" />
+  <text x="495" y="430" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">分子级环境治理</text>
+  <text x="495" y="455" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米催化剂分解塑料微粒、吸附</text>
+  <text x="495" y="475" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">重金属、捕集二氧化碳</text>
+  <image href="../images/image157.png" x="485" y="510" width="310" height="130" preserveAspectRatio="xMidYMid slice" />
+
+  
+  <path fill="#131926" d="M856,90 H1214 A6,6 0 0 1 1220,96 V664 A6,6 0 0 1 1214,670 H856 A6,6 0 0 1 850,664 V96 A6,6 0 0 1 856,90 Z" />
+  <path fill="#1E3A5F" d="M856,90 H1214 A6,6 0 0 1 1220,96 V124 A6,6 0 0 1 1214,130 H856 A6,6 0 0 1 850,124 V96 A6,6 0 0 1 856,90 Z" />
+  <rect x="850" y="110" width="370" height="20" fill="#1E3A5F" />
+  <text x="1035" y="115" font-family="Microsoft YaHei" font-size="16" font-weight="bold" fill="#3B82F6" text-anchor="middle">信息技术与人机融合</text>
+  <path fill="#0D1A2E" d="M874,155 H1196 A4,4 0 0 1 1200,159 V381 A4,4 0 0 1 1196,385 H874 A4,4 0 0 1 870,381 V159 A4,4 0 0 1 874,155 Z" />
+  <image href="../images/image155.png" x="880" y="165" width="310" height="100" preserveAspectRatio="xMidYMid slice" />
+  <text x="885" y="290" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">超越摩尔定律</text>
+  <text x="885" y="315" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">基于二维纳米材料的光子芯片</text>
+  <text x="885" y="335" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">或量子芯片</text>
+  <path fill="#0D1A2E" d="M874,400 H1196 A4,4 0 0 1 1200,404 V486 A4,4 0 0 1 1196,490 H874 A4,4 0 0 1 870,486 V404 A4,4 0 0 1 874,400 Z" />
+  <text x="890" y="430" font-family="Microsoft YaHei" font-size="13" font-weight="bold" fill="#FFFFFF">微观脑机接口</text>
+  <text x="890" y="455" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">纳米电极穿过血脑屏障，实现</text>
+  <text x="890" y="475" font-family="Microsoft YaHei" font-size="12" fill="#CCCCCC">高分辨率神经信号读写</text>
+  <image href="../images/image161.png" x="880" y="510" width="310" height="130" preserveAspectRatio="xMidYMid slice" />
+
+  <text x="1220" y="700" font-family="Microsoft YaHei" font-size="11" fill="#8899AA" text-anchor="end">17</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#3B82F6" opacity="0.4" />
+</svg>

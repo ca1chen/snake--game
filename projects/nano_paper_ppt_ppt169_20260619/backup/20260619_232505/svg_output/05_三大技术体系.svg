@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#003D7C"/>
+  <text x="80" y="55" font-family="Microsoft YaHei" font-size="26" font-weight="bold" fill="#003D7C">三大核心技术体系与研究目标</text>
+  <rect x="80" y="70" width="1120" height="1" fill="#E0E4E8"/>
+
+  <!-- 3 cards -->
+  <rect x="80" y="100" width="350" height="280" rx="6" fill="#F4F6F9"/>
+  <rect x="80" y="100" width="350" height="5" fill="#003D7C"/>
+  <text x="255" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#003D7C" text-anchor="middle">精密机械制造</text>
+  <text x="110" y="185" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">飞秒激光微纳加工、微注塑成型、</text>
+  <text x="110" y="210" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">电化学刻蚀、高精度光刻等工艺</text>
+  <text x="110" y="240" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">实现微米级结构轮廓精度与纳米</text>
+  <text x="110" y="265" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">级表面粗糙度控制，多尺度一体化</text>
+  <text x="110" y="290" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">集成制造</text>
+  <rect x="110" y="320" width="300" height="1" fill="#E0E4E8"/>
+  <text x="110" y="350" font-family="Microsoft YaHei" font-size="12" fill="#666E75">→ 决定结构精度与作业可靠性</text>
+
+  <rect x="465" y="100" width="350" height="280" rx="6" fill="#F4F6F9"/>
+  <rect x="465" y="100" width="350" height="5" fill="#0066B3"/>
+  <text x="640" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#0066B3" text-anchor="middle">柔性机构与精密驱动</text>
+  <text x="495" y="185" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">柔性机构依靠材料弹性变形实现</text>
+  <text x="495" y="210" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">运动与力控，无传动间隙和摩擦</text>
+  <text x="495" y="240" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">磨损；压电驱动为主流，磁/光</text>
+  <text x="495" y="265" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">驱动适配生物微环境无损伤作业</text>
+  <rect x="495" y="320" width="300" height="1" fill="#E0E4E8"/>
+  <text x="495" y="350" font-family="Microsoft YaHei" font-size="12" fill="#666E75">→ 实现高精度、自适应作业</text>
+
+  <rect x="850" y="100" width="350" height="280" rx="6" fill="#F4F6F9"/>
+  <rect x="850" y="100" width="350" height="5" fill="#003D7C"/>
+  <text x="1025" y="145" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#003D7C" text-anchor="middle">功能纳米材料</text>
+  <text x="880" y="185" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">石墨烯、碳纳米管、智能水凝胶、</text>
+  <text x="880" y="210" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">介电弹性体等，实现驱动、感知、</text>
+  <text x="880" y="240" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">操作一体化，纳米复合材料提升</text>
+  <text x="880" y="265" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">抗疲劳性，涂层优化表面特性</text>
+  <rect x="880" y="320" width="300" height="1" fill="#E0E4E8"/>
+  <text x="880" y="350" font-family="Microsoft YaHei" font-size="12" fill="#666E75">→ 性能突破与功能拓展关键载体</text>
+
+  <!-- Bottom: research goal -->
+  <rect x="80" y="420" width="1120" height="120" rx="6" fill="#0B1D3A"/>
+  <text x="640" y="465" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">研究目标</text>
+  <text x="640" y="500" font-family="Microsoft YaHei" font-size="15" fill="#8899BB" text-anchor="middle">构建 "材料改性 — 结构优化 — 精密制造 — 精准驱动" 一体化研发体系</text>
+
+  <!-- Bottom: cross-cutting note -->
+  <rect x="80" y="560" width="1120" height="120" rx="6" fill="#FFF3E0"/>
+  <rect x="80" y="560" width="1120" height="4" fill="#D4380D"/>
+  <text x="110" y="600" font-family="Microsoft YaHei" font-size="14" font-weight="bold" fill="#D4380D">核心论断</text>
+  <text x="110" y="630" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">单一领域创新已无法突破现有技术瓶颈 → 亟需三大技术体系深度耦合、协同攻关</text>
+  <text x="110" y="655" font-family="Microsoft YaHei" font-size="13" fill="#1A1A1A">攻克尺度精度不足、驱动控制滞后、材料性能受限等关键难题</text>
+
+  <text x="1200" y="700" font-family="Microsoft YaHei" font-size="11" fill="#666E75" text-anchor="end">5</text>
+  <rect x="0" y="718" width="1280" height="2" fill="#E0E4E8"/>
+</svg>
