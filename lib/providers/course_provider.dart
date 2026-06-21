@@ -1,7 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/course.dart';
+import '../models/semester.dart';
 import '../repositories/course_repository.dart';
+import '../repositories/semester_repository.dart';
+import '../services/course_import_service.dart';
 import '../utils/date_utils.dart' as DateHelper;
+import '../utils/logger.dart';
 import 'semester_provider.dart';
 
 /// 课程列表状态
@@ -46,18 +50,31 @@ class CourseNotifier extends StateNotifier<CourseState> {
 
   /// 加载当前学期的课程
   Future<void> loadCourses() async {
-    final semester = _semesterNotifier.state.currentSemester;
+    Semester? semester = _semesterNotifier.state.currentSemester;
     final semesterId = semester?.id;
     if (semesterId == null) {
       state = state.copyWith(courses: [], coursesByDay: {}, isLoading: false);
       return;
     }
+
+    // 自动修正学期开学日期（DB 旧数据可能不准）
+    final correctStart = CourseImportService.estimateSemesterStart(semester!.name);
+    if (semester.startDate.difference(correctStart).inDays.abs() > 3) {
+      Logger.d('Course', 'Auto-correcting semester startDate: ${semester.startDate} → $correctStart');
+      final endDate = correctStart.add(Duration(days: semester.totalWeeks * 7 - 1));
+      final fixed = semester.copyWith(startDate: correctStart, endDate: endDate);
+      await SemesterRepository().update(fixed);
+      // 通知 semesterProvider 重新加载
+      await _semesterNotifier.loadSemesters();
+      semester = _semesterNotifier.state.currentSemester ?? fixed;
+    }
+
     // 自动计算当前周次（如果从未设置过）
     var week = state.currentWeek;
     if (week <= 1) {
-      week = DateHelper.DateUtils.getWeekNumber(semester!.startDate, DateTime.now());
+      week = DateHelper.DateUtils.getWeekNumber(semester.startDate, DateTime.now());
       if (week < 1) week = 1;
-      if (week > semester!.totalWeeks) week = semester!.totalWeeks;
+      if (week > semester.totalWeeks) week = semester.totalWeeks;
     }
 
     state = state.copyWith(currentWeek: week, isLoading: true, error: null);
