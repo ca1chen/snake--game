@@ -4,6 +4,7 @@ import '../../providers/semester_provider.dart';
 import '../../providers/course_provider.dart';
 import '../../providers/todo_provider.dart';
 import '../../utils/date_utils.dart' as DateHelper;
+import '../../utils/app_strings.dart';
 import '../../utils/constants.dart';
 import '../../models/semester.dart';
 import '../../widgets/schedule/day_timeline_widget.dart';
@@ -113,7 +114,7 @@ class _DaySchedulePageState extends ConsumerState<DaySchedulePage> {
             child: courses.isEmpty
                 ? EmptyStateWidget(
                     icon: Icons.event_busy,
-                    title: '当天没有课程',
+                    title: AppStrings.scheduleEmptyDay,
                     subtitle: '换个日子看看？',
                   )
                 : DayTimeline(

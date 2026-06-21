@@ -12,8 +12,8 @@ import '../pages/todo/todo_detail_page.dart';
 import '../pages/settings/settings_page.dart';
 import '../pages/settings/semester_manage_page.dart';
 
-/// 全局导航 Key（用于 NotificationService 回调等场景）
-final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>();
+/// 全局导航 Key（用于 NotificationService 回调、跨 async 操作的 dialog 等场景）
+final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
 
 /// 路由路径常量
 class AppRoutes {
@@ -34,7 +34,7 @@ class AppRoutes {
 
 /// GoRouter 配置
 final GoRouter appRouter = GoRouter(
-  navigatorKey: _rootNavigatorKey,
+  navigatorKey: rootNavigatorKey,
   initialLocation: AppRoutes.schedule,
   redirect: (context, state) {
     if (state.uri.path == AppRoutes.home) {

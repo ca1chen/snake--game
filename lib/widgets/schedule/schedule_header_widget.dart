@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../utils/constants.dart';
 import '../../utils/date_utils.dart' as DateHelper;
+import '../../utils/app_strings.dart';
 import '../../models/semester.dart';
 
 /// 周视图表头组件：周次切换 + 日期显示
@@ -85,7 +86,7 @@ class ScheduleHeader extends StatelessWidget {
                 onPressed: onTapDayView,
                 padding: EdgeInsets.zero,
                 constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
-                tooltip: '日视图',
+                tooltip: AppStrings.scheduleDayView,
               ),
             ],
           ),

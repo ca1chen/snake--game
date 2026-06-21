@@ -5,6 +5,7 @@ import '../../providers/semester_provider.dart';
 import '../../providers/course_provider.dart';
 import '../../providers/todo_provider.dart';
 import '../../widgets/schedule/schedule_header_widget.dart';
+import '../../utils/app_strings.dart';
 import '../../widgets/schedule/week_grid_widget.dart';
 import '../../widgets/common/empty_state_widget.dart';
 import '../../router/app_router.dart';
@@ -79,23 +80,22 @@ class WeekSchedulePage extends ConsumerWidget {
                 : semesterState.currentSemester == null
                     ? EmptyStateWidget(
                         icon: Icons.school_outlined,
-                        title: '请先设置学期',
-                        subtitle: '在设置中添加一个学期开始使用',
+                        title: AppStrings.schedulePleaseSetSemester,
+                        subtitle: AppStrings.scheduleSetSemesterHint,
                       )
                     : courseState.coursesByDay.isEmpty ||
                            courseState.coursesByDay.values.every((l) => l.isEmpty)
                         ? EmptyStateWidget(
                             icon: Icons.grid_view_rounded,
-                            title: '本周没有课程',
-                            subtitle: '点击右下角按钮添加课程',
-                            actionLabel: '添加课程',
+                            title: AppStrings.scheduleEmptyWeek,
+                            subtitle: AppStrings.scheduleEmptySubtitle,
+                            actionLabel: AppStrings.courseAdd,
                             onAction: () {
                               AppRouter.goCourseAdd(context);
                             },
                           )
                         : WeekGrid(
                             coursesByDay: courseState.coursesByDay,
-                            displayPeriods: 6,
                             todoCountMap: todoCountMap,
                             onCourseTap: (course) {
                               AppRouter.goCourseDetail(context, course.id!);

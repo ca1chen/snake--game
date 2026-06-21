@@ -9,6 +9,7 @@ import '../services/notification_service.dart';
 import '../services/course_import_service.dart';
 import '../repositories/semester_repository.dart';
 import '../repositories/course_repository.dart';
+import '../utils/app_strings.dart';
 import '../main.dart' show pendingImportPath;
 
 /// 启动页 — 初始化数据库和通知服务
@@ -23,7 +24,7 @@ class SplashPage extends ConsumerStatefulWidget {
 
 class _SplashPageState extends ConsumerState<SplashPage> {
   bool _ready = false;
-  String _status = '正在初始化...';
+  String _status = AppStrings.splashInit;
 
   @override
   void initState() {
@@ -34,11 +35,11 @@ class _SplashPageState extends ConsumerState<SplashPage> {
   Future<void> _init() async {
     try {
       // 1. 初始化通知服务
-      setState(() => _status = '正在初始化通知服务...');
+      setState(() => _status = AppStrings.splashInitNotify);
       await NotificationService.init();
 
       // 2. 加载学期数据（触发数据库初始化）
-      setState(() => _status = '正在加载数据...');
+      setState(() => _status = AppStrings.splashLoadData);
       await ref.read(semesterProvider.notifier).loadSemesters();
 
       // 3. 首次启动时，导入课表种子数据
@@ -66,7 +67,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
     final existingSemesters = await semRepo.getAll();
     if (existingSemesters.isNotEmpty) return; // 已有数据，跳过
 
-    setState(() => _status = '正在导入课表数据...');
+    setState(() => _status = AppStrings.splashSeedData);
 
     // 创建学期
     final semester = Semester(
@@ -136,7 +137,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
   Future<void> _handleSharedImport() async {
     if (pendingImportPath == null) return;
 
-    setState(() => _status = '正在导入分享的课表...');
+    setState(() => _status = AppStrings.splashImportShared);
 
     try {
       final importResult = await CourseImportService.parseFile(pendingImportPath!);
@@ -216,7 +217,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
               ),
             ),
             const SizedBox(height: 8),
-            Text('大学生课程表+待办管理', style: theme.textTheme.bodySmall),
+            Text(AppStrings.appSubtitle, style: theme.textTheme.bodySmall),
             const SizedBox(height: 24),
             const SizedBox(
               width: 24,

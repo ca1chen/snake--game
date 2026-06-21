@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../models/semester.dart';
 import '../../providers/semester_provider.dart';
+import '../../providers/course_provider.dart';
+import '../../providers/todo_provider.dart';
 import '../../widgets/common/empty_state_widget.dart';
+import '../../utils/app_strings.dart';
 import '../../widgets/common/confirm_dialog.dart';
 
 /// 学期管理页面
@@ -71,7 +74,7 @@ class _SemesterManagePageState extends ConsumerState<SemesterManagePage> {
           ),
         ),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('取消')),
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text(AppStrings.cancel)),
           FilledButton(
             onPressed: () {
               final name = nameCtrl.text.trim();
@@ -97,7 +100,7 @@ class _SemesterManagePageState extends ConsumerState<SemesterManagePage> {
                 ),
               );
             },
-            child: const Text('保存'),
+            child: const Text(AppStrings.save),
           ),
         ],
       ),
@@ -110,14 +113,14 @@ class _SemesterManagePageState extends ConsumerState<SemesterManagePage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('学期管理')),
+      appBar: AppBar(title: const Text(AppStrings.semesterManagement)),
       body: state.isLoading
           ? const Center(child: CircularProgressIndicator())
           : state.semesters.isEmpty
               ? EmptyStateWidget(
                   icon: Icons.school_outlined,
-                  title: '还没有学期',
-                  subtitle: '添加一个新学期开始规划课程吧',
+                  title: AppStrings.semesterNone,
+                  subtitle: AppStrings.semesterNoneHint,
                   actionLabel: '新建学期',
                   onAction: () => _editSemester(null),
                 )
@@ -146,21 +149,24 @@ class _SemesterManagePageState extends ConsumerState<SemesterManagePage> {
                             } else if (action == 'delete') {
                               final ok = await ConfirmDialog.show(
                                 context,
-                                title: '删除学期',
+                                title: AppStrings.semesterDeleteTitle,
                                 content: '删除「${s.name}」及其所有课程和待办？此操作不可撤销。',
-                                confirmLabel: '删除',
+                                confirmLabel: AppStrings.semesterDeleteConfirm,
                                 confirmColor: Colors.red,
                               );
                               if (ok == true) {
                                 await ref.read(semesterProvider.notifier).deleteSemester(s.id!);
+                                // 学期删除会级联删除课程，刷新课程和待办
+                                await ref.read(courseProvider.notifier).loadCourses();
+                                await ref.read(todoProvider.notifier).loadTodos();
                               }
                             }
                           },
                           itemBuilder: (_) => [
                             if (!s.isCurrent)
-                              const PopupMenuItem(value: 'current', child: Text('设为当前学期')),
-                            const PopupMenuItem(value: 'edit', child: Text('编辑')),
-                            const PopupMenuItem(value: 'delete', child: Text('删除', style: TextStyle(color: Colors.red))),
+                              const PopupMenuItem(value: 'current', child: Text(AppStrings.semesterSetCurrent)),
+                            const PopupMenuItem(value: 'edit', child: Text(AppStrings.edit)),
+                            const PopupMenuItem(value: 'delete', child: Text(AppStrings.semesterDeleteConfirm, style: TextStyle(color: Colors.red))),
                           ],
                         ),
                       ),
