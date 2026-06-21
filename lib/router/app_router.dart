@@ -11,6 +11,7 @@ import '../repositories/course_repository.dart';
 import '../pages/todo/todo_list_page.dart';
 import '../pages/todo/todo_edit_page.dart';
 import '../pages/todo/todo_detail_page.dart';
+import '../pages/todo/todo_voice_add_page.dart';
 import '../pages/settings/settings_page.dart';
 import '../pages/settings/semester_manage_page.dart';
 
@@ -30,6 +31,7 @@ class AppRoutes {
   static const todoAdd = '/todos/add';
   static const todoDetail = '/todos/detail';
   static const todoEdit = '/todos/edit';
+  static const todoVoiceAdd = '/todos/voice-add';
   static const settings = '/settings';
   static const semesters = '/settings/semesters';
 }
@@ -155,6 +157,10 @@ final GoRouter appRouter = GoRouter(
       },
     ),
     GoRoute(
+      path: AppRoutes.todoVoiceAdd,
+      builder: (context, state) => const TodoVoiceAddPage(),
+    ),
+    GoRoute(
       path: AppRoutes.semesters,
       builder: (context, state) => const SemesterManagePage(),
     ),
@@ -181,6 +187,7 @@ class AppRouter {
   }
   static void goTodoDetail(BuildContext context, int id) => context.push('${AppRoutes.todoDetail}/$id');
   static void goTodoEdit(BuildContext context, int id) => context.push('${AppRoutes.todoEdit}/$id');
+  static void goTodoVoiceAdd(BuildContext context) => context.push(AppRoutes.todoVoiceAdd);
 
   // 设置相关
   static void goSemesters(BuildContext context) => context.push(AppRoutes.semesters);

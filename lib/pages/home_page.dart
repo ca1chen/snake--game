@@ -53,13 +53,8 @@ class HomePage extends StatelessWidget {
           tooltip: '添加课程',
           child: const Icon(Icons.add),
         );
-      case 1: // 待办 Tab
-        return FloatingActionButton(
-          heroTag: 'add_todo',
-          onPressed: () => AppRouter.goTodoAdd(context),
-          tooltip: '添加待办',
-          child: const Icon(Icons.add),
-        );
+      case 1: // 待办 Tab — 页面内已有添加入口
+        return null;
       default:
         return null;
     }

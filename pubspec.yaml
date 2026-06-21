@@ -40,6 +40,9 @@ dependencies:
 
   # 文件选择
   file_picker: ^8.0.0
+
+  # 语音识别
+  speech_to_text: ^7.0.0
   # HTML 解析
   html: ^0.15.4
 

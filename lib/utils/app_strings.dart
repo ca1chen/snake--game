@@ -96,6 +96,27 @@ class AppStrings {
   static const String filterHighPriority = '高优先级';
   static const String filterOverdue = '逾期';
 
+  // === 语音添加待办 ===
+  static const String voiceAddTitle = '语音添加待办';
+  static const String voiceAddLongPressHint = '长按开始录音';
+  static const String voiceAddSpeakHint = '说出要做的事情，支持一句话多个任务';
+  static const String voiceAddReleaseHint = '松开停止录音';
+  static const String voiceAddRecognizing = '识别中...';
+  static const String voiceAddNoContent = '未检测到任务内容';
+  static const String voiceAddNoContentHint = '语音识别结果为空或无法解析出有效任务，请重新录音并尝试更清晰地表达。';
+  static const String voiceAddRetry = '重新录音';
+  static const String voiceAddSaveAll = '全部保存';
+  static const String voiceAddSaveAllCount = '全部保存 ({count} 条)';
+  static const String voiceAddSaved = '已保存 {count} 条待办';
+  static const String voiceAddPermissionDenied = '麦克风不可用';
+  static const String voiceAddPermissionDeniedHint = '请在系统设置中开启麦克风权限后重试';
+  static const String voiceAddManual = '手动添加';
+  static const String voiceAddVoice = '语音添加';
+  static const String voiceAddSaving = '正在保存...';
+  static const String voiceAddParsedCount = '解析出 {count} 条待办';
+  static const String voiceAddRawText = '识别原文';
+  static const String voiceAddEditTitle = '任务名称';
+
   // === 学期 ===
   static const String semesterManagement = '学期管理';
   static const String semesterNew = '新建学期';
