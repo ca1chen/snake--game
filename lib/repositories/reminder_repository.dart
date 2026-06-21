@@ -4,7 +4,10 @@ import '../models/reminder.dart';
 
 /// 提醒数据仓库
 class ReminderRepository {
-  final DatabaseHelper _dbHelper = DatabaseHelper();
+  final DatabaseHelper _dbHelper;
+
+  ReminderRepository({DatabaseHelper? dbHelper})
+      : _dbHelper = dbHelper ?? DatabaseHelper();
 
   /// 插入新提醒
   Future<int> insert(Reminder reminder) async {

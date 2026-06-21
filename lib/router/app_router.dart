@@ -6,6 +6,8 @@ import '../pages/schedule/day_schedule_page.dart';
 import '../pages/course/course_list_page.dart';
 import '../pages/course/course_edit_page.dart';
 import '../pages/course/course_detail_page.dart';
+import '../models/course.dart';
+import '../repositories/course_repository.dart';
 import '../pages/todo/todo_list_page.dart';
 import '../pages/todo/todo_edit_page.dart';
 import '../pages/todo/todo_detail_page.dart';
@@ -109,8 +111,17 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '${AppRoutes.courseEdit}/:courseId',
       builder: (context, state) {
-        final _ = int.parse(state.pathParameters['courseId']!);
-        return const CourseEditPage();
+        final courseId = int.parse(state.pathParameters['courseId']!);
+        final repo = CourseRepository();
+        return FutureBuilder<Course?>(
+          future: repo.getById(courseId),
+          builder: (ctx, snap) {
+            if (snap.connectionState != ConnectionState.done) {
+              return const Scaffold(body: Center(child: CircularProgressIndicator()));
+            }
+            return CourseEditPage(course: snap.data);
+          },
+        );
       },
     ),
     GoRoute(

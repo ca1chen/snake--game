@@ -12,8 +12,10 @@ class ThemeNotifier extends StateNotifier<ThemeMode> {
 
   Future<void> _loadTheme() async {
     final prefs = await SharedPreferences.getInstance();
-    final index = prefs.getInt(_key) ?? 2; // 默认跟随系统
-    state = ThemeMode.values[index];
+    final index = prefs.getInt(_key) ?? ThemeMode.system.index;
+    state = index >= 0 && index < ThemeMode.values.length
+        ? ThemeMode.values[index]
+        : ThemeMode.system;
   }
 
   Future<void> setTheme(ThemeMode mode) async {

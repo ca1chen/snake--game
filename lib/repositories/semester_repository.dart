@@ -4,7 +4,10 @@ import '../models/semester.dart';
 
 /// 学期数据仓库
 class SemesterRepository {
-  final DatabaseHelper _dbHelper = DatabaseHelper();
+  final DatabaseHelper _dbHelper;
+
+  SemesterRepository({DatabaseHelper? dbHelper})
+      : _dbHelper = dbHelper ?? DatabaseHelper();
 
   /// 插入新学期
   Future<int> insert(Semester semester) async {

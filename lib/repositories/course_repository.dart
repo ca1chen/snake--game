@@ -4,7 +4,10 @@ import '../models/course.dart';
 
 /// 课程数据仓库
 class CourseRepository {
-  final DatabaseHelper _dbHelper = DatabaseHelper();
+  final DatabaseHelper _dbHelper;
+
+  CourseRepository({DatabaseHelper? dbHelper})
+      : _dbHelper = dbHelper ?? DatabaseHelper();
 
   /// 插入新课程
   Future<int> insert(Course course) async {

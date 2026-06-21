@@ -4,7 +4,10 @@ import '../models/todo_item.dart';
 
 /// 待办数据仓库
 class TodoRepository {
-  final DatabaseHelper _dbHelper = DatabaseHelper();
+  final DatabaseHelper _dbHelper;
+
+  TodoRepository({DatabaseHelper? dbHelper})
+      : _dbHelper = dbHelper ?? DatabaseHelper();
 
   /// 插入新待办
   Future<int> insert(TodoItem todo) async {

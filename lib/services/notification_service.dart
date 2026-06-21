@@ -92,7 +92,6 @@ class NotificationService {
           ),
         ),
         androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-        matchDateTimeComponents: DateTimeComponents.dateAndTime,
         uiLocalNotificationDateInterpretation:
             UILocalNotificationDateInterpretation.absoluteTime,
       );
@@ -116,10 +115,10 @@ class NotificationService {
     final date = DateTime.tryParse(dueDate);
     if (date == null) return null;
 
-    if (dueTime != null) {
+    if (dueTime != null && dueTime.contains(':')) {
       final parts = dueTime.split(':');
       final hour = int.tryParse(parts[0]) ?? 0;
-      final minute = int.tryParse(parts[1]) ?? 0;
+      final minute = parts.length > 1 ? (int.tryParse(parts[1]) ?? 0) : 0;
       return DateTime(date.year, date.month, date.day, hour, minute);
     }
 
