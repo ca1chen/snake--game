@@ -1,0 +1,46 @@
+name: Build Flutter Release APK
+
+# 触发条件：推送到 main 或 master 分支，或者手动在 Actions 页面点击运行
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 拉取你的 GitHub 代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 配置 Java 环境 (Flutter 最新版 Android 编译依赖 Java 17)
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      # 3. 配置 Flutter SDK (使用 v3，显式指定版本，并开启缓存，完美解决你的报错)
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v3
+        with:
+          flutter-version: '3.24.3' # 推荐指定一个具体的稳定版本，避免自动拉取失败
+          channel: 'stable'
+          cache: true                # 开启缓存，下次运行构建只需几秒钟
+
+      # 4. 安装 Flutter 依赖包
+      - name: Install dependencies
+        run: flutter pub get
+
+      # 5. 编译打包 Release 版本的 APK
+      - name: Build APK
+        run: flutter build apk --release
+
+      # 6. 将生成的 APK 文件上传到 GitHub Actions 页面，供你下载
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
