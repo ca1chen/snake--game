@@ -1,20 +1,45 @@
-name: Build Flutter Android APK
+name: Build Flutter Release APK
+
+# 触发条件：推送到 main 或 master 分支时，或手动点击运行
 on:
+  push:
+    branches: [ main, master ]
   workflow_dispatch:
+
 jobs:
-  build-apk:
+  build:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v4
-      - uses: subosito/flutter-action@v2
+      # 1. 拉取你的代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 设置 Java 环境 (Flutter 安卓打包必须)
+      - name: Setup Java
+        uses: actions/setup-java@v4
         with:
-          flutter-version: '3.24.0'
-        env:
-          PUB_HOSTED_URL: https://pub.flutter-io.cn
-          FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
-      - run: flutter pub get
-      - run: flutter build apk --debug
-      - uses: actions/upload-artifact@v4
+          distribution: 'zulu'
+          java-version: '17'
+
+      # 3. 设置 Flutter 环境 (使用 stable 稳定版)
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          name: Debug-APK
-          path: build/app/outputs/flutter-apk/app-debug.apk
+          flutter-version: 'stable'
+          channel: 'stable'
+
+      # 4. 安装依赖包
+      - name: Install dependencies
+        run: flutter pub get
+
+      # 5. 编译打包 Release APK (注意：这里未配置签名，是 debug 签名包)
+      - name: Build APK
+        run: flutter build apk --release
+
+      # 6. 上传生成的 APK 文件到 GitHub Actions 页面供下载
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
