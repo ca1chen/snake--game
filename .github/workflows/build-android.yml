@@ -1,32 +1,40 @@
-# 工作流名称
 name: Build Flutter Android APK
-# 触发规则：推送代码 / 手动点Run workflow 均可运行
 on:
   push:
-    branches: [ main, master ]
-  workflow_dispatch: # 开启手动运行按钮（关键）
+    branches: [ main ]
+  workflow_dispatch:
 jobs:
   build-apk:
-    runs-on: ubuntu-latest # 云端Ubuntu服务器编译
+    runs-on: ubuntu-latest
     steps:
-      # 1.拉取源码
-      - name: Checkout code
+      - name: Checkout Source Code
         uses: actions/checkout@v4
-      # 2.配置Flutter环境
+
+      # 配置JDK，适配Android编译
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: temurin
+
+      # Flutter环境 + 国内镜像加速
       - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.0' # 可根据项目实际Flutter版本修改
+          flutter-version: '3.19.0' # 后续可根据项目实际版本修改
           channel: stable
-          cache: true # 缓存依赖，下次打包更快
-      # 3.拉取项目依赖
-      - name: Install dependencies
+          cache: true
+        env:
+          PUB_HOSTED_URL: https://pub.flutter-io.cn
+          FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+
+      - name: Install Project Dependencies
         run: flutter pub get
-      # 4.编译Release正式APK（arm64主流手机通用）
-      - name: Build Release APK
+
+      - name: Compile Release APK
         run: flutter build apk --release --target-platform=android-arm64
-      # 5.把编译好的APK打包上传，运行完成可下载
-      - name: Upload APK Artifact
+
+      - name: Upload Finished APK
         uses: actions/upload-artifact@v4
         with:
           name: Android-Release-APK
