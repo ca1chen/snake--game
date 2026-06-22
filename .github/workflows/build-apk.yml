@@ -19,13 +19,13 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      # 【关键修改】这里改用具体的 v3.2.0 版本，规避解析 @v3 失败的问题
+      # 【彻底替换】使用更稳定的 fwal/setup-flutter 解决解析报错问题
       - name: Setup Flutter
-        uses: subosito/flutter-action@v3.2.0 
+        uses: fwal/setup-flutter@v1
         with:
           flutter-version: '3.24.3'
-          channel: 'stable'
-          cache: true
+          # 如果你不想固定版本号，也可以改为：
+          # channel: 'stable'
 
       - name: Install dependencies
         run: flutter pub get
