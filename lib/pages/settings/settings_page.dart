@@ -6,7 +6,6 @@ import '../../providers/semester_provider.dart';
 import '../../providers/course_provider.dart';
 import '../../models/semester.dart';
 import '../../utils/app_strings.dart';
-import '../../models/course.dart';
 import '../../repositories/semester_repository.dart';
 import '../../repositories/course_repository.dart';
 import '../../services/course_import_service.dart';

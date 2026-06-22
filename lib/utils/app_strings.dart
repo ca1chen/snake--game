@@ -176,6 +176,4 @@ class AppStrings {
   static const String weekTypeOdd = '单周';
   static const String weekTypeEven = '双周';
 
-  // === 星期 ===
-  static const List<String> weekdays = ['周一', '周二', '周三', '周四', '周五', '周六', '周日'];
 }

@@ -6,15 +6,20 @@ import '../utils/constants.dart';
 
 /// SQLite 数据库单例（移动端：sqflite）
 class DatabaseHelper {
-  static late final DatabaseHelper _instance = DatabaseHelper._();
+  static final DatabaseHelper _instance = DatabaseHelper._();
   static Database? _database;
+  static Future<Database>? _initFuture;
 
   DatabaseHelper._();
 
   factory DatabaseHelper() => _instance;
 
   Future<Database> get database async {
-    _database ??= await _initDatabase();
+    if (_database != null) return _database!;
+
+    // 防止并发初始化：多个调用方共享同一个 Future
+    _initFuture ??= _initDatabase();
+    _database = await _initFuture;
     return _database!;
   }
 
@@ -47,6 +52,7 @@ class DatabaseHelper {
     if (db != null) {
       await db.close();
       _database = null;
+      _initFuture = null;
       Logger.d('DB', 'Database closed');
     }
   }
@@ -56,7 +62,8 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, dbName);
     await deleteDatabase(path);
-    _database = await _initDatabase();
+    _initFuture = _initDatabase();
+    _database = await _initFuture;
     Logger.d('DB', 'Database reset');
   }
 }

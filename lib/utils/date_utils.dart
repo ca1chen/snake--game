@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart';
+import 'constants.dart';
 
 /// 日期工具类 — 学期周次计算、日期格式化
 class DateUtils {
@@ -30,10 +31,9 @@ class DateUtils {
 
   /// 格式化日期为中文显示 "10月15日 周一"
   static String formatDateCN(DateTime date) {
-    const weekdays = ['周一', '周二', '周三', '周四', '周五', '周六', '周日'];
     final month = date.month;
     final day = date.day;
-    final weekday = weekdays[date.weekday - 1];
+    final weekday = weekdayLabels[date.weekday - 1];
     return '$month月${day}日 $weekday';
   }
 

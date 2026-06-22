@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/painting.dart';
 
 /// 节数时间段映射（天大作息）
 const Map<int, String> periodTimeMap = {

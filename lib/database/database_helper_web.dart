@@ -6,7 +6,7 @@ import '../utils/constants.dart';
 
 /// SQLite 数据库单例（Web 端：IndexedDB 底层）
 class DatabaseHelper {
-  static late final DatabaseHelper _instance = DatabaseHelper._();
+  static final DatabaseHelper _instance = DatabaseHelper._();
   static Database? _database;
   static Future<Database>? _initFuture;
 
