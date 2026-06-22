@@ -25,6 +25,22 @@
   <title>FirstCC</title>
   <link rel="manifest" href="manifest.json">
 
+  <!-- 锁定竖屏 -->
+  <script>
+    (function lockPortrait() {
+      // Screen Orientation API
+      if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock('portrait').catch(function(){});
+      }
+      // 监听旋转事件，强制恢复
+      screen.addEventListener('orientationchange', function() {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock('portrait').catch(function(){});
+        }
+      });
+    })();
+  </script>
+
   <!-- Service Worker -->
   <script>
     if ('serviceWorker' in navigator) {

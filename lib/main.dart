@@ -17,10 +17,14 @@ Future<void> main() async {
     ),
   );
 
-  // 强制竖屏
-  await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-  ]);
+  // 强制竖屏（Web 端由 index.html 中 JS 处理）
+  try {
+    await SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+  } catch (_) {
+    // Web 端可能不支持此 API
+  }
 
   Logger.d('App', 'Starting FirstCC...');
 
